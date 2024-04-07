@@ -6,8 +6,9 @@
 | 2   | [Prototype](#Prototype)                                             |
 | 3   | [Call, Apply and Bind](#Call-Apply-and-Bind)                        |
 | 4   | [JSON](#JSON)                                                       |
-| 4   | [Object and Map](#Object-and-Map)                                   |
-| 4   | [== and === operators](#==-and-===-operators)                                   |
+| 5   | [Object and Map](#Object-and-Map)                                   |
+| 6   | [== and === operators](#==-and-===-operators)                       |
+| 7   | [var, let, and const](#var-let-and-const)                           |
 
 ### <h2>Possible ways to create objects</h2>
 
@@ -465,4 +466,99 @@ null === undefined // false
 []==[] or []===[] //false, refer different objects in memory
 {}=={} or {}==={} //false, refer different objects in memory
 ```
+**[⬆ Back to Top](#table-of-contents)**
+
+### <h2>var, let, and const</h2>
+
+You can list out the differences in a tabular format
+
+| var                                                    | let                                             | const                                  |
+| ------------------------------------------------------ | ----------------------------------------------- | -------------------------------------- |
+| Redeclare and reassign is possible                     | Redeclare not possible but reassign is possible | Redeclare and reassign is not possible |
+| Global scope                                           | Block scope                                     | Block scope                            |
+| It has been available from the beginning of JavaScript | Introduced as part of ES6                       | Introduced as part of ES6              |
+| Global scope                                           | Block scope                                     | Block scope                            |
+| Global scope                                           | Block scope                                     | Block scope                            |
+
+**Examples:**
+
+```javascript
+var a = 10
+
+var a = 11 // It is allowed
+
+a = 12 // It is allowed
+```
+```javascript
+let a = 10
+
+let a = 11 // It is not allowed
+
+a = 12 // It is allowed
+```
+
+```javascript
+const a = 10
+
+const a = 10 // It is not allowed
+
+a = 10 // It is not allowed
+```
+
+**Questions and Answers**
+
+**1. What is the purpose of the let keyword?**
+
+**Ans:**
+
+**2. What is the reason to choose the name let as a keyword?**
+
+**Ans:** The `let` statement declares a **block scope local variable**. Hence the variables defined with let keyword are limited in scope to the block, statement, or expression on which it is used. Whereas variables declared with the `var` keyword used to define a variable globally, or locally to an entire function regardless of block scope.
+
+Let's take an example to demonstrate the usage,
+
+```javascript
+let counter = 30;
+if (counter === 30) {
+let counter = 31;
+console.log(counter); // 31
+}
+console.log(counter); // 30 (because the variable in if block won't exist here)
+```
+
+**3. Can I redeclare let and const variables?**
+
+**Ans:** No, you cannot redeclare let and const variables. If you do, it throws below error
+
+```bash
+Uncaught SyntaxError: Identifier 'someVariable' has already been declared
+```
+
+**Explanation:** The variable declaration with `var` keyword refers to a function scope and the variable is treated as if it were declared at the top of the enclosing scope due to hoisting feature. So all the multiple declarations contributing to the same hoisted variable without any error. Let's take an example of re-declaring variables in the same scope for both var and let/const variables.
+
+```javascript
+var name = "John";
+function myFunc() {
+   var name = "Nick";
+   var name = "Abraham"; // Re-assigned in the same function block
+   alert(name); // Abraham
+}
+myFunc();
+alert(name); // John
+```
+
+The block-scoped multi-declaration throws syntax error,
+
+```javascript
+let name = "John";
+function myFunc() {
+   let name = "Nick";
+   let name = "Abraham"; // Uncaught SyntaxError: Identifier 'name' has already been declared
+   alert(name);
+}
+
+myFunc();
+alert(name);
+```
+
 **[⬆ Back to Top](#table-of-contents)**
