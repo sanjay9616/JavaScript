@@ -7,9 +7,10 @@
 | 3   | [Call, Apply and Bind](#Call-Apply-and-Bind)                                                        |
 | 4   | [JSON](#JSON)                                                                                       |
 | 5   | [Object and Map](#Object-and-Map)                                                                   |
-| 6   | [== and === operators](#==-and-===-operators)                                                       |
-| 7   | [var, let, and const](#var-let-and-const)                                                           |
-| 8   | [How do you decode or encode a URL in JavaScript](#How-do-you-decode-or-encode-a-URL-in-JavaScript) |
+| 6   | [null, undefined, and Nan](#null-undefined-and-Nan)                                                 |
+| 7   | [== and === operators](#==-and-===-operators)                                                       |
+| 8   | [var, let, and const](#var-let-and-const)                                                           |
+| 9   | [How do you decode or encode a URL in JavaScript](#How-do-you-decode-or-encode-a-URL-in-JavaScript) |
 
 ### <h2>Possible ways to create objects</h2>
 
@@ -440,6 +441,11 @@ console.log(userString); //"{"name":"John","age":31}"
 
 **[⬆ Back to Top](#table-of-contents)**
 
+### <h2>null, undefined, and Nan</h2>
+
+
+**[⬆ Back to Top](#table-of-contents)**
+
 ### <h2>== and === operators</h2>
 
 JavaScript provides both strict(===, !==) and type-converting(==, !=) equality comparison. The strict operators take type of variable in consideration, while non-strict operators make type correction/conversion based upon values of variables. The strict operators follow the below conditions for different types,
@@ -566,6 +572,18 @@ function myFunc() {
 myFunc();
 alert(name);
 ```
+
+**4. What are global variables?**
+
+**Ans:** Global variables are those that are available throughout the length of the code without any scope. The var keyword is used to declare a local variable but if you omit it then it will become global variable
+
+```javascript
+msg = "Hello"; // var is missing, it becomes global variable
+```
+
+**5. What are the problems with global variables?**
+
+**Ans:** The problem with global variables is the conflict of variable names of local and global scope. It is also difficult to debug and test the code that relies on global variables.
 
 **[⬆ Back to Top](#table-of-contents)**
 
