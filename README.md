@@ -484,24 +484,18 @@ You can list out the differences in a tabular format
 
 ```javascript
 var a = 10
-
 var a = 11 // It is allowed
-
 a = 12 // It is allowed
 ```
 ```javascript
 let a = 10
-
 let a = 11 // It is not allowed
-
 a = 12 // It is allowed
 ```
 
 ```javascript
 const a = 10
-
 const a = 10 // It is not allowed
-
 a = 10 // It is not allowed
 ```
 
