@@ -7,6 +7,7 @@
 | 3   | [Call, Apply and Bind](#Call-Apply-and-Bind)                        |
 | 4   | [JSON](#JSON)                                                       |
 | 4   | [Object and Map](#Object-and-Map)                                   |
+| 4   | [== and === operators](#==-and-===-operators)                                   |
 
 ### <h2>Possible ways to create objects</h2>
 
@@ -435,4 +436,33 @@ console.log(userString); //"{"name":"John","age":31}"
 5. An Object has a prototype, so there are default keys in an object that could collide with your keys if you're not careful. As of ES5 this can be bypassed by creating an object(which can be called a map) using `Object.create(null)`, but this practice is seldom done. <br>
 6. A Map may perform better in scenarios involving frequent addition and removal of key pairs. <br>
 
+**[⬆ Back to Top](#table-of-contents)**
+
+### <h2>== and === operators</h2>
+
+JavaScript provides both strict(===, !==) and type-converting(==, !=) equality comparison. The strict operators take type of variable in consideration, while non-strict operators make type correction/conversion based upon values of variables. The strict operators follow the below conditions for different types,
+
+1. Two strings are strictly equal when they have the same sequence of characters, same length, and same characters in corresponding positions. <br>
+2. Two numbers are strictly equal when they are numerically equal, i.e., having the same number value. There are two special cases in this, <br>
+   1. NaN is not equal to anything, including NaN. <br>
+   2. Positive and negative zeros are equal to one another. <br>
+3. Two Boolean operands are strictly equal if both are true or both are false. <br>
+4. Two objects are strictly equal if they refer to the same Object. <br>
+5. Null and Undefined types are not equal with ===, but equal with ==, i.e, <br>
+   null===undefined --> false, but null==undefined --> true <br>
+
+Some of the example which covers the above cases:
+
+```javascript
+0 == false   // true
+0 === false  // false
+1 == "1"     // true
+1 === "1"    // false
+null == undefined // true
+null === undefined // false
+'0' == false // true
+'0' === false // false
+[]==[] or []===[] //false, refer different objects in memory
+{}=={} or {}==={} //false, refer different objects in memory
+```
 **[⬆ Back to Top](#table-of-contents)**
