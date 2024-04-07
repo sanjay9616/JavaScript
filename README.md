@@ -1,14 +1,15 @@
 ### Table of Contents
 
-| No. | Questions                                                           |
-| --- | ------------------------------------------------------------------- |
-| 1   | [Possible ways to create objects](#Possible-ways-to-create-objects) |
-| 2   | [Prototype](#Prototype)                                             |
-| 3   | [Call, Apply and Bind](#Call-Apply-and-Bind)                        |
-| 4   | [JSON](#JSON)                                                       |
-| 5   | [Object and Map](#Object-and-Map)                                   |
-| 6   | [== and === operators](#==-and-===-operators)                       |
-| 7   | [var, let, and const](#var-let-and-const)                           |
+| No. | Questions                                                                                           |
+| --- | --------------------------------------------------------------------------------------------------- |
+| 1   | [Possible ways to create objects](#Possible-ways-to-create-objects)                                 |
+| 2   | [Prototype](#Prototype)                                                                             |
+| 3   | [Call, Apply and Bind](#Call-Apply-and-Bind)                                                        |
+| 4   | [JSON](#JSON)                                                                                       |
+| 5   | [Object and Map](#Object-and-Map)                                                                   |
+| 6   | [== and === operators](#==-and-===-operators)                                                       |
+| 7   | [var, let, and const](#var-let-and-const)                                                           |
+| 8   | [How do you decode or encode a URL in JavaScript](#How-do-you-decode-or-encode-a-URL-in-JavaScript) |
 
 ### <h2>Possible ways to create objects</h2>
 
@@ -565,5 +566,24 @@ function myFunc() {
 myFunc();
 alert(name);
 ```
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### <h2>How do you decode or encode a URL in JavaScript</h2>
+
+`encodeURI()` function is used to encode an URL. This function requires a URL string as a parameter and return that encoded string.
+`decodeURI()` function is used to decode an URL. This function requires an encoded URL string as parameter and return that decoded string.
+
+**Note:** If you want to encode characters such as `/ ? : @ & = + $ #` then you need to use `encodeURIComponent()`.
+
+```javascript
+let uri = "https://mozilla.org/?x=шеллы";
+let encoded_uri = encodeURI(uri); // output - https://mozilla.org/?x=%D1%88%D0%B5%D0%BB%D0%BB%D1%8B
+let decoded_uri = decodeURI(encoded_uri); // output - https://mozilla.org/?x=шеллы
+```
+**[⬆ Back to Top](#table-of-contents)**
+
+### <h2>Object and Map</h2>
+
 
 **[⬆ Back to Top](#table-of-contents)**
