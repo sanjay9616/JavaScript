@@ -196,7 +196,7 @@ const person = new Person();
 console.log(person.__proto__);   // { age: 24 }
 ```
 
-</h3>Questions and Answers:</h3>
+</h2>Questions and Answers:</h2>
 
 **1. How do you create an object with prototype?**
 
