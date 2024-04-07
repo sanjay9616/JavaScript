@@ -4,7 +4,7 @@
 | --- | ------------------------------------------------------------------- |
 | 1   | [Possible ways to create objects](#Possible-ways-to-create-objects) |
 
-1. ### <h2>Possible ways to create objects</h2>
+<h2>1.</h2> ### <h2>Possible ways to create objects</h2>
 
    1. **Object literal syntax:**
 
