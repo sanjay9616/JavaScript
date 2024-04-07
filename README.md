@@ -143,7 +143,7 @@ Person.prototype.nationality = "English";
 console.log(person.nationality) // Output - English
 ```
 
-**Note**: The **syntax** to add the property to an object constructor: **objectConstructorName.prototype.key = 'value';**
+**Note**: The **syntax** to add the property to an object constructor: `objectConstructorName.prototype.key = 'value'`;
 
 **Add Methods to a Constructor Function Using Prototype**
 
@@ -195,6 +195,10 @@ const person = new Person();
 
 console.log(person.__proto__);   // { age: 24 }
 ```
+
+**Questions and Answers:**
+
+1. 
 
 **[⬆ Back to Top](#table-of-contents)**
 
