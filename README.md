@@ -443,6 +443,76 @@ console.log(userString); //"{"name":"John","age":31}"
 
 ### <h2>null, undefined, and Nan</h2>
 
+**null** - The value null represents the intentional absence of any object value. It is one of JavaScript's primitive values. The type of null value is object. You can empty the variable by setting the value to null.
+
+```javascript
+var user = null;
+console.log(typeof user); //object
+```
+
+**NaN** - The NaN property is a global property that represents "Not-a-Number" value. i.e, It indicates that a value is not a legal number. It is very rare to use NaN in a program but it can be used as return value for few cases
+
+```javascript
+Math.sqrt(-1);
+parseInt("Hello");
+```
+
+**isNaN** - The isNaN() function is used to determine whether a value is an illegal number (Not-a-Number) or not. i.e, This function returns true if the value equates to NaN. Otherwise it returns false.
+
+```javascript
+isNaN("Hello"); //true
+isNaN("100"); //false
+```
+
+**undefined** - The undefined property indicates that a variable has not been assigned a value, or declared but not initialized at all. The type of undefined value is undefined too.
+
+```javascript
+var user; // Value is undefined, type is undefined
+console.log(typeof user); //undefined
+```
+
+Any variable can be emptied by setting the value to undefined.
+
+```javascript
+user = undefined;
+```
+
+**Questions and Answers:**
+
+**1. What is the difference between null and undefined?**
+
+**Ans:**  Below are the main differences between null and undefined,
+
+| Null                                                                                            | Undefined                                                                                               |
+| ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| It is an assignment value which indicates that variable points to no object.                    | It is not an assignment value where a variable has been declared but has not yet been assigned a value. |
+| Type of null is object                                                                          | Type of undefined is undefined                                                                          |
+| The null value is a primitive value that represents the null, empty, or non-existent reference. | The undefined value is a primitive value used when a variable has not been assigned a value.            |
+| Indicates the absence of a value for a variable                                                 | Indicates absence of variable itself                                                                    |
+| Converted to zero (0) while performing primitive operations                                     | Converted to NaN while performing primitive operations                                                  |
+
+**2. What is the difference between isNaN and Number.isNaN?**
+
+**Ans:**
+
+1. **isNaN**: The global function `isNaN` converts the argument to a Number and returns true if the resulting value is NaN.
+2. **Number.isNaN**: This method does not convert the argument. But it returns true when the type is a Number and value is NaN.
+
+Let's see the difference with an example,
+
+```javascript
+isNaN(‘hello’);   // true
+Number.isNaN('hello'); // false
+```
+
+**3. What are the differences between undeclared and undefined variables?**
+
+**Ans:** Below are the major differences between undeclared(not defined) and undefined variables,
+
+| undeclared                                                                                  | undefined                                                                              |
+| ------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| These variables do not exist in a program and are not declared                              | These variables declared in the program but have not assigned any value                |
+| If you try to read the value of an undeclared variable, then a runtime error is encountered | If you try to read the value of an undefined variable, an undefined value is returned. |
 
 **[⬆ Back to Top](#table-of-contents)**
 
