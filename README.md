@@ -255,7 +255,7 @@ Object.getPrototypeOf("James"); // String.prototype
 **Ans:** Prototype chaining is used to build new types of objects based on existing ones. It is similar to inheritance in a class based language. </br>
 The prototype on object instance is available through Object.getPrototypeOf(object) or __proto__ property whereas prototype on constructors function is available through Object.prototype.
 
-<img src="https://raw.githubusercontent.com/sanjay9616/JavaScript-Interview-Questions/master/images/prototype_chain.png?token=GHSAT0AAAAAACQU7SMWT7LWSHL3Q5ABNEYCZQSSEXA" alt="not found">
+![prototype_chain](https://github.com/sanjay9616/JavaScript/assets/87460579/b1465657-f9ed-46bd-a591-3f8f330c4523)
 
 **6. What is the difference between proto and prototype**
 
