@@ -3,6 +3,7 @@
 | No. | Questions                                                           |
 | --- | ------------------------------------------------------------------- |
 | 1   | [Possible ways to create objects](#Possible-ways-to-create-objects) |
+| 2   | [Prototype](#Prototype)                                             |
 
 ### <h2>Possible ways to create objects</h2>
 
@@ -112,4 +113,90 @@
       ```
 
       **[⬆ Back to Top](#table-of-contents)**
+
+### <h2>Prototype</h2>
+
+In JavaScript, every function and object has a property named prototype by default
+
+```javascript
+function Person () {
+    this.name = 'John',
+    this.age = 23
+}
+
+const person = new Person();
+
+console.log(Person.prototype); // { ... }
+```
+
+You can not add a new property to an existing object constructor:
+
+```javascript
+Person.nationality = "English";
+console.log(person.nationality) // Output - undefined
+```
+
+a prototype can be used to add properties and methods to a constructor function. And objects inherit properties and methods from a prototype
+
+```javascript
+Person.prototype.nationality = "English";
+console.log(person.nationality) // Output - English
+```
+
+**Note**: The **syntax** to add the property to an object constructor function is: **objectConstructorName.prototype.key = 'value';**
+
+**Add Methods to a Constructor Function Using Prototype**
+
+```javascript
+function Person () {
+    this.name = 'John',
+    this.age = 23
+}
+const person1 = new Person();
+Person.prototype.greet = function() {
+    console.log('hello' + ' ' +  this.name);
+}
+person1.greet(); // hello John
+```
+
+**Changing Prototype**
+
+If a prototype value is changed, then all the new objects will have the changed property value, and all the previously created objects will have the previous value. For example,
+
+```javascript
+function Person() {
+    this.name = 'John'
+}
+
+Person.prototype.age = 20;
+
+const person1 = new Person();
+
+console.log(person1.age); // 20
+
+Person.prototype = { age: 50 }
+
+const person2 = new Person();
+
+console.log(person2.age); // 50
+console.log(person1.age); // 20
+```
+
+You can also access the prototype property of a constructor function from an object.
+
+```javascript
+function Person () {
+    this.name = 'John'
+}
+
+Person.prototype.age = 24;
+
+const person = new Person();
+
+console.log(person.__proto__);   // { age: 24 }
+```
+
+**[⬆ Back to Top](#table-of-contents)**
+
+
 
