@@ -2,7 +2,7 @@
 
 | No. | Questions                                                                                                                     |
 | --- | ----------------------------------------------------------------------------------------------------------------------------- |
-| 1   | [Possible ways to create objects or Questions based on Ojects](#Possible-ways-to-create-objects-or-Questions-based-on-Ojects) |
+| 1   | [Questions based on Objects and Map](#Questions-based-on-Objects-and-Map) |
 | 2   | [Prototype](#Prototype)                                                                                                       |
 | 3   | [Call, Apply and Bind](#Call-Apply-and-Bind)                                                                                  |
 | 4   | [JSON](#JSON)                                                                                                                 |
@@ -12,7 +12,13 @@
 | 8   | [var, let, and const](#var-let-and-const)                                                                                     |
 | 9   | [How do you decode or encode a URL in JavaScript](#How-do-you-decode-or-encode-a-URL-in-JavaScript)                           |
 
-### <h1>Possible ways to create objects or Questions based on Ojects</h1>
+### <h1>Questions based on Objects and Map</h1>
+
+**Questions and Answers:**
+
+**1. What are the possible ways to create objects in JavaScript?**
+
+**Ans:** There are many ways to create objects in javascript as mentioned below:
 
 **1. Object literal syntax:**
 
@@ -119,9 +125,7 @@ var object = new (function () {
 })();
 ```
 
-**Questions and Answers:**
-
-**1. What are the recommendations to create new object?**
+**2. What are the recommendations to create new object?**
 
 **Ans:** It is recommended to avoid creating new objects using `new Object()`. Instead you can initialize values based on it's type to create the objects.
 
@@ -145,13 +149,13 @@ var v6 = /()/;
 var v7 = function () {};
 ```
 
-**2. What is the difference between native, host and user objects?**
+**3. What is the difference between native, host and user objects?**
 
 **Ans:** `Native objects` are objects that are part of the JavaScript language defined by the ECMAScript specification. For example, String, Math, RegExp, Object, Function etc core objects defined in the ECMAScript spec.
 `Host objects` are objects provided by the browser or runtime environment (Node). For example, window, XmlHttpRequest, DOM nodes etc are considered as host objects.
 `User objects` are objects defined in the javascript code. For example, User objects created for profile information.
 
-**3. How do you compare two date objects?**
+**4. How do you compare two date objects?**
 
 **Ans:** You need to use date.getTime() method to compare date values instead of comparison operators (==, !=, ===, and !== operators)
 
@@ -162,7 +166,7 @@ console.log(d1.getTime() === d2.getTime()); //True
 console.log(d1 === d2); // False
 ```
 
-**4. What are wrapper objects?**
+**5. What are wrapper objects?**
 
 **Ans:** Primitive Values like string,number and boolean don't have properties and methods but they are temporarily converted or coerced to an object(Wrapper object) when you try to perform actions on them. For example, if you apply toUpperCase() method on a primitive string value, it does not throw an error but returns uppercase of the string.
 
