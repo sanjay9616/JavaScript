@@ -6,7 +6,6 @@
 | 2   | [Prototype](#Prototype)                                                                                                       |
 | 3   | [Call, Apply and Bind](#Call-Apply-and-Bind)                                                                                  |
 | 4   | [JSON](#JSON)                                                                                                                 |
-| 5   | [Object and Map](#Object-and-Map)                                                                                             |
 | 6   | [null, undefined, and Nan](#null-undefined-and-Nan)                                                                           |
 | 7   | [== and === operators](#==-and-===-operators)                                                                                 |
 | 8   | [var, let, and const](#var-let-and-const)                                                                                     |
@@ -177,6 +176,17 @@ console.log(name.toUpperCase()); // Behind the scenes treated as console.log(new
 ```
 
 i.e, Every primitive except null and undefined have Wrapper Objects and the list of wrapper objects are String,Number,Boolean,Symbol and BigInt.
+
+**5. How do you compare Object and Map?**
+
+**Ans:** **Objects** are similar to **Maps** in that both let you set keys to values, retrieve those values, delete keys, and detect whether something is stored at a key. Due to this reason, Objects have been used as Maps historically. But there are important differences that make using a Map preferable in certain cases:
+
+1. The keys of an Object can be Strings and Symbols, whereas they can be any value for a Map, including functions, objects, and any primitive. <br>
+2. The keys in a Map are ordered while keys added to Object are not. Thus, when iterating over it, a Map object returns keys in the order of insertion. <br>
+3. You can get the size of a Map easily with the size property, while the number of properties in an Object must be determined manually. <br>
+4. A Map is an iterable and can thus be directly iterated, whereas iterating over an Object requires obtaining its keys in some fashion and iterating over them.
+5. An Object has a prototype, so there are default keys in an object that could collide with your keys if you're not careful. As of ES5 this can be bypassed by creating an object(which can be called a map) using `Object.create(null)`, but this practice is seldom done. <br>
+6. A Map may perform better in scenarios involving frequent addition and removal of key pairs. <br>
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -484,19 +494,6 @@ console.log(userString); //"{"name":"John","age":31}"
 **4. Why do you need JSON?**
 
 **Ans:** When exchanging data between a browser and a server, the data can only be text. Since JSON is text only, it can easily be sent to and from a server, and used as a data format by any programming language.
-
-**[⬆ Back to Top](#table-of-contents)**
-
-### <h1>Object and Map</h1>
-
-**Objects** are similar to **Maps** in that both let you set keys to values, retrieve those values, delete keys, and detect whether something is stored at a key. Due to this reason, Objects have been used as Maps historically. But there are important differences that make using a Map preferable in certain cases:
-
-1. The keys of an Object can be Strings and Symbols, whereas they can be any value for a Map, including functions, objects, and any primitive. <br>
-2. The keys in a Map are ordered while keys added to Object are not. Thus, when iterating over it, a Map object returns keys in the order of insertion. <br>
-3. You can get the size of a Map easily with the size property, while the number of properties in an Object must be determined manually. <br>
-4. A Map is an iterable and can thus be directly iterated, whereas iterating over an Object requires obtaining its keys in some fashion and iterating over them.
-5. An Object has a prototype, so there are default keys in an object that could collide with your keys if you're not careful. As of ES5 this can be bypassed by creating an object(which can be called a map) using `Object.create(null)`, but this practice is seldom done. <br>
-6. A Map may perform better in scenarios involving frequent addition and removal of key pairs. <br>
 
 **[⬆ Back to Top](#table-of-contents)**
 
