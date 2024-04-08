@@ -14,7 +14,7 @@
 
 ### <h1>Questions based on Objects and Map</h1>
 
-</h2>Questions and Answers:</h2>
+<h2>Questions and Answers:</h2>
 
 **1. What are the possible ways to create objects in JavaScript?**
 
@@ -262,7 +262,7 @@ const person = new Person();
 console.log(person.__proto__);   // { age: 24 }
 ```
 
-</h2>Questions and Answers:</h2>
+<h2>Questions and Answers:</h2>
 
 **1. How do you create an object with prototype?**
 
@@ -401,7 +401,7 @@ Call and Apply are pretty much interchangeable. Both execute the current functio
 
 Bind creates a new function that will have `this` set to the first parameter passed to bind().
 
-</h2>Questions and Answers:</h2>
+<h2>Questions and Answers:</h2>
 
 **1. How do you create your own bind method using either call or apply method?**
 
@@ -450,7 +450,7 @@ Below are the list of syntax rules of JSON </br>
 3. Curly braces hold objects </br>
 4. Square brackets hold arrays </br>
 
-</h2>Questions and Answers:</h2>
+<h2>Questions and Answers:</h2>
 
 **1. How do you define JSON arrays?**
 
@@ -536,7 +536,7 @@ Any variable can be emptied by setting the value to undefined.
 user = undefined;
 ```
 
-</h2>Questions and Answers:</h2>
+<h2>Questions and Answers:</h2>
 
 **1. What is the difference between null and undefined?**
 
@@ -635,7 +635,7 @@ const a = 10 // It is not allowed
 a = 10 // It is not allowed
 ```
 
-</h2>Questions and Answers:</h2>
+<h2>Questions and Answers:</h2>
 
 **1. What is the purpose of the let keyword?**
 
