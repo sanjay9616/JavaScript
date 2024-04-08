@@ -12,9 +12,9 @@
 | 8   | [var, let, and const](#var-let-and-const)                                                           |
 | 9   | [How do you decode or encode a URL in JavaScript](#How-do-you-decode-or-encode-a-URL-in-JavaScript) |
 
-### <h2>Possible ways to create objects</h2>
+### <h1>Possible ways to create objects</h1>
 
-1. **Object literal syntax:**
+**1. Object literal syntax:**
 
 ```javascript
 var object = {
@@ -27,7 +27,7 @@ Object literal property values can be of any data type, including array, functio
 
 **Note:** This is one of the easiest ways to create an object.
 
-2. **Object constructor:**
+**2. Object constructor:**
 
 The simplest way to create an empty object is using the `Object` constructor. Currently this approach is not recommended.
 
@@ -41,7 +41,7 @@ The `Object()` is a built-in constructor function so "new" keyword is not requir
 var object = Object();
 ```
 
-3. **Object's create method:**
+**3. Object's create method:**
 
 The create method of Object is used to create a new object by passing the specificied prototype object and properties as arguments, i.e., this pattern is helpful to create new objects based on existing objects.
 The second argument is optional and it is used to create properties on a newly created object.
@@ -52,7 +52,7 @@ The following code creates a new empty object whose prototype is null.
 var object = Object.create(null);
 ```
 
-4. **Function constructor:**
+**4. Function constructor:**
 
 In this approach, create any function and apply the new operator to create object instances.
 
@@ -64,7 +64,7 @@ function Person(name) {
 var object = new Person("Sudheer");
 ```
 
-5. **Function constructor with prototype:**
+**5. Function constructor with prototype:**
 
 This is similar to function constructor but it uses prototype for their properties and methods,
 
@@ -95,7 +95,7 @@ var result = func.call(newInstance, x, y, z),
 console.log(result && typeof result === 'object' ? result : newInstance);
 ```
 
-6. **ES6 Class syntax:**
+**6. ES6 Class syntax:**
 
 ES6 introduces class feature to create objects.
 
@@ -109,7 +109,7 @@ class Person {
 var object = new Person("Sudheer");
 ```
 
-7. **Singleton pattern:**
+**7. Singleton pattern:**
 
 A Singleton is an object which can only be instantiated one time. Repeated calls to its constructor return the same instance. This way one can ensure that they don't accidentally create multiple instances.
 
@@ -147,7 +147,7 @@ var v7 = function () {};
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### <h2>Prototype</h2>
+### <h1>Prototype</h1>
 
 In JavaScript, every function and object has a property named prototype by default
 
@@ -310,7 +310,7 @@ There are few more differences,
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### <h2>Call, Apply and Bind</h2>
+### <h1>Call, Apply and Bind</h1>
 
 The difference between Call, Apply and Bind can be explained with below examples,
 
@@ -390,7 +390,7 @@ Function.prototype.myOwnBind = function (whoIsCallingMe) {
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### <h2>JSON</h2>
+### <h1>JSON</h1>
 
 **JSON** is a text-based data format following JavaScript object syntax, which was popularized by `Douglas Crockford`. It is useful when you want to transmit data across a network. It is basically just a text file with an extension of .json, and a MIME type of application/json
 
@@ -454,7 +454,7 @@ console.log(userString); //"{"name":"John","age":31}"
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### <h2>Object and Map</h2>
+### <h1>Object and Map</h1>
 
 **Objects** are similar to **Maps** in that both let you set keys to values, retrieve those values, delete keys, and detect whether something is stored at a key. Due to this reason, Objects have been used as Maps historically. But there are important differences that make using a Map preferable in certain cases:
 
@@ -467,7 +467,7 @@ console.log(userString); //"{"name":"John","age":31}"
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### <h2>null, undefined, and Nan</h2>
+### <h1>null, undefined, and Nan</h1>
 
 **null** - The value null represents the intentional absence of any object value. It is one of JavaScript's primitive values. The type of null value is object. You can empty the variable by setting the value to null.
 
@@ -542,7 +542,7 @@ Number.isNaN('hello'); // false
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### <h2>== and === operators</h2>
+### <h1>== and === operators</h1>
 
 JavaScript provides both strict(===, !==) and type-converting(==, !=) equality comparison. The strict operators take type of variable in consideration, while non-strict operators make type correction/conversion based upon values of variables. The strict operators follow the below conditions for different types,
 
@@ -571,7 +571,7 @@ null === undefined // false
 ```
 **[⬆ Back to Top](#table-of-contents)**
 
-### <h2>var, let, and const</h2>
+### <h1>var, let, and const</h1>
 
 You can list out the differences in a tabular format
 
@@ -683,7 +683,7 @@ msg = "Hello"; // var is missing, it becomes global variable
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### <h2>How do you decode or encode a URL in JavaScript</h2>
+### <h1>How do you decode or encode a URL in JavaScript</h1>
 
 `encodeURI()` function is used to encode an URL. This function requires a URL string as a parameter and return that encoded string.
 `decodeURI()` function is used to decode an URL. This function requires an encoded URL string as parameter and return that decoded string.
@@ -697,7 +697,7 @@ let decoded_uri = decodeURI(encoded_uri); // output - https://mozilla.org/?x=ш�
 ```
 **[⬆ Back to Top](#table-of-contents)**
 
-### <h2>Object and Map</h2>
+### <h1>Object and Map</h1>
 
 
 **[⬆ Back to Top](#table-of-contents)**
