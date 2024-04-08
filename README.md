@@ -209,6 +209,56 @@ i.e, Every primitive except null and undefined have Wrapper Objects and the list
 5. An Object has a prototype, so there are default keys in an object that could collide with your keys if you're not careful. As of ES5 this can be bypassed by creating an object(which can be called a map) using `Object.create(null)`, but this practice is seldom done. <br>
 6. A Map may perform better in scenarios involving frequent addition and removal of key pairs. <br>
 
+**6. What are the differences between WeakMap and Map?**
+
+**Ans:** The main difference is that references to key objects in Map are strong while references to key objects in WeakMap are weak. i.e, A key object in WeakMap can be garbage collected if there is no other reference to it.
+Other differences are,
+
+1. Maps can store any key type Whereas WeakMaps can store only collections of key objects <br>
+2. WeakMap does not have size property unlike Map <br>
+3. WeakMap does not have methods such as clear, keys, values, entries, forEach. <br>
+4. WeakMap is not iterable. <br>
+
+**7. List down the collection of methods available on WeakMap?**
+
+**Ans:** Below are the list of methods available on WeakMap,
+
+1. set(key, value): Sets the value for the key in the WeakMap object. Returns the WeakMap object. <br>
+2. delete(key): Removes any value associated to the key. <br>
+3. has(key): Returns a Boolean asserting whether a value has been associated to the key in the WeakMap object or not. <br>
+4. get(key): Returns the value associated to the key, or undefined if there is none. <br>
+  Let's see the functionality of all the above methods in an example, <br>
+
+```javascript
+var weakMapObject = new WeakMap();
+var firstObject = {};
+var secondObject = {};
+// set(key, value)
+weakMapObject.set(firstObject, "John");
+weakMapObject.set(secondObject, 100);
+console.log(weakMapObject.has(firstObject)); //true
+console.log(weakMapObject.get(firstObject)); // John
+weakMapObject.delete(secondObject);
+```
+
+**8. How do you map the array values without using map method?**
+
+**Ans:** You can map the array values without using the `map` method by just using the `from` method of Array. Let's map city names from Countries array,
+
+```javascript
+const countries = [
+   { name: "India", capital: "Delhi" },
+   { name: "US", capital: "Washington" },
+   { name: "Russia", capital: "Moscow" },
+   { name: "Singapore", capital: "Singapore" },
+   { name: "China", capital: "Beijing" },
+   { name: "France", capital: "Paris" },
+];
+
+const cityNames = Array.from(countries, ({ capital }) => capital);
+console.log(cityNames); // ['Delhi, 'Washington', 'Moscow', 'Singapore', 'Beijing', 'Paris']
+```
+
 **[⬆ Back to Top](#table-of-contents)**
 
 ### <h1>Prototype</h1>
