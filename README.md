@@ -13,6 +13,27 @@
 
 ### <h1>Questions based on Objects and Map</h1>
 
+**Object:** The keys of an Object must be either a String or a Symbol. (add theorey)
+
+**Map:** A Map 's keys can be any value (including functions, objects, or any primitive). (add theorey)
+
+**WeakMap:** The WeakMap object is a collection of key/value pairs in which the keys are weakly referenced. In this case, keys must be objects and the values can be arbitrary values. The syntax is looking like as below,
+
+```javascript
+new WeakMap([iterable]);
+```
+
+Let's see the below example to explain it's behavior,
+
+```javascript
+var ws = new WeakMap();
+var user = {};
+ws.set(user);
+ws.has(user); // true
+ws.delete(user); // removes user from the map
+ws.has(user); // false, user has been removed
+```
+
 <h2>Questions and Answers:</h2>
 
 **1. What are the possible ways to create objects in JavaScript?**
