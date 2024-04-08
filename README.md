@@ -1,15 +1,16 @@
 ### Table of Contents
 
-| No. | Questions                                                                                                                     |
-| --- | ----------------------------------------------------------------------------------------------------------------------------- |
-| 1   | [Questions based on Objects and Map](#Questions-based-on-Objects-and-Map) |
-| 2   | [Prototype](#Prototype)                                                                                                       |
-| 3   | [Call, Apply and Bind](#Call-Apply-and-Bind)                                                                                  |
-| 4   | [JSON](#JSON)                                                                                                                 |
-| 6   | [null, undefined, and Nan](#null-undefined-and-Nan)                                                                           |
-| 7   | [== and === operators](#==-and-===-operators)                                                                                 |
-| 8   | [var, let, and const](#var-let-and-const)                                                                                     |
-| 9   | [How do you decode or encode a URL in JavaScript](#How-do-you-decode-or-encode-a-URL-in-JavaScript)                           |
+| No. | Questions                                                                                           |
+| --- | --------------------------------------------------------------------------------------------------- |
+| 1   | [Questions based on Objects and Map](#Questions-based-on-Objects-and-Map)                           |
+| 2   | [Prototype](#Prototype)                                                                             |
+| 3   | [Call, Apply and Bind](#Call-Apply-and-Bind)                                                        |
+| 4   | [JSON](#JSON)                                                                                       |
+| 6   | [null, undefined, and Nan](#null-undefined-and-Nan)                                                 |
+| 7   | [== and === operators](#==-and-===-operators)                                                       |
+| 8   | [var, let, and const](#var-let-and-const)                                                           |
+| 9   | [How do you decode or encode a URL in JavaScript](#How-do-you-decode-or-encode-a-URL-in-JavaScript) |
+| 10  | [localStorage, sessionStorage, and Cookie](#localStorage-sessionStorage-and-Cookie)                 |
 
 ### <h1>Questions based on Objects and Map</h1>
 
@@ -796,6 +797,143 @@ let uri = "https://mozilla.org/?x=шеллы";
 let encoded_uri = encodeURI(uri); // output - https://mozilla.org/?x=%D1%88%D0%B5%D0%BB%D0%BB%D1%8B
 let decoded_uri = decodeURI(encoded_uri); // output - https://mozilla.org/?x=шеллы
 ```
+**[⬆ Back to Top](#table-of-contents)**
+
+### <h1>localStorage, sessionStorage, and Cookie</h1>
+
+**localStorage:** The localStorage object allows you to save key/value pairs in the browser, the data is not deleted even when the browser is closed and reopened(i.e it has no expiration time).
+
+**sessionStorage:** The localStorage object allows you to save key/value pairs in the browser, the data is deleted when tab is closed.
+
+**Cookie:** The localStorage object allows you to save key/value pairs in the browser, the data is deleted as configured using Expires option.
+
+<h2>Questions and Answers:</h2>
+
+**1. What is web storage?**
+
+**Ans:** Web storage is an API that provides a mechanism by which browsers can store key/value pairs locally within the user's browser, in a much more intuitive fashion than using cookies. The web storage provides two mechanisms for storing data on the client.
+
+1. **Local storage:** It stores data for current origin with no expiration date. </br>
+2. **Session storage:** It stores data for one session and the data is lost when the browser tab is closed. </br>
+
+**2. What are the differences between cookie, local storage and session storage?**
+
+**Ans:** Below are some of the differences between cookie, local storage and session storage,
+
+| Feature                           | Cookie                             | Local storage    | Session storage     |
+| --------------------------------- | ---------------------------------- | ---------------- | ------------------- |
+| Accessed on client or server side | Both server-side & client-side     | client-side only | client-side only    |
+| Lifetime                          | As configured using Expires option | until deleted    | until tab is closed |
+| SSL support                       | Supported                          | Not supported    | Not supported       |
+| Maximum data size                 | 4KB                                | 5 MB             | 5MB                 |
+
+**3. What is the main difference between localStorage and sessionStorage?**
+
+**Ans:** LocalStorage is the same as SessionStorage but it persists the data even when the browser is closed and reopened(i.e it has no expiration time) whereas in sessionStorage data gets cleared when the page session ends.
+
+**4. How do you access web storage?**
+
+**Ans:** The Window object implements the `WindowLocalStorage` and `WindowSessionStorage` objects which has `localStorage`(window.localStorage) and `sessionStorage`(window.sessionStorage) properties respectively. These properties create an instance of the Storage object, through which data items can be set, retrieved and removed for a specific domain and storage type (session or local).
+For example, you can read and write on local storage objects as below
+
+```javascript
+localStorage.setItem("logo", document.getElementById("logo").value);
+localStorage.getItem("logo");
+```
+
+**5. What are the methods available on session storage?**
+
+The session storage provided methods for reading, writing and clearing the session data
+
+```javascript
+sessionStorage.setItem("key", "value"); // Save data to sessionStorage
+let data = sessionStorage.getItem("key"); // Get saved data from sessionStorage
+sessionStorage.removeItem("key"); // Remove saved data from sessionStorage
+sessionStorage.clear(); // Remove all saved data from sessionStorage
+```
+
+**6. What is a storage event and its event handler?**
+
+**Ans:** The StorageEvent is an event that fires when a storage area has been changed in the context of another document. Whereas onstorage property is an EventHandler for processing storage events.
+The syntax would be as below
+
+```javascript
+window.onstorage = functionRef;
+```
+Let's take the example usage of onstorage event handler which logs the storage key and it's values
+
+```javascript
+window.onstorage = function (e) {
+console.log(
+   "The " +
+      e.key +
+      " key has been changed from " +
+      e.oldValue +
+      " to " +
+      e.newValue +
+      "."
+);
+};
+```
+
+**7. Why do you need web storage?**
+
+**Ans:** Web storage is more secure, and large amounts of data can be stored locally, without affecting website performance. Also, the information is never transferred to the server. Hence this is a more recommended approach than Cookies.
+
+**8. How do you check web storage browser support?**
+
+**Ans:** You need to check browser support for localStorage and sessionStorage before using web storage,
+
+```javascript
+if (typeof Storage !== "undefined") {
+// Code for localStorage/sessionStorage.
+} else {
+// Sorry! No Web Storage support..
+}
+```
+
+**9. What is a Cookie?**
+
+**Ans:** A cookie is a piece of data that is stored on your computer to be accessed by your browser. Cookies are saved as key/value pairs.
+For example, you can create a cookie named username as below,
+
+```javascript
+document.cookie = "username=John";
+```
+
+**10. Why do you need a Cookie?**
+
+**Ans:** Cookies are used to remember information about the user profile(such as username). It basically involves two steps,
+
+1. When a user visits a web page, the user profile can be stored in a cookie. </br>
+2. Next time the user visits the page, the cookie remembers the user profile. </br>
+
+**11. What are the options in a cookie?**
+
+**Ans:** There are few below options available for a cookie,
+
+1. By default, the cookie is deleted when the browser is closed but you can change this behavior by setting expiry date (in UTC time).
+```javascript
+document.cookie = "username=John; expires=Sat, 8 Jun 2019 12:00:00 UTC";
+```
+
+1. By default, the cookie belongs to a current page. But you can tell the browser what path the cookie belongs to using a path parameter.
+```javascript
+document.cookie = "username=John; path=/services";
+```
+
+**12. How do you delete a cookie?**
+
+You can delete a cookie by setting the expiry date as a passed date. You don't need to specify a cookie value in this case.
+For example, you can delete a username cookie in the current page as below.
+
+```javascript
+document.cookie =
+"username=; expires=Fri, 07 Jun 2019 00:00:00 UTC; path=/;";
+```
+
+**Note:** You should define the cookie path option to ensure that you delete the right cookie. Some browsers doesn't allow to delete a cookie unless you specify a path parameter.
+
 **[⬆ Back to Top](#table-of-contents)**
 
 ### <h1>Object and Map</h1>
