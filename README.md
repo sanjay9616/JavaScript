@@ -783,6 +783,10 @@ msg = "Hello"; // var is missing, it becomes global variable
 
 **Ans:** The problem with global variables is the conflict of variable names of local and global scope. It is also difficult to debug and test the code that relies on global variables.
 
+**6. What is scope in javascript?**
+
+**Ans:** Scope is the accessibility of variables, functions, and objects in some particular part of your code during runtime. In other words, scope determines the visibility of variables and other resources in areas of your code.
+
 **[⬆ Back to Top](#table-of-contents)**
 
 ### <h1>How do you decode or encode a URL in JavaScript</h1>
