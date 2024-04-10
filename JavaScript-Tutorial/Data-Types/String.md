@@ -345,7 +345,7 @@ console.log(total) // Total: 12.50
 
 ### <h2>Interview Questions and Answers</h2>
 
-**1. How to remove all line breaks from a string?**
+<h3>1. How to remove all line breaks from a string?</h3>
 
 **Ans:** The easiest approach is using regular expressions to detect and replace newlines in the string. In this case, we use replace function along with string to replace with, which in our case is an empty string.
 
@@ -357,7 +357,7 @@ function remove_linebreaks( var message ) {
 
 In the above expression, g and m are for global and multiline flags.
 
-**2. How do you trim a string at the beginning or ending?**
+<h3>2. How do you trim a string at the beginning or ending?</h3>
 
 **Ans:** The `trim` method of string prototype is used to trim on both sides of a string. But if you want to trim especially at the beginning or ending of the string then you can use `trimStart/trimLeft` and `trimEnd/trimRight` methods. Let's see an example of these methods on a greeting message,
 
@@ -372,7 +372,7 @@ console.log(greeting.trimEnd()); // "   Hello, Goodmorning!"
 console.log(greeting.trimRight()); // "   Hello, Goodmorning!"
 ```
 
-**3. How do you create specific number of copies of a string?**
+<h3>3. How do you create specific number of copies of a string?</h3>
 
 **Ans:** The `repeat()` method is used to construct and return a new string which contains the specified number of copies of the string on which it was called, concatenated together. Remember that this method has been added to the ECMAScript 2015 specification.
 Let's take an example of Hello string to repeat it 4 times,
@@ -381,7 +381,7 @@ Let's take an example of Hello string to repeat it 4 times,
 "Hello".repeat(4); // 'HelloHelloHelloHello'
 ```
 
-**4. What is the output of below string expression?**
+<h3>4. What is the output of below string expression?</h3>
 
 ```javascript
 console.log("Welcome to JS world"[0]);
@@ -391,7 +391,7 @@ console.log("Welcome to JS world"[0]);
 
 **Explanation:** The bracket notation with specific index on a string returns the character at a specific location. Hence, it returns the character "W" of the string. Since this is not supported in IE7 and below versions, you may need to use the .charAt() method to get the desired result.
 
-**5. How do you write multi-line strings in template literals?**
+<h3>5. How do you write multi-line strings in template literals?</h3>
 
 **Ans:** In ES5, you would have to use newline escape characters('\\n') and concatenation symbols(+) in order to get multi-line strings.
 
@@ -406,7 +406,7 @@ console.log(`This is string sentence
 'This is string sentence 2`);
 ```
 
-**6. How to convert string to title case with javascript?**
+<h3>6. How to convert string to title case with javascript?</h3>
 
 **Ans:**  Title case means that the first letter of each word is capitalized. You can convert a string to title case using the below function,
 
@@ -419,7 +419,7 @@ return str.replace(/\w\S*/g, function (txt) {
 toTitleCase("good morning john"); // Good Morning John
 ```
 
-**7. How do you define multiline strings?**
+<h3>7. How do you define multiline strings?</h3>
 
 **Ans:** You can define multiline string literals using the '\\' character followed by line terminator.
 
@@ -432,7 +432,7 @@ sentence!";
 
 But if you have a space after the '\\' character, the code will look exactly the same, but it will raise a SyntaxError.
 
-**8. How do you trim a string in javascript?**
+<h3>8. How do you trim a string in javascript?</h3>
 
 **Ans:** JavaScript provided a trim method on string types to trim any whitespaces present at the beginning or ending of the string.
 
@@ -454,7 +454,7 @@ if (!String.prototype.trim) {
 }
 ```
 
-**9. How do you check if a string starts with another string?**
+<h3>9. How do you check if a string starts with another string?</h3>
 
 **Ans:** You can use ECMAScript 6's `String.prototype.startsWith()` method to check if a string starts with another string or not. But it is not yet supported in all browsers. Let's see an example to see this usage,
 
@@ -463,7 +463,7 @@ if (!String.prototype.trim) {
 "Good morning".startsWith("morning"); // false
 ```
 
-**10. How do you convert the first letter of a string to uppercase?**
+<h3>10. How do you convert the first letter of a string to uppercase?</h3>
 
 **Ans:**
 
@@ -474,7 +474,7 @@ console.log(str); // name
 console.log(modStr); // Name
 ```
 
-**11. How do you check whether a string contains a substring?**
+<h3>11. How do you check whether a string contains a substring?</h3>
 
 **Ans:** There are 3 possible ways to check whether a string contains a substring or not,
 
@@ -502,7 +502,7 @@ regex = /hell/;
 regex.test(mainString);
 ```
 
-**12. What are raw strings?**
+<h3>12. What are raw strings?</h3>
 
 **Ans:** ES6 provides a raw strings feature using the `String.raw()` method which is used to get the raw string form of template strings. This feature allows you to access the raw strings as they were entered, without processing escape sequences. For example, the usage would be as below,
 
@@ -530,7 +530,7 @@ console.log(strings.raw[0]);
 }
 ```
 
-**13. What are template literals?**
+<h3>13. What are template literals?</h3>
 
 **Ans:** Template literals or template strings are string literals allowing embedded expressions. These are enclosed by the back-tick (`) character instead of double or single quotes.
 In ES6, this feature enables using dynamic expressions as below,
@@ -547,7 +547,7 @@ var greeting = 'Welcome to JS World, Mr. ' + firstName + ' ' + lastName.`
 
 **Note:** You can use multi-line strings and string interpolation features with template literals.
 
-**14. What are enhanced object literals?**
+<h3>14. What are enhanced object literals?</h3>
 
 Ans: Object literals make it easy to quickly create objects with properties inside the curly braces. For example, it provides shorter syntax for common object property definition as below.
 
