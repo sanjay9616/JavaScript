@@ -2,7 +2,15 @@
 
 Strings are written with quotes. You can use single or double quotes:
 
-<h2>String Methods</h2>
+### Table of Contents
+
+| No. | Topic                                           |
+| --- | ----------------------------------------------- |
+| 1   | [String Methods](#String-Methods)               |
+| 2   | [String Search Methods](#String-Search-Methods) |
+| 3   | [Template Strings](#Template-Strings)           |
+
+### <h2>String Methods</h2>
 
 | String Methods        | Description                                                                                                                                 |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -181,7 +189,9 @@ const myArray = text.split(",");
 console.log(myArray) // [ 'a', 'b', 'c', 'd', 'e', 'f' ]
 ```
 
-<h2>String Search Methods</h2>
+**[⬆ Back to Top](#table-of-contents)**
+
+### <h2>String Search Methods</h2>
 
 
 | String Search Methods | Description                                                                                                               |
@@ -288,5 +298,49 @@ let text = "Hello world, welcome to the universe.";
 let res = text.endsWith("world", 11); // Check if the 11 first characters of a string ends with "world":
 console.log(res) // res
 ```
+
+**[⬆ Back to Top](#table-of-contents)**
+
+
+### <h2>Template Strings</h2>
+
+**Template Strings** use back-ticks (``) rather than the quotes ("") to define a string:
+
+**Examples**
+
+```javascript
+let text = `Hello World!`;
+console.log(text) // Hello World!
+
+let text = `He's often called "Johnny"`;
+console.log(text) // He's often called "Johnny"
+
+let text =
+`The quick
+brown fox
+jumps over
+the lazy dog`;
+console.log(text)
+
+// OutPut
+
+The quick
+brown fox
+jumps over
+the lazy dog
+
+let firstName = "John";
+let lastName = "Doe";
+let text = `Welcome ${firstName}, ${lastName}!`;
+console.log(text) // Welcome John, Doe!
+
+let price = 10;
+let VAT = 0.25;
+let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
+console.log(total) // Total: 12.50
+```
+
+**[⬆ Back to Top](#table-of-contents)**
+
 
 <h2><a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/README.md"> 🔙 Back</a></h2>
