@@ -2,6 +2,8 @@
 
 Strings are written with quotes. You can use single or double quotes:
 
+<h2>String Methods</h2>
+
 | String Methods        | Description                                                                                                                                 |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
 | length                | returns the length of a string                                                                                                              |
@@ -177,6 +179,114 @@ console.log(text) // I love dogs. Dogs are very easy to love. Dogs are very popu
 let text = "a,b,c,d,e,f";
 const myArray = text.split(",");
 console.log(myArray) // [ 'a', 'b', 'c', 'd', 'e', 'f' ]
+```
+
+<h2>String Search Methods</h2>
+
+
+| String Search Methods | Description                                                                                                               |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| indexOf()             | returns the index (position) of the first occurrence of a string in a string, or it returns -1 if the string is not found |
+| lastIndexOf()         | returns the index of the last occurrence of a specified text in a string                                                  |
+| search()              | searches a string for a string (or a regular expression) and returns the position of the match                            |
+| match()               | returns an array containing the results of matching a string against a string (or a regular expression)                   |
+| matchAll()            | returns an iterator containing the results of matching a string against a string (or a regular expression)                |
+| includes()            | returns true if a string contains a specified value. Otherwise it returns false                                           |
+| startsWith()          | returns true if a string begins with a specified value                                                                    |
+| endsWith()            | method returns true if a string ends with a specified value, Otherwise it returns false                                   |
+| search()              | searches a string for a string (or a regular expression) and returns the position of the match                            |
+| search()              | searches a string for a string (or a regular expression) and returns the position of the match                            |
+
+**Examples:**
+
+```javascript
+let text = "Please locate where 'locate' occurs!";
+let index = text.indexOf("locate");
+console.log(index) // 7
+
+let text = "Please locate where 'locate' occurs!";
+let index = text.lastIndexOf("locate");
+console.log(index) // 21
+
+let text = "Please locate where 'locate' occurs!";
+let index = text.lastIndexOf("John");
+console.log(index) // -1
+
+let text = "Please locate where 'locate' occurs!";
+let index = text.indexOf("locate", 15);
+console.log(index) // 21
+
+let text = "Please locate where 'locate' occurs!";
+let res = text.lastIndexOf("locate", 15); // methods searches backwards (from the end to the beginning), meaning: if the second parameter is 15, the search starts at position 15, and searches to the beginning of the string.
+console.log(res) // 7
+
+let text = "Please locate where 'locate' occurs!";
+let res = text.search("locate");
+console.log(res) // 7
+
+let text = "Please locate where 'locate' occurs!";
+let res = text.search(/locate/);
+console.log(res) // 7
+
+let text = "The rain in SPAIN stays mainly in the plain";
+let res = text.match("ain");
+console.log(res) // ['ain', index: 5, input: 'The rain in SPAIN stays mainly in the plain', groups: undefined]
+
+let text = "The rain in SPAIN stays mainly in the plain";
+let res = text.match(/ain/);
+console.log(res) // ['ain', index: 5, input: 'The rain in SPAIN stays mainly in the plain', groups: undefined]
+
+let text = "The rain in SPAIN stays mainly in the plain";
+let res = text.match(/ain/g);
+console.log(res) // [ 'ain', 'ain', 'ain' ]
+
+let text = "The rain in SPAIN stays mainly in the plain";
+let res = text.match(/ain/gi);
+console.log(res) // [ 'ain', 'AIN', 'ain', 'ain' ]
+
+let text = "I love cats. Cats are very easy to love. Cats are very popular."
+const iterator = text.matchAll("Cats");
+console.log(iterator) // Cats,Cats
+
+let text = "I love cats. Cats are very easy to love. Cats are very popular."
+const iterator = text.matchAll(/Cats/g);
+console.log(iterator) // Cats,Cats
+
+let text = "I love cats. Cats are very easy to love. Cats are very popular."
+const iterator = text.matchAll(/Cats/gi);
+console.log(iterator) // cats,Cats,Cats
+
+let text = "Hello world, welcome to the universe.";
+let res = text.includes("world");
+console.log(res) // true
+
+let text = "Hello world, welcome to the universe.";
+let res = text.includes("world", 12);
+console.log(res) // false
+
+let text = "Hello world, welcome to the universe.";
+let res = text.startsWith("Hello");
+console.log(res) // true
+
+let text = "Hello world, welcome to the universe.";
+let res = text.startsWith("world")
+console.log(res) // false
+
+let text = "Hello world, welcome to the universe.";
+let res = text.startsWith("world", 5)
+console.log(res) // false
+
+let text = "Hello world, welcome to the universe.";
+let res = text.startsWith("world", 6)
+console.log(res) // true
+
+let text = "John Doe";
+let res = text.endsWith("Doe");
+console.log(res) // true
+
+let text = "Hello world, welcome to the universe.";
+let res = text.endsWith("world", 11); // Check if the 11 first characters of a string ends with "world":
+console.log(res) // res
 ```
 
 <h2><a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/README.md"> 🔙 Back</a></h2>
