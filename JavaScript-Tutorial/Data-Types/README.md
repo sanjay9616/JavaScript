@@ -12,7 +12,7 @@ The latest ECMAScript standard defines eight data types Out of which seven data 
 
 | No. | Topics                                                 |
 | --- | ------------------------------------------------------ |
-| 1   | [String](#String)                                      |
+| 1   | <a href="">String</a>                                      |
 | 2   | [Number](#Number)                                      |
 | 3   | [Boolean](#Boolean)                                    |
 | 4   | [Undefined](#Undefined)                                |
@@ -21,37 +21,37 @@ The latest ECMAScript standard defines eight data types Out of which seven data 
 | 7   | [Symbol](#Symbol)                                      |
 | 8   | Object (Array, Date, Math, RegExp, Set, Map, Literals) |
 
-### <h1>String</h1>
+### <h2>String</h2>
 
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### <h1>Number</h1>
+### <h2>Number</h2>
 
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### <h1>Boolean</h1>
+### <h2>Boolean</h2>
 
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### <h1>Undefined</h1>
+### <h2>Undefined</h2>
 
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### <h1>Null</h1>
+### <h2>Null</h2>
 
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### <h1>Bigint</h1>
+### <h2>Bigint</h2>
 
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### <h1>Symbol</h1>
+### <h2>Symbol</h2>
 
 
 **[⬆ Back to Top](#table-of-contents)**
