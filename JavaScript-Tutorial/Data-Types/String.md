@@ -347,7 +347,7 @@ console.log(total) // Total: 12.50
 
 | Questions                                                                                                                               |
 | --------------------------------------------------------------------------------------------------------------------------------------- |
-| [How to remove all line breaks from a string?](#How-to-remove-all-line-breaks-from-a-string?)                                           |
+| [How to remove all line breaks from a string](#How-to-remove-all-line-breaks-from-a-string)                                             |
 | [2. How do you trim a string at the beginning or ending?](#2.-How-do-you-trim-a-string-at-the-beginning-or-ending?)                     |
 | [3. How do you create specific number of copies of a string?](#3.-How-do-you-create-specific-number-of-copies-of-a-string?)             |
 | [4. What is the output of below string expression?](#4.-What-is-the-output-of-below-string-expression?)                                 |
@@ -362,7 +362,7 @@ console.log(total) // Total: 12.50
 | [13. What are template literals?](#13.-What-are-template-literals?)                                                                     |
 | [14. What are enhanced object literals?](#14.-What-are-enhanced-object-literals?)                                                       |
 
-### <h3>How to remove all line breaks from a string?</h3>
+### <h3>How to remove all line breaks from a string</h3>
 
 **Ans:** The easiest approach is using regular expressions to detect and replace newlines in the string. In this case, we use replace function along with string to replace with, which in our case is an empty string.
 
