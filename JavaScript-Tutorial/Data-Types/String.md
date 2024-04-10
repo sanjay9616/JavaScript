@@ -345,22 +345,22 @@ console.log(total) // Total: 12.50
 
 ### <h2>Interview Questions and Answers</h2>
 
-| Questions                                                                                                                     |
-| ----------------------------------------------------------------------------------------------------------------------------- |
-| [How to remove all line breaks from a string](#How-to-remove-all-line-breaks-from-a-string)                                   |
-| [How do you trim a string at the beginning or ending](#How-do-you-trim-a-string-at-the-beginning-or-ending)                   |
-| [How do you create specific number of copies of a string](#How-do-you-create-specific-number-of-copies-of-a-string)           |
-| [What is the output of below string expression](#What-is-the-output-of-below-string-expression)                               |
-| [How do you write multi-line strings in template literals](#How-do-you-write-multi-line-strings-in-template-literals)         |
-| [How to convert string to title case with javascript](#How-to-convert-string-to-title-case-with-javascript)                   |
-| [How do you define multiline strings](#How-do-you-define-multiline-strings)                                                   |
-| [How do you trim a string in javascript](#How-do-you-trim-a-string-in-javascript)                                             |
-| [How do you check if a string starts with another string](#How-do-you-check-if-a-string-starts-with-another-string)           |
-| [How do you convert the first letter of a string to uppercase](#How-do-you-convert-the-first-letter-of-a-string-to-uppercase) |
-| [How do you check whether a string contains a substring](#How-do-you-check-whether-a-string-contains-a-substring)             |
-| [What are raw strings](#What-are-raw-strings)                                                                                 |
-| [What are template literals](#What-are-template-literals)                                                                     |
-| [What are enhanced object literals](#What-are-enhanced-object-literals)                                                       |
+| S. No. | Questions                                                                                                                     |
+| ------ | ----------------------------------------------------------------------------------------------------------------------------- |
+| 1      | [How to remove all line breaks from a string](#How-to-remove-all-line-breaks-from-a-string)                                   |
+| 2      | [How do you trim a string at the beginning or ending](#How-do-you-trim-a-string-at-the-beginning-or-ending)                   |
+| 3      | [How do you create specific number of copies of a string](#How-do-you-create-specific-number-of-copies-of-a-string)           |
+| 4      | [What is the output of below string expression](#What-is-the-output-of-below-string-expression)                               |
+| 5      | [How do you write multi-line strings in template literals](#How-do-you-write-multi-line-strings-in-template-literals)         |
+| 6      | [How to convert string to title case with javascript](#How-to-convert-string-to-title-case-with-javascript)                   |
+| 7      | [How do you define multiline strings](#How-do-you-define-multiline-strings)                                                   |
+| 8      | [How do you trim a string in javascript](#How-do-you-trim-a-string-in-javascript)                                             |
+| 9      | [How do you check if a string starts with another string](#How-do-you-check-if-a-string-starts-with-another-string)           |
+| 10     | [How do you convert the first letter of a string to uppercase](#How-do-you-convert-the-first-letter-of-a-string-to-uppercase) |
+| 11     | [How do you check whether a string contains a substring](#How-do-you-check-whether-a-string-contains-a-substring)             |
+| 12     | [What are raw strings](#What-are-raw-strings)                                                                                 |
+| 13     | [What are template literals](#What-are-template-literals)                                                                     |
+| 14     | [What are enhanced object literals](#What-are-enhanced-object-literals)                                                       |
 
 ### <h3>How to remove all line breaks from a string</h3>
 
