@@ -347,7 +347,7 @@ console.log(total) // Total: 12.50
 
 | Questions                                                                                                                               |
 | --------------------------------------------------------------------------------------------------------------------------------------- |
-| [How to remove all line breaks from a string?](#How-to-remove-all-line-breaks-from-a-string?)                                     |
+| [How to remove all line breaks from a string?](#How-to-remove-all-line-breaks-from-a-string?)                                           |
 | [2. How do you trim a string at the beginning or ending?](#2.-How-do-you-trim-a-string-at-the-beginning-or-ending?)                     |
 | [3. How do you create specific number of copies of a string?](#3.-How-do-you-create-specific-number-of-copies-of-a-string?)             |
 | [4. What is the output of below string expression?](#4.-What-is-the-output-of-below-string-expression?)                                 |
