@@ -4,11 +4,12 @@ Strings are written with quotes. You can use single or double quotes:
 
 ### Table of Contents
 
-| No. | Topic                                           |
-| --- | ----------------------------------------------- |
-| 1   | [String Methods](#String-Methods)               |
-| 2   | [String Search Methods](#String-Search-Methods) |
-| 3   | [Template Strings](#Template-Strings)           |
+| No. | Topic                                                               |
+| --- | ------------------------------------------------------------------- |
+| 1   | [String Methods](#String-Methods)                                   |
+| 2   | [String Search Methods](#String-Search-Methods)                     |
+| 3   | [Template Strings](#Template-Strings)                               |
+| 4   | [Interview Questions and Answers](#Interview-Questions-and-Answers) |
 
 ### <h2>String Methods</h2>
 
@@ -338,6 +339,229 @@ let price = 10;
 let VAT = 0.25;
 let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
 console.log(total) // Total: 12.50
+```
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### <h2>Interview Questions and Answers</h2>
+
+**1. How to remove all line breaks from a string?**
+
+**Ans:** The easiest approach is using regular expressions to detect and replace newlines in the string. In this case, we use replace function along with string to replace with, which in our case is an empty string.
+
+```javascript
+function remove_linebreaks( var message ) {
+    return message.replace( /[\r\n]+/gm, "" );
+}
+```
+
+In the above expression, g and m are for global and multiline flags.
+
+**2. How do you trim a string at the beginning or ending?**
+
+**Ans:** The `trim` method of string prototype is used to trim on both sides of a string. But if you want to trim especially at the beginning or ending of the string then you can use `trimStart/trimLeft` and `trimEnd/trimRight` methods. Let's see an example of these methods on a greeting message,
+
+```javascript
+var greeting = "   Hello, Goodmorning!   ";
+
+console.log(greeting); // "   Hello, Goodmorning!   "
+console.log(greeting.trimStart()); // "Hello, Goodmorning!   "
+console.log(greeting.trimLeft()); // "Hello, Goodmorning!   "
+
+console.log(greeting.trimEnd()); // "   Hello, Goodmorning!"
+console.log(greeting.trimRight()); // "   Hello, Goodmorning!"
+```
+
+**3. How do you create specific number of copies of a string?**
+
+**Ans:** The `repeat()` method is used to construct and return a new string which contains the specified number of copies of the string on which it was called, concatenated together. Remember that this method has been added to the ECMAScript 2015 specification.
+Let's take an example of Hello string to repeat it 4 times,
+
+```javascript
+"Hello".repeat(4); // 'HelloHelloHelloHello'
+```
+
+**4. What is the output of below string expression?**
+
+```javascript
+console.log("Welcome to JS world"[0]);
+```
+
+**Ans:** The output of the above expression is "W".
+
+**Explanation:** The bracket notation with specific index on a string returns the character at a specific location. Hence, it returns the character "W" of the string. Since this is not supported in IE7 and below versions, you may need to use the .charAt() method to get the desired result.
+
+**5. How do you write multi-line strings in template literals?**
+
+**Ans:** In ES5, you would have to use newline escape characters('\\n') and concatenation symbols(+) in order to get multi-line strings.
+
+```javascript
+console.log("This is string sentence 1\n" + "This is string sentence 2");
+```
+
+Whereas in ES6, You don't need to mention any newline sequence character,
+
+```javascript
+console.log(`This is string sentence
+'This is string sentence 2`);
+```
+
+**6. How to convert string to title case with javascript?**
+
+**Ans:**  Title case means that the first letter of each word is capitalized. You can convert a string to title case using the below function,
+
+```javascript
+function toTitleCase(str) {
+return str.replace(/\w\S*/g, function (txt) {
+    return txt.charAt(0).toUpperCase() + txt.substring(1).toLowerCase();
+});
+}
+toTitleCase("good morning john"); // Good Morning John
+```
+
+**7. How do you define multiline strings?**
+
+**Ans:** You can define multiline string literals using the '\\' character followed by line terminator.
+
+```javascript
+var str =
+"This is a \
+very lengthy \
+sentence!";
+```
+
+But if you have a space after the '\\' character, the code will look exactly the same, but it will raise a SyntaxError.
+
+**8. How do you trim a string in javascript?**
+
+**Ans:** JavaScript provided a trim method on string types to trim any whitespaces present at the beginning or ending of the string.
+
+```javascript
+"  Hello World   ".trim(); //Hello World
+```
+
+If your browser(<IE9) doesn't support this method then you can use below polyfill.
+
+```javascript
+if (!String.prototype.trim) {
+(function () {
+    // Make sure we trim BOM and NBSP
+    var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+    String.prototype.trim = function () {
+    return this.replace(rtrim, "");
+    };
+})();
+}
+```
+
+**9. How do you check if a string starts with another string?**
+
+**Ans:** You can use ECMAScript 6's `String.prototype.startsWith()` method to check if a string starts with another string or not. But it is not yet supported in all browsers. Let's see an example to see this usage,
+
+```javascript
+"Good morning".startsWith("Good"); // true
+"Good morning".startsWith("morning"); // false
+```
+
+**10. How do you convert the first letter of a string to uppercase?**
+
+**Ans:**
+
+```javascript
+const str = "name";
+const modStr = str[0].toUpperCase() + str.slice(1);
+console.log(str); // name
+console.log(modStr); // Name
+```
+
+**11. How do you check whether a string contains a substring?**
+
+**Ans:** There are 3 possible ways to check whether a string contains a substring or not,
+
+1. **Using includes:** ES6 provided `String.prototype.includes` method to test a string contains a substring
+
+```javascript
+var mainString = "hello",
+subString = "hell";
+mainString.includes(subString);
+```
+
+2. **Using indexOf:** In an ES5 or older environment, you can use `String.prototype.indexOf` which returns the index of a substring. If the index value is not equal to -1 then it means the substring exists in the main string.
+
+```javascript
+var mainString = "hello",
+subString = "hell";
+mainString.indexOf(subString) !== -1;
+```
+
+3. **Using RegEx:** The advanced solution is using Regular expression's test method(`RegExp.test`), which allows for testing for against regular expressions
+
+```javascript
+var mainString = "hello",
+regex = /hell/;
+regex.test(mainString);
+```
+
+**12. What are raw strings?**
+
+**Ans:** ES6 provides a raw strings feature using the `String.raw()` method which is used to get the raw string form of template strings. This feature allows you to access the raw strings as they were entered, without processing escape sequences. For example, the usage would be as below,
+
+```javascript
+var calculationString = String.raw`The sum of numbers is \n${
+1 + 2 + 3 + 4
+}!`;
+console.log(calculationString); // The sum of numbers is \n10!
+```
+
+If you don't use raw strings, the newline character sequence will be processed by displaying the output in multiple lines
+
+```javascript
+var calculationString = `The sum of numbers is \n${1 + 2 + 3 + 4}!`;
+console.log(calculationString);
+// The sum of numbers is
+// 10!
+```
+
+Also, the raw property is available on the first argument to the tag function
+
+```javascript
+function tag(strings) {
+console.log(strings.raw[0]);
+}
+```
+
+**13. What are template literals?**
+
+**Ans:** Template literals or template strings are string literals allowing embedded expressions. These are enclosed by the back-tick (`) character instead of double or single quotes.
+In ES6, this feature enables using dynamic expressions as below,
+
+```javascript
+var greeting = `Welcome to JS World, Mr. ${firstName} ${lastName}.`;
+```
+
+In ES5, you need break string like below,
+
+```javascript
+var greeting = 'Welcome to JS World, Mr. ' + firstName + ' ' + lastName.`
+```
+
+**Note:** You can use multi-line strings and string interpolation features with template literals.
+
+**14. What are enhanced object literals?**
+
+Ans: Object literals make it easy to quickly create objects with properties inside the curly braces. For example, it provides shorter syntax for common object property definition as below.
+
+```javascript
+//ES6
+var x = 10,
+y = 20;
+obj = { x, y };
+console.log(obj); // {x: 10, y:20}
+//ES5
+var x = 10,
+y = 20;
+obj = { x: x, y: y };
+console.log(obj); // {x: 10, y:20}
 ```
 
 **[⬆ Back to Top](#table-of-contents)**
