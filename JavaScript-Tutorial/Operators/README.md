@@ -148,3 +148,5 @@ Bit operators work on 32 bits numbers, Any numeric operand in the operation is c
 | instanceof | Returns true if an object is an instance of an object type |
 
 **[⬆ Back to Top](#table-of-contents)**
+
+<h2><a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/README.md"> 🔙 Back</a></h2>
