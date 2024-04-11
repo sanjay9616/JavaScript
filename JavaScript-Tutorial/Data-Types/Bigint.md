@@ -1,4 +1,4 @@
-<h1>Number</h1>
+<h1>BigInt</h1>
 
 BigInt is a built-in object in JavaScript that provides a way to represent whole numbers larger than 2^53 – 1. The largest number that JavaScript can reliably represent with the Number primitive is 2^53 – 1, which is represented by the MAX_SAFE_INTEGER constant. BigInts are utilized in scenarios where operations on large numbers are necessary due to their ability to represent integers with arbitrary precision.
 
