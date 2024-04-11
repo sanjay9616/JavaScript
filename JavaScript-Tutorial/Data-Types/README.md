@@ -16,30 +16,11 @@ The latest ECMAScript standard defines eight data types Out of which seven data 
 | 2   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Number.md">Number</a>       |
 | 3   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Boolean.md">Boolean</a>     |
 | 4   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Undefined.md">Undefined</a> |
-| 5   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Null.md">Null</a> |
-| 6   | [Bigint](#Bigint)                                                                                                        |
+| 5   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Null.md">Null</a>           |
+| 6   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Bigint.md">Bigint</a>       |
 | 7   | [Symbol](#Symbol)                                                                                                        |
 | 8   | Object (Array, Date, Math, RegExp, Set, Map, Literals)                                                                   |
 
-### <h2>Boolean</h2>
-
-
-**[⬆ Back to Top](#table-of-contents)**
-
-### <h2>Undefined</h2>
-
-
-**[⬆ Back to Top](#table-of-contents)**
-
-### <h2>Null</h2>
-
-
-**[⬆ Back to Top](#table-of-contents)**
-
-### <h2>Bigint</h2>
-
-
-**[⬆ Back to Top](#table-of-contents)**
 
 ### <h2>Symbol</h2>
 
