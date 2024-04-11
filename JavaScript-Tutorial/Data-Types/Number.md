@@ -13,7 +13,8 @@ JavaScript has only one type of number. Numbers can be written with or without d
 | 5   | [Infinity](#Infinity)                                               |
 | 6   | [Hexadecimal](#Hexadecimal)                                         |
 | 7   | [JavaScript Numbers as Objects](#JavaScript-Numbers-as-Objects)     |
-| 8   | [Interview Questions and Answers](#Interview-Questions-and-Answers) |
+| 8   | [Number Methods](#Number-Methods)                                   |
+| 9   | [Interview Questions and Answers](#Interview-Questions-and-Answers) |
 
 ```javascript
 let x = 3.14;    // A number with decimals
@@ -254,3 +255,131 @@ let x = new Number(500);
 let y = new Number(500);
 console.log(x == y, x === y) // false, false // Comparing two JavaScript objects always returns false.
 ```
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### <h2>Number Methods</h2>
+
+These number methods can be used on all JavaScript numbers
+
+| Method          | Description                                        |
+| --------------- | -------------------------------------------------- |
+| toString()      | Returns a number as a string                       |
+| toExponential() | Returns a number written in exponential notation   |
+| toFixed()       | Returns a number written with a number of decimals |
+| toPrecision()   | Returns a number written with a specified length   |
+| valueOf()       | Returns a number as a number                       |
+
+```javascript
+console.log((123).toString()); // 123
+console.log((100 + 23).toString()); // 123
+
+let x = 9.656;
+let res1 = x.toExponential(2);
+let res2 = x.toExponential(4);
+let res3 = x.toExponential(6);
+console.log(res1, res2, res3) // 9.66e+0 9.6560e+0 9.656000e+0
+
+let x = 9.656;
+let res1 = x.toFixed(0);
+let res2 = x.toFixed(2);
+let res3 = x.toFixed(4);
+let res4 = x.toFixed(6);
+console.log(res1, res2, res3, res4) // 10 9.66 9.6560 9.656000
+
+let x = 9.656;
+let res1 = x.toPrecision();
+let res2 = x.toPrecision(2);
+let res3 = x.toPrecision(4);
+let res4 = x.toPrecision(6);
+console.log(res1, res2, res3, res4) // 9.656 9.7 9.656 9.65600
+
+let x = 123;
+let res1 = x.valueOf();
+let res2 = (123).valueOf();
+let res3 = (100 + 23).valueOf();
+console.log(res1, res2, res3) // 123, 123, 123
+```
+
+**Converting Variables to Numbers:**
+
+| Method       | Description                                             |
+| ------------ | ------------------------------------------------------- |
+| Number()     | Returns a number converted from its argument.           |
+| parseFloat() | Parses its argument and returns a floating point number |
+| parseInt()   | Parses its argument and returns a whole number          |
+
+```javascript
+console.log(Number(true)); // 1
+console.log(Number(false)); // 0
+console.log(Number("10")); // 10
+console.log(Number("  10")); // 10
+console.log(Number("10  ")); // 10
+console.log(Number(" 10  ")); // 10
+console.log(Number("10.33")); // 10.33
+console.log(Number("10,33")); // NaN
+console.log(Number("10 33")); // Nan
+console.log(Number("John")); // NaN
+
+// Number() can also convert a date to a number - The Date() method returns the number of milliseconds since 1.1.1970.
+// The number of milliseconds between 1970-01-02 and 1970-01-01 is 86400000
+console.log(Number(new Date("1970-01-01"))) // 0
+console.log(Number(new Date("1970-01-02"))) // 86400000
+console.log(Number(new Date("2017-09-30"))) // 1506729600000
+console.log((new Date("2017-09-30")).getTime()) // 1506729600000
+
+// parseInt() parses a string and returns a whole number. Spaces are allowed. Only the first number is returned:
+console.log(parseInt("-10")); // -10
+console.log(parseInt("-10.33")); // -10
+console.log(parseInt("10")); // 10
+console.log(parseInt("10.33")); // 10
+console.log(parseInt("10 20 30")); // 10
+console.log(parseInt("10 years")); // 10
+console.log(parseInt("years 10")); // NaN
+
+// parseFloat() parses a string and returns a number. Spaces are allowed. Only the first number is returned:
+console.log(parseFloat("10")); // 10
+console.log(parseFloat("10.33")); // 10.33
+console.log(parseFloat("10 20 30")); // 10
+console.log(parseFloat("10 years")); // 10
+console.log(parseFloat("years 10")); // NaN
+```
+
+**Number Object Methods**
+
+| Method                 | Description                                    |
+| ---------------------- | ---------------------------------------------- |
+| Number.isInteger()     | Returns true if the argument is an integer     |
+| Number.isSafeInteger() | Returns true if the argument is a safe integer |
+| Number.parseFloat()    | Converts a string to a number                  |
+| Number.parseInt()      | Converts a string to a whole number            |
+
+```javascript
+console.log(Number.isInteger(10)); // true
+console.log(Number.isInteger(10.5)); // false
+
+// A safe integer is an integer that can be exactly represented as a double precision number.
+// Safe integers are all integers from -(253 - 1) to +(253 - 1).
+// This is safe: 9007199254740991. This is not safe: 9007199254740992.
+console.log(Number.isSafeInteger(10)); // true
+console.log(Number.isSafeInteger(12345678901234567890)); // false
+
+//Spaces are allowed. Only the first number is returned
+console.log(Number.parseFloat("10")); // 10
+console.log(Number.parseFloat("10.33")); // 10.33
+console.log(Number.parseFloat("10 20 30")); // 10
+console.log(Number.parseFloat("10 years")); // 10
+console.log(Number.parseFloat("years 10")); // NaN
+
+console.log(Number.parseInt("-10")); // -10
+console.log(Number.parseInt("-10.33")); // -10
+console.log(Number.parseInt("10")); // 10
+console.log(Number.parseInt("10.33")); // 10
+console.log(Number.parseInt("10 20 30")); // 10
+console.log(Number.parseInt("10 years")); // 10
+console.log(Number.parseInt("years 10")); // NaN
+```
+
+**[⬆ Back to Top](#table-of-contents)**
+
+<h2><a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/README.md"> 🔙 Back</a></h2>
