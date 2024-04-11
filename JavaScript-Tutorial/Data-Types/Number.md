@@ -14,7 +14,8 @@ JavaScript has only one type of number. Numbers can be written with or without d
 | 6   | [Hexadecimal](#Hexadecimal)                                         |
 | 7   | [JavaScript Numbers as Objects](#JavaScript-Numbers-as-Objects)     |
 | 8   | [Number Methods](#Number-Methods)                                   |
-| 9   | [Interview Questions and Answers](#Interview-Questions-and-Answers) |
+| 9   | [Number Properties](#Number-Properties)                             |
+| 10  | [Interview Questions and Answers](#Interview-Questions-and-Answers) |
 
 ```javascript
 let x = 3.14;    // A number with decimals
@@ -378,6 +379,84 @@ console.log(Number.parseInt("10.33")); // 10
 console.log(Number.parseInt("10 20 30")); // 10
 console.log(Number.parseInt("10 years")); // 10
 console.log(Number.parseInt("years 10")); // NaN
+```
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### <h2>Number Properties</h2>
+
+| Property          | Description                                           |
+| ----------------- | ----------------------------------------------------- |
+| EPSILON           | The difference between 1 and the smallest number > 1. |
+| MAX_VALUE         | The largest number possible in JavaScript             |
+| MIN_VALUE         | The smallest number possible in JavaScript            |
+| MAX_SAFE_INTEGER  | The maximum safe integer (2^53 - 1)                   |
+| MIN_SAFE_INTEGER  | The minimum safe integer -(2^53 - 1)                  |
+| POSITIVE_INFINITY | Infinity (returned on overflow)                       |
+| NEGATIVE_INFINITY | Negative infinity (returned on overflow)              |
+| NaN               | A "Not-a-Number" value                                |
+
+```javascript
+let x = Number.EPSILON;
+console.log(x) // 2.220446049250313e-16
+
+let x = Number.MAX_VALUE;
+console.log(x) // 1.7976931348623157e+308
+
+let x = 6;
+console.log(x.MAX_VALUE) // undefined
+
+let x = Number.MIN_VALUE;
+console.log(x) // 5e-324
+
+let x = Number.MAX_SAFE_INTEGER;
+console.log(x) // 9007199254740991
+
+let x = Number.MIN_SAFE_INTEGER;
+console.log(x) // -9007199254740991
+
+let x = Number.POSITIVE_INFINITY;
+console.log(x) // Infinity
+
+let x = 1 / 0;
+console.log(x) // Infinity
+
+let x = Number.NEGATIVE_INFINITY;
+console.log(x) // -Infinity
+
+let x = -1 / 0;
+console.log(x) // -Infinity
+
+let x = Number.NaN;
+console.log(x) // NaN
+
+let x = 100 / "Apple";
+console.log(x) // NaN
+```
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### <h2>Interview Questions and Answers</h2>
+
+**[⬆ Back to Top](#table-of-contents)**
+
+**1. How do you verify that an argument is a Number or not?**
+
+**Ans:** The combination of IsNaN and isFinite methods are used to confirm whether an argument is a number or not.
+
+```javascript
+function isNumber(n) {
+return !isNaN(parseFloat(n)) && isFinite(n);
+}
+```
+
+**2. How do you round numbers to certain decimals?**
+
+**Ans:** You can round numbers to a certain number of decimals using `toFixed` method from native javascript.
+
+```javascript
+let pie = 3.141592653;
+pie = pie.toFixed(3); // 3.142
 ```
 
 **[⬆ Back to Top](#table-of-contents)**
