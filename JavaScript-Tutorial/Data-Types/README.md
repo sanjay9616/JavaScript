@@ -13,18 +13,13 @@ The latest ECMAScript standard defines eight data types Out of which seven data 
 | No. | Topics                                                                                                             |
 | --- | ------------------------------------------------------------------------------------------------------------------ |
 | 1   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/String.md">String</a> |
-| 2   | [Number](#Number)                                                                                                  |
+| 2   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Number.md">Number</a> |
 | 3   | [Boolean](#Boolean)                                                                                                |
 | 4   | [Undefined](#Undefined)                                                                                            |
 | 5   | [Null](#Null)                                                                                                      |
 | 6   | [Bigint](#Bigint)                                                                                                  |
 | 7   | [Symbol](#Symbol)                                                                                                  |
 | 8   | Object (Array, Date, Math, RegExp, Set, Map, Literals)                                                             |
-
-### <h2>Number</h2>
-
-
-**[⬆ Back to Top](#table-of-contents)**
 
 ### <h2>Boolean</h2>
 
