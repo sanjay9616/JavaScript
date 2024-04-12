@@ -19,6 +19,13 @@ Objects written as name value pairs are similar to:
 3. Hash maps in Java</br>
 4. Hashes in Ruby and Perl</br>
 
+### Table of Contents
+
+| No. | Topic                                                             |
+| --- | ----------------------------------------------------------------- |
+| 1   | [Creating a JavaScript Object](#Creating-a-JavaScript-Object)     |
+| 2   | [JavaScript Objects are Mutable](#JavaScript-Objects-are-Mutable) |
+
 ### <h2>Creating a JavaScript Object</h2>
 
 There are different ways to create new objects:
@@ -30,7 +37,7 @@ There are different ways to create new objects:
 | 3   | [Object create Method](#Object-create-Method)                               |
 | 4   | [Function constructor Method](#Function-constructor-Method)                 |
 | 5   | [Function constructor with prototype](#Function-constructor-with-prototype) |
-| 6   | [ES6 Class Syntax Method](#ES6-Class-Syntax-Method)                          |
+| 6   | [ES6 Class Syntax Method](#ES6-Class-Syntax-Method)                         |
 | 7   | [Singleton Pattern Method](#Singleton-Pattern-Method)                       |
 
 ### <h3>Object literal Method</h3>
@@ -153,5 +160,29 @@ var object = new (function () {
 ```
 
 **[⬆ Back to Creating a JavaScript Object](#Creating-a-JavaScript-Object)**
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### <h2>JavaScript Objects are Mutable</h2>
+
+```javascript
+let person = {
+  firstName:"John",
+  lastName:"Doe",
+  age:50,
+  eyeColor:"blue"
+}
+
+let x = person;
+x.age = 10;
+console.log(person, x)
+
+// Output
+{ firstName: 'John', lastName: 'Doe', age: 10, eyeColor: 'blue' }
+{ firstName: 'John', lastName: 'Doe', age: 10, eyeColor: 'blue' }
+```
+
+**[⬆ Back to Top](#table-of-contents)**
+
 
 <h2><a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/README.md"> 🔙 Back</a></h2>
