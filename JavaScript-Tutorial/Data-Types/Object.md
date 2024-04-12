@@ -21,10 +21,12 @@ Objects written as name value pairs are similar to:
 
 ### Table of Contents
 
-| No. | Topic                                                             |
-| --- | ----------------------------------------------------------------- |
-| 1   | [Creating a JavaScript Object](#Creating-a-JavaScript-Object)     |
-| 2   | [JavaScript Objects are Mutable](#JavaScript-Objects-are-Mutable) |
+| No. | Topic                                                               |
+| --- | ------------------------------------------------------------------- |
+| 1   | [Creating a JavaScript Object](#Creating-a-JavaScript-Object)       |
+| 2   | [JavaScript Objects are Mutable](#JavaScript-Objects-are-Mutable)   |
+| 3   | [Displaying the Object in a Loop](#Displaying-the-Object-in-a-Loop) |
+| 4   | [JavaScript Accessors](#JavaScript-Accessors)                       |
 
 ### <h2>Creating a JavaScript Object</h2>
 
@@ -184,5 +186,57 @@ console.log(person, x)
 
 **[⬆ Back to Top](#table-of-contents)**
 
+### <h2>Displaying the Object in a Loop</h2>
+
+```javascript
+const person = {
+  name: "John",
+  age: 30,
+  city: "New York"
+};
+
+let txt = "";
+for (let x in person) {
+txt += person[x] + " ";
+};
+console.log(txt) // John 30 New York
+```
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### <h2>JavaScript Accessors</h2>
+
+Getters and setters allow you to define Object Accessors (Computed Properties)
+
+**JavaScript Getter**
+
+```javascript
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  get fullName() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+console.log(person.fullName) // John Doe
+```
+
+**JavaScript Setter**
+
+```javascript
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  language: "",
+  set lang(lang) {
+    this.language = lang;
+  }
+};
+
+person.lang = "en";
+console.log(person.language) // en
+```
+
+**[⬆ Back to Top](#table-of-contents)**
 
 <h2><a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/README.md"> 🔙 Back</a></h2>
