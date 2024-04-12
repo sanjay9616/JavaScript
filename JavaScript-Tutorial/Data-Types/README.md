@@ -10,16 +10,17 @@ The latest ECMAScript standard defines eight data types Out of which seven data 
 
 ### Table of Contents
 
-| No. | Topics                                                                                                                   |
-| --- | ------------------------------------------------------------------------------------------------------------------------ |
-| 1   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/String.md">String</a>       |
-| 2   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Number.md">Number</a>       |
-| 3   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Boolean.md">Boolean</a>     |
-| 4   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Undefined.md">Undefined</a> |
-| 5   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Null.md">Null</a>           |
-| 6   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Bigint.md">Bigint</a>       |
-| 7   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Symbol.md">Symbol</a>       |
-| 8   | Object (Array, Date, Math, RegExp, Set, Map, Literals)                                                                   |
+| No. | Topics                                                                                                                                                                                      |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/String.md">String</a>                                                                          |
+| 2   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Number.md">Number</a>                                                                          |
+| 3   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Boolean.md">Boolean</a>                                                                        |
+| 4   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Undefined.md">Undefined</a>                                                                    |
+| 5   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Null.md">Null</a>                                                                              |
+| 6   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Bigint.md">Bigint</a>                                                                          |
+| 7   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Symbol.md">Symbol</a>                                                                          |
+| 7   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Object.md#Singleton-Pattern-Method">Object (Array, Date, Math, RegExp, Set, Map, Literals)</a> |
+| 8   | Object (Array, Date, Math, RegExp, Set, Map, Literals)                                                                                                                                      |
 
 
 ### <h2>Symbol</h2>
