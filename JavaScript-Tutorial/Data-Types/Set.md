@@ -30,6 +30,14 @@ console.log(letters, typeof letters) // Set(3) { 'a', 'b', 'c' } object
 console.log(letters.keys()) // [Set Iterator] { 'a', 'b', 'c' }
 console.log(letters.values()) // [Set Iterator] { 'a', 'b', 'c' }
 console.log(letters.entries()) // [Set Entries] { [ 'a', 'a' ], [ 'b', 'b' ], [ 'c', 'c' ] }
+console.log(letters.size) // 3
+console.log(letters.has('c')) // true
+
+letters.delete('c')
+console.log(letters) // Set(2) { 'a', 'b' }
+
+letters.clear()
+console.log(letters) // Set(0) {}
 ```
 
 <h2><a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Object.md"> 🔙 Back</a></h2>
