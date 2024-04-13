@@ -20,8 +20,10 @@ The latest ECMAScript standard defines eight data types Out of which seven data 
 | 6   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Bigint.md">Bigint</a>                                                                                                            |
 | 7   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Symbol.md">Symbol</a>                                                                                                            |
 | 8   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Object.md#Singleton-Pattern-Method">Object (Accessors, Prototypes, Iterators, Set, Map, Array, Date, Math, RegExp, Literals)</a> |
-| 9   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Set.md">JavaScript Sets</a>                                                                                                      |
-| 9   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Map.md">JavaScript Mapss</a>                                                                                                      |
+| 10  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Set.md">JavaScript Sets</a>                                                                                                      |
+| 11  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Map.md">JavaScript Maps</a>                                                                                                      |
+| 12  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Object-Reference/Map.md">ES5 Object Methods</a>                                                                                             |
+
 
 
 ### <h2>Symbol</h2>
