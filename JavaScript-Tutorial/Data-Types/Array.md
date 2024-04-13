@@ -41,6 +41,7 @@ console.log(person) // [ firstName: 'John', lastName: 'Doe', age: 46 ]
 | 1   | [Basic Array Methods](#Basic-Array-Methods)             |
 | 2   | [JavaScript Search Methods](#JavaScript-Search-Methods) |
 | 3   | [Sorting Arrays Methods](#Sorting-Arrays-Methods)       |
+| 4   | [Array Iteration Methods](#Array-Iteration-Methods)     |
 
 ### <h2>Basic Array Methods</h2>
 
@@ -218,6 +219,84 @@ console.log(cars) // [ { type: 'Saab', year: 2001 }, { type: 'BMW', year: 2010 }
 
 **[⬆ Back to Top](#table-of-contents)**
 
+### <h2>Array Iteration Methods</h2>
 
+**[⬆ Back to Top](#table-of-contents)**
+
+<h3>Array forEach</h3>
+
+The forEach() method calls a function (a callback function) once for each array element.
+
+```javascript
+const numbers = [45, 4, 9, 16, 25]
+let sum = 0
+numbers.forEach((number) => sum = sum + number)
+console.log(sum) // 99
+```
+
+<h3>Array map()</h3>
+
+Creates a new array by calling a function for iterating every element of the original array.
+
+```javascript
+let arr1 = [1, 2, 3, 4, 5]
+const arr2 = Arr1.map((val) => val * 5)
+console.log(arr2) // [ 5, 10, 15, 20, 25 ]
+```
+
+<h3>Array fill()</h3>
+
+Fills specified elements in an array with a value
+
+```javascript
+let arr1 = [1, 2, 3, 4, 5]
+const arr2 = arr1.fill(9)
+console.log(arr2) // [ 9, 9, 9, 9, 9 ]
+
+arr = new Array(3).fill(false)
+console.log(arr) // [ false, false, false ]
+```
+
+<h3>Array some()</h3>
+
+Return true if at least one element in the array passes the test, else false.
+
+```javascript
+let arr1 = [1, 2, 3, 4, 5]
+const bol = arr1.some((val) => val == 3)
+console.log(bol) // true
+
+let arr1 = [1, 2, 3, 4, 5]
+const bol = arr1.some((val) => val == 9)
+console.log(bol) // false
+```
+
+<h3>Array every()</h3>
+
+Return true if all elements in the array passes the test, else false.
+
+```javascript
+let arr1 = [1, 2, 3, 4, 5]
+const bol = arr1.every((val) => val > 0)
+console.log(bol) // true
+
+let arr1 = [1, 2, 3, 4, 5]
+const bol = arr1.every((val) => val > 2)
+console.log(bol) // false
+```
+
+<h3>Reduce every()</h3>
+
+Reduce() method in JavaScript is used to reduce the array to a single value and executes a provided function for each value of the array (from left-to-right) and the return value of the function is stored in an accumulator.
+
+```javascript
+let array = [15, 16, 17, 18, 19];
+const val = array.reduce((accumulator, currentValue, index) => accumulator+currentValue)
+console.log(val) // 85
+
+const array = [{ x: 1 }, { x: 2 }, { x: 3 }];
+const val = array.reduce((accumulator, currentValue) => accumulator + currentValue.x, 0)
+console.log(val) // 6
+```
 
 <h2><a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Object.md"> 🔙 Back</a></h2>
