@@ -47,7 +47,7 @@ There are different ways to create new objects:
 | 6   | [ES6 Class Syntax Method](#ES6-Class-Syntax-Method)                         |
 | 7   | [Singleton Pattern Method](#Singleton-Pattern-Method)                       |
 
-### <h3>Object literal Method</h3>
+### <h2>Object literal Method</h2>
 
 ```javascript
 const person = {
@@ -64,7 +64,7 @@ Object literal property values can be of any data type, including array, functio
 
 **[⬆ Back to Creating a JavaScript Object](#Creating-a-JavaScript-Object)**
 
-### <h3>Object constructor Method</h3>
+### <h2>Object constructor Method</h2>
 
 The simplest way to create an empty object is using the `Object` constructor. Currently this approach is not recommended.
 
@@ -80,7 +80,7 @@ var object = Object();
 
 **[⬆ Back to Creating a JavaScript Object](#Creating-a-JavaScript-Object)**
 
-### <h3>Object create Method</h3>
+### <h2>Object create Method</h2>
 
 The create method of Object is used to create a new object by passing the specificied prototype object and properties as arguments, i.e., this pattern is helpful to create new objects based on existing objects.
 The second argument is optional and it is used to create properties on a newly created object.
@@ -93,7 +93,7 @@ var object = Object.create(null);
 
 **[⬆ Back to Creating a JavaScript Object](#Creating-a-JavaScript-Object)**
 
-### <h3>Function constructor Method</h3>
+### <h2>Function constructor Method</h2>
 
 In this approach, create any function and apply the new operator to create object instances.
 
@@ -107,7 +107,7 @@ var object = new Person("Sudheer");
 
 **[⬆ Back to Creating a JavaScript Object](#Creating-a-JavaScript-Object)**
 
-### <h3>Function constructor with prototype</h3>
+### <h2>Function constructor with prototype</h2>
 
 This is similar to function constructor but it uses prototype for their properties and methods,
 
@@ -140,7 +140,7 @@ console.log(result && typeof result === 'object' ? result : newInstance);
 
 **[⬆ Back to Creating a JavaScript Object](#Creating-a-JavaScript-Object)**
 
-### <h3>ES6 Class Syntax Method</h3>
+### <h2>ES6 Class Syntax Method</h2>
 
 ES6 introduces class feature to create objects.
 
@@ -156,7 +156,7 @@ var object = new Person("Sudheer");
 
 **[⬆ Back to Creating a JavaScript Object](#Creating-a-JavaScript-Object)**
 
-### <h3>Singleton Pattern Method</h3>
+### <h2>Singleton Pattern Method</h2>
 
 A Singleton is an object which can only be instantiated one time. Repeated calls to its constructor return the same instance. This way one can ensure that they don't accidentally create multiple instances.
 

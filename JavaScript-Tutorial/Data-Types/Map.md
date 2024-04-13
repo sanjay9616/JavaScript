@@ -63,7 +63,7 @@ console.log(fruits.values()) // [Map Iterator] { 500, 300, 200 }
 console.log(fruits.entries()) // { [ 'apples', 500 ], [ 'bananas', 300 ], [ 'oranges', 200 ] }
 ```
 
-<h3>JavaScript Objects vs Maps</h3>
+<h2>JavaScript Objects vs Maps</h2>
 
 | Object                            | Map                           |
 | --------------------------------- | ----------------------------- |
