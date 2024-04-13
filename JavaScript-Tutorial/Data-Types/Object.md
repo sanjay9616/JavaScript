@@ -30,6 +30,7 @@ Objects written as name value pairs are similar to:
 | 5   | [Object Prototypes](#Object-Prototypes)                                                                                  |
 | 6   | [JavaScript Iterators](#JavaScript-Iterators)                                                                            |
 | 7   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Set.md">JavaScript Sets</a> |
+| 7   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Map.md">JavaScript Maps</a> |
 
 ### <h2>Creating a JavaScript Object</h2>
 
