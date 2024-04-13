@@ -300,6 +300,67 @@ const val = array.reduce((accumulator, currentValue) => accumulator + currentVal
 console.log(val) // 6
 ```
 
+<h3>Array flatMap()</h3>
+
+The flatMap() method first maps all elements of an array and then creates a new array by flattening the array.
+
+```javascript
+const myArr = [1, 2, 3, 4, 5, 6];
+const newArr = myArr.flatMap((x) => x * 2);
+console.log(newArr) // [ 2, 4, 6, 8, 10, 12 ]
+```
+
+<h3>Array reduceRight()</h3>
+
+The reduceRight() method runs a function on each array element to produce (reduce it to) a single value. </br>
+The reduceRight() works from right-to-left in the array. See also reduce().
+
+```javascript
+const numbers = [15, 16, 17, 18, 19];
+let val = numbers.reduceRight((accumulator, currentValue, index, array) => accumulator + currentValue)
+console.log(val) // 85
+```
+
+<h3>JavaScript Array.from()</h3>
+
+The Array.from() method returns an Array object from any object with a length property or any iterable object.
+
+```javascript
+const arr = Array.from("ABCDEFG");
+console.log(arr) // [ 'A', 'B', 'C', 'D', 'E', 'F', 'G' ]
+```
+
+<h3>JavaScript Operator</h3>
+
+The rest operator ( ... ) allows a function to accept an indefinite number of arguments as an array.
+
+```javascript
+sum = (...values) => {
+    console.log(values)
+    let total = 0
+    for(const val of values) {
+        total += val
+    }
+    return total
+}
+console.log(sum(1, 2, 3)); //Output: 6
+console.log(sum(1, 2, 3, 4)); //Output: 10
+```
+
+<h3>JavaScript Spread</h3>
+
+The rest operator ( ... ) allows us to quickly copy all or part of an existing array or object into another array or object.
+
+```javascript
+l=[1,2,3]
+console.log([...l]) // [ 1, 2, 3 ]
+
+const numbersOne = [1, 2, 3];
+const numbersTwo = [4, 5, 6];
+const numbersCombined = [...numbersOne, ...numbersTwo];
+console.log(numbersCombined) // [ 1, 2, 3, 4, 5, 6 ]
+```
+
 **[⬆ Back to Top](#table-of-contents)**
 
 <h2><a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Object.md"> 🔙 Back</a></h2>
