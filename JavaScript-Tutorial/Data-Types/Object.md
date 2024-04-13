@@ -21,15 +21,15 @@ Objects written as name value pairs are similar to:
 
 ### Table of Contents
 
-| No. | Topic                                                               |
-| --- | ------------------------------------------------------------------- |
-| 1   | [Creating a JavaScript Object](#Creating-a-JavaScript-Object)       |
-| 2   | [JavaScript Objects are Mutable](#JavaScript-Objects-are-Mutable)   |
-| 3   | [Displaying the Object in a Loop](#Displaying-the-Object-in-a-Loop) |
-| 4   | [JavaScript Accessors](#JavaScript-Accessors)                       |
-| 5   | [Object Prototypes](#Object-Prototypes)                             |
-| 6   | [JavaScript Iterators](#JavaScript-Iterators)                       |
-| 7   | <a href="">JavaScript Sets</a>                                      |
+| No. | Topic                                                                                                                    |
+| --- | ------------------------------------------------------------------------------------------------------------------------ |
+| 1   | [Creating a JavaScript Object](#Creating-a-JavaScript-Object)                                                            |
+| 2   | [JavaScript Objects are Mutable](#JavaScript-Objects-are-Mutable)                                                        |
+| 3   | [Displaying the Object in a Loop](#Displaying-the-Object-in-a-Loop)                                                      |
+| 4   | [JavaScript Accessors](#JavaScript-Accessors)                                                                            |
+| 5   | [Object Prototypes](#Object-Prototypes)                                                                                  |
+| 6   | [JavaScript Iterators](#JavaScript-Iterators)                                                                            |
+| 7   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Set.md">JavaScript Sets</a> |
 
 ### <h2>Creating a JavaScript Object</h2>
 
