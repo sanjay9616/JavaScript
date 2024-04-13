@@ -1,6 +1,6 @@
 <h1>JavaScript ES5 Object Methods</h1>
 
-<h2>Managing Objects<h2>
+<h2>Managing Objects</h2>
 
 ```javascript
 Object.create() // Create object with an existing object as prototype
