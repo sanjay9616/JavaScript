@@ -40,6 +40,7 @@ console.log(person) // [ firstName: 'John', lastName: 'Doe', age: 46 ]
 | --- | ------------------------------------------------------- |
 | 1   | [Basic Array Methods](#Basic-Array-Methods)             |
 | 2   | [JavaScript Search Methods](#JavaScript-Search-Methods) |
+| 3   | [Sorting Arrays Methods](#Sorting-Arrays-Methods)       |
 
 ### <h2>Basic Array Methods</h2>
 
@@ -178,6 +179,45 @@ console.log(lastIndex) // 4
 ```
 
 **[⬆ Back to Top](#table-of-contents)**
+
+### <h2>Sorting Arrays Methods</h2>
+
+```javascript
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.sort();
+console.log(fruits) // [ 'Apple', 'Banana', 'Mango', 'Orange' ]
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.reverse();
+console.log(fruits) // [ 'Mango', 'Apple', 'Orange', 'Banana' ]
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+const sorted = fruits.toSorted();
+console.log(sorted) // [ 'Apple', 'Banana', 'Mango', 'Orange' ]
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+const reversed = months.toReversed();
+console.log(reversed) // [ 'Mango', 'Apple', 'Orange', 'Banana' ]
+
+const points = [40, 100, 1, 5, 25, 10];
+points.sort((a, b) => a - b)
+console.log(points) // [ 1, 5, 10, 25, 40, 100 ]
+
+const points = [40, 100, 1, 5, 25, 10];
+points.sort((a, b) => a > b ? 1 : -1)
+console.log(points) // [ 1, 5, 10, 25, 40, 100 ]
+
+const points = [40, 100, 1, 5, 25, 10];
+points.sort((a, b) => a > b ? -1 : 1)
+console.log(points) // [ 100, 40, 25, 10, 5, 1 ]
+
+const cars = [ { type: "Volvo", year: 2016 }, { type: "Saab", year: 2001 }, { type: "BMW", year: 2010 } ];
+cars.sort((a, b) => a.year > b.year ? 1 : -1)
+console.log(cars) // [ { type: 'Saab', year: 2001 }, { type: 'BMW', year: 2010 }, { type: 'Volvo', year: 2016 } ]
+```
+
+**[⬆ Back to Top](#table-of-contents)**
+
 
 
 <h2><a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Object.md"> 🔙 Back</a></h2>
