@@ -32,3 +32,5 @@ The latest ECMAScript standard defines eight data types Out of which seven data 
 
 
 **[⬆ Back to Top](#table-of-contents)**
+
+<h2><a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/README.md"> 🔙 Back</a></h2>
