@@ -22,7 +22,7 @@ The latest ECMAScript standard defines eight data types Out of which seven data 
 | 8   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Object.md#Singleton-Pattern-Method">Object (Accessors, Prototypes, Iterators, Set, Map, Array, Date, Math, RegExp, Literals)</a> |
 | 10  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Set.md">JavaScript Sets</a>                                                                                                      |
 | 11  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Map.md">JavaScript Maps</a>                                                                                                      |
-| 12  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Object-Reference/Map.md">ES5 Object Methods</a>                                                                                             |
+| 12  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Object-Reference.md">ES5 Object Methods</a>                                                                                             |
 
 
 
