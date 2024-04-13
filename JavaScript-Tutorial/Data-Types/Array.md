@@ -42,6 +42,7 @@ console.log(person) // [ firstName: 'John', lastName: 'Doe', age: 46 ]
 | 2   | [JavaScript Search Methods](#JavaScript-Search-Methods) |
 | 3   | [Sorting Arrays Methods](#Sorting-Arrays-Methods)       |
 | 4   | [Array Iteration Methods](#Array-Iteration-Methods)     |
+| 5   | [JavaScript Array Const](#JavaScript-Array-Const)       |
 
 ### <h2>Basic Array Methods</h2>
 
@@ -362,5 +363,118 @@ console.log(numbersCombined) // [ 1, 2, 3, 4, 5, 6 ]
 ```
 
 **[⬆ Back to Top](#table-of-contents)**
+
+### <h2>JavaScript Array Const</h2>
+
+In 2015, JavaScript introduced an important new keyword: const </br>
+It has become a common practice to declare arrays using const
+
+```javascript
+const cars = ["Saab", "Volvo", "BMW"];
+cars = ["Toyota", "Volvo", "Audi"]; // ERROR - TypeError
+console.log(cars)
+```
+
+The keyword const is a little misleading. </br>
+It does NOT define a constant array. It defines a constant reference to an array. </br>
+Because of this, we can still change the elements of a constant array. </br>
+
+```javascript
+const cars = ["Saab", "Volvo", "BMW"];
+cars[0] = "Toyota"; // You can change an element:
+cars.push("Audi"); // You can add an element:
+console.log(cars) // [ 'Toyota', 'Volvo', 'BMW', 'Audi' ]
+```
+
+JavaScript const variables must be assigned a value when they are declared: </br>
+Meaning: An array declared with const must be initialized when it is declared. </br>
+Using const without initializing the array is a syntax error: </br>
+
+```javascript
+const cars;
+cars = ["Saab", "Volvo", "BMW"]; // ERROR - SyntaxError: Missing initializer in const declaration
+console.log(cars)
+```
+
+Arrays declared with var can be initialized at any time. </br>
+You can even use the array before it is declared: </br>
+
+```javascript
+cars = ["Saab", "Volvo", "BMW"];
+var cars;
+console.log(cars) // [ 'Saab', 'Volvo', 'BMW' ]
+```
+
+An array declared with const has Block Scope. </br>
+An array declared in a block is not the same as an array declared outside the block:
+
+```javascript
+const cars = ["Saab", "Volvo", "BMW"]; // Here cars[0] is "Saab"
+{
+  const cars = ["Toyota", "Volvo", "BMW"]; // Here cars[0] is "Toyota"
+}
+// Here cars[0] is "Saab"
+```
+
+An array declared with var does not have block scope
+
+```javascript
+var cars = ["Saab", "Volvo", "BMW"]; // Here cars[0] is "Saab"
+{
+  var cars = ["Toyota", "Volvo", "BMW"]; // Here cars[0] is "Toyota"
+}
+// Here cars[0] is "Toyota"
+```
+
+**Redeclaring Arrays:**
+
+Redeclaring an array declared with var is allowed anywhere in a program:
+
+```javascript
+var cars = ["Volvo", "BMW"];   // Allowed
+var cars = ["Toyota", "BMW"];  // Allowed
+cars = ["Volvo", "Saab"];      // Allowed
+```
+
+Redeclaring or reassigning an array to const, in the same scope, or in the same block, is not allowed:
+
+```javascript
+var cars = ["Volvo", "BMW"];     // Allowed
+const cars = ["Volvo", "BMW"];   // Not allowed
+{
+  var cars = ["Volvo", "BMW"];   // Allowed
+  const cars = ["Volvo", "BMW"]; // Not allowed
+}
+```
+
+Redeclaring or reassigning an existing const array, in the same scope, or in the same block, is not allowed:
+
+```javascript
+const cars = ["Volvo", "BMW"];   // Allowed
+const cars = ["Volvo", "BMW"];   // Not allowed
+var cars = ["Volvo", "BMW"];     // Not allowed
+cars = ["Volvo", "BMW"];         // Not allowed
+
+{
+  const cars = ["Volvo", "BMW"]; // Allowed
+  const cars = ["Volvo", "BMW"]; // Not allowed
+  var cars = ["Volvo", "BMW"];   // Not allowed
+  cars = ["Volvo", "BMW"];       // Not allowed
+}
+```
+
+Redeclaring an array with const, in another scope, or in another block, is allowed:
+
+```javascript
+const cars = ["Volvo", "BMW"];   // Allowed
+{
+  const cars = ["Volvo", "BMW"]; // Allowed
+}
+{
+  const cars = ["Volvo", "BMW"]; // Allowed
+}
+```
+**[⬆ Back to Top](#table-of-contents)**
+
 
 <h2><a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Object.md"> 🔙 Back</a></h2>
