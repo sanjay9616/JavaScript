@@ -30,7 +30,7 @@ Object.defineProperty(person, "fullName", { // // Define a getter
 console.log(person.fullName) // John Doe
 ```
 
-<h2>Managing Objects<h2>
+<h2>Managing Objects</h2>
 
 ```javascript
 Object.preventExtensions(object) // Prevents adding properties to an object
