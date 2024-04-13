@@ -36,9 +36,10 @@ console.log(person) // [ firstName: 'John', lastName: 'Doe', age: 46 ]
 
 ### Table of Contents
 
-| No. | Topic                                       |
-| --- | ------------------------------------------- |
-| 1   | [Basic Array Methods](#Basic-Array-Methods) |
+| No. | Topic                                                   |
+| --- | ------------------------------------------------------- |
+| 1   | [Basic Array Methods](#Basic-Array-Methods)             |
+| 2   | [JavaScript Search Methods](#JavaScript-Search-Methods) |
 
 ### <h2>Basic Array Methods</h2>
 
@@ -134,5 +135,49 @@ console.log(spliced) // [ 'Orange', 'Apple', 'Mango' ]
 ```
 
 **[⬆ Back to Top](#table-of-contents)**
+
+### <h2>JavaScript Search Methods</h2>
+
+| Method          | Description                                                                                             |
+| --------------- | ------------------------------------------------------------------------------------------------------- |
+| indexOf()       | returns the position of the fist occurrence of the specified element, return -1 if element is not found |
+| lastIndexOf()   | returns the position of the last occurrence of the specified element, return -1 if element is not found |
+| includes()      | This allows us to check if an element is present in an array                                            |
+| find()          | returns the value of the first array element that passes a test function                                |
+| findIndex()     | returns the index of the first array element that passes a test function                                |
+| findLast()      | start from the end of an array and return the value of the first element that satisfies a condition     |
+| findLastIndex() | finds the index of the last element that satisfies a condition                                          |
+
+```javascript
+// Syntax - array.indexOf(item, start) 2nd argument is Optional. Where to start the search default start is 0
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+console.log(fruits.indexOf("Orange")) // 1
+
+// Syntax - array.lastIndexOf(item, start) 2nd argument is Optional. Where to start the search default start is 0
+const fruits = ["Apple", "Orange", "Apple", "Mango"];
+console.log(fruits.lastIndexOf("Apple")) // 2
+
+const fruits = ["Apple", "Orange", "Apple", "Mango"];
+console.log(fruits.includes("Apple")) // true
+
+const temp = [27, 28, 30, 40, 42, 35, 30];
+let element = temp.find(x => x > 40); // 4
+console.log(element) // 42
+
+const temp = [27, 28, 30, 40, 42, 52, 30];
+let lastElement = temp.findLast(x => x > 40);
+console.log(lastElement) // 52
+
+const temp = [27, 28, 30, 40, 42, 35, 30];
+let index = temp.findIndex(x => x > 40);
+console.log(index) // 4
+
+const temp = [27, 28, 30, 40, 42, 35, 30];
+let lastIndex = temp.findLastIndex(x => x > 40);
+console.log(lastIndex) // 4
+```
+
+**[⬆ Back to Top](#table-of-contents)**
+
 
 <h2><a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Object.md"> 🔙 Back</a></h2>
