@@ -28,6 +28,7 @@ Objects written as name value pairs are similar to:
 | 3   | [Displaying the Object in a Loop](#Displaying-the-Object-in-a-Loop) |
 | 4   | [JavaScript Accessors](#JavaScript-Accessors)                       |
 | 5   | [Object Prototypes](#Object-Prototypes)                             |
+| 6   | [JavaScript Iterators](#JavaScript-Iterators)                       |
 
 ### <h2>Creating a JavaScript Object</h2>
 
@@ -271,7 +272,7 @@ console.log(person.nationality) // Output - English
 
 **Note**: The **syntax** to add the property to an object constructor: `objectConstructorName.prototype.key = 'value'`;
 
-<h2>Add Methods to a Constructor Function Using Prototype</h2>
+<h3>Add Methods to a Constructor Function Using Prototype</h3>
 
 ```javascript
 function Person () {
@@ -320,6 +321,39 @@ Person.prototype.age = 24;
 const person = new Person();
 
 console.log(person.__proto__);   // { age: 24 }
+```
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### <h2>JavaScript Iterators<h2>
+
+The iterator protocol defines how to produce a sequence of values from an object. </br>
+An object becomes an iterator when it implements a next() method. </br>
+The next() method must return an object with two properties: <br>
+**1. value**: The value returned by the iterator (Can be omitted if done is true) </br>
+**2. done**: true if the iterator has completed (false if the iterator has produced a new value) </br>
+
+```javascript
+const array = ['a', 'b', 'c'];
+const it = array[Symbol.iterator]();
+console.log(JSON.stringify(it.next())); // {"value":"a","done":false}
+console.log(JSON.stringify(it.next())); // {"value":"b","done":false}
+console.log(JSON.stringify(it.next())); // {"value":"c","done":false}
+console.log(JSON.stringify(it.next())); // {"done":true}
+```
+
+```javascript
+const array = ['a', 'b', 'c'];
+const it = array[Symbol.iterator]()
+for (let value of it) {
+    console.log(value)
+}
+
+// Output
+
+a
+b
+c
 ```
 
 **[⬆ Back to Top](#table-of-contents)**
