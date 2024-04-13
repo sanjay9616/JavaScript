@@ -293,6 +293,7 @@ Reduce() method in JavaScript is used to reduce the array to a single value and 
 let array = [15, 16, 17, 18, 19];
 const val = array.reduce((accumulator, currentValue, index) => accumulator+currentValue)
 console.log(val) // 85
+![kkkkkkkk](https://github.com/sanjay9616/JavaScript/assets/87460579/08f43899-eaf8-42f8-94ed-f31b8d0939db)
 
 const array = [{ x: 1 }, { x: 2 }, { x: 3 }];
 const val = array.reduce((accumulator, currentValue) => accumulator + currentValue.x, 0)
