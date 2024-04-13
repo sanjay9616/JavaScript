@@ -221,8 +221,6 @@ console.log(cars) // [ { type: 'Saab', year: 2001 }, { type: 'BMW', year: 2010 }
 
 ### <h2>Array Iteration Methods</h2>
 
-**[⬆ Back to Top](#table-of-contents)**
-
 <h3>Array forEach</h3>
 
 The forEach() method calls a function (a callback function) once for each array element.
@@ -293,11 +291,15 @@ Reduce() method in JavaScript is used to reduce the array to a single value and 
 let array = [15, 16, 17, 18, 19];
 const val = array.reduce((accumulator, currentValue, index) => accumulator+currentValue)
 console.log(val) // 85
+```
 ![kkkkkkkk](https://github.com/sanjay9616/JavaScript/assets/87460579/08f43899-eaf8-42f8-94ed-f31b8d0939db)
 
+```javascript
 const array = [{ x: 1 }, { x: 2 }, { x: 3 }];
 const val = array.reduce((accumulator, currentValue) => accumulator + currentValue.x, 0)
 console.log(val) // 6
 ```
+
+**[⬆ Back to Top](#table-of-contents)**
 
 <h2><a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Object.md"> 🔙 Back</a></h2>
