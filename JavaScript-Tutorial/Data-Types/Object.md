@@ -32,6 +32,7 @@ Objects written as name value pairs are similar to:
 | 7   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Set.md">JavaScript Sets</a>                 |
 | 8   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Map.md">JavaScript Maps</a>                 |
 | 9   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Object-Reference.md">ES5 Object Methods</a> |
+| 10  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Array.md">JavaScript Arrays</a>             |
 
 ### <h2>Creating a JavaScript Object</h2>
 
