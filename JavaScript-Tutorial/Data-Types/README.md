@@ -25,6 +25,8 @@ The latest ECMAScript standard defines eight data types Out of which seven data 
 | 12  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Object-Reference.md">ES5 Object Methods</a>                                                                                                          |
 | 10  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Array.md">JavaScript Arrays</a>                                                                                                                      |
 | 11  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Date.md">JavaScript Date Objects</a>                                                                                                                 |
+| 12  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Math.md">JavaScript Math Object</a>                                                                                                                  |
+
 
 
 
