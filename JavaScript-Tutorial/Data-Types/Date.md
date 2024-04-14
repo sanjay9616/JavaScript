@@ -6,10 +6,11 @@ By default, JavaScript will use the browser's time zone and display a date as a 
 
 ### Table of Contents
 
-| No. | Topic                               |
-| --- | ----------------------------------- |
-| 1   | [JS Dates](#JS-Dates)               |
-| 2   | [JS Date Formats](#JS-Date-Formats) |
+| No. | Topic                                       |
+| --- | ------------------------------------------- |
+| 1   | [JS Dates](#JS-Dates)                       |
+| 2   | [JS Date Formats](#JS-Date-Formats)         |
+| 3   | [JS Get Date Methods](#JS-Get-Date-Methods) |
 
 ### <h2>JS Dates</h2>
 
@@ -180,6 +181,72 @@ console.log(d) // 2012-03-21T00:00:00.000Z
 ```
 
 **[⬆ Back to Top](#table-of-contents)**
+
+### <h2>JS Get Date Methods</h2>
+
+| Method            | Description                                   |
+| ----------------- | --------------------------------------------- |
+| getFullYear()     | Get year as a four digit number (yyyy)        |
+| getMonth()        | Get month as a number (0-11)                  |
+| getDate()         | Get day as a number (1-31)                    |
+| getDay()          | Get weekday as a number (0-6)                 |
+| getHours()        | Get hour (0-23)                               |
+| getMinutes()      | Get minute (0-59)                             |
+| getSeconds()      | Get second (0-59)                             |
+| getMilliseconds() | Get millisecond (0-999)                       |
+| getTime()         | Get time (milliseconds since January 1, 1970) |
+
+**0 menans first day (sunday), first month (january)**
+
+```javascript
+const d = new Date("2021-03-25");
+console.log(d.getFullYear()) // 2021
+console.log(d.getMonth()) // 2
+console.log(d.getDate()) // 25
+
+const d = new Date();
+console.log(d.getHours()) // 11
+console.log(d.getMinutes()) // 22
+console.log(d.getSeconds()) // 43
+console.log(d.getMilliseconds()) // 628
+console.log(d.getDay()) // 0
+
+console.log(d.getTime()) // 1713094028929
+```
+
+<h3>The Date.now() Method</h3>
+
+Date.now() returns the number of milliseconds since January 1, 1970.
+
+```javascript
+let ms = Date.now();
+console.log(ms) // 1713094170703
+
+// Calculate the number of years since 1970/01/01:
+const minute = 1000 * 60;
+const hour = minute * 60;
+const day = hour * 24;
+const year = day * 365;
+let years = Math.round(Date.now() / year);
+console.log(years) // 54
+```
+
+<h3>UTC Date Get Methods</h3>
+
+**Add UTC before above methods** ex - getUTCDate(), getUTCFullYear(), getUTCMonth(), getUTCDay(), getUTCHours(), getUTCMinutes(), getUTCSeconds(), getUTCMilliseconds()
+
+<h3>The getTimezoneOffset() Method</h3>
+
+The getTimezoneOffset() method returns the difference (in minutes) between local time an UTC time
+
+```javascript
+let d = new Date()
+let diff = d.getTimezoneOffset();
+console.log(diff)
+```
+
+**[⬆ Back to Top](#table-of-contents)**
+
 
 
 <h2><a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/README.md"> 🔙 Back</a></h2>
