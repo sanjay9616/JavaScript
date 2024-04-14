@@ -248,7 +248,7 @@ console.log(diff)
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### <h2>JS Date Methods</h2>
+### <h2>JS Set Date Methods</h2>
 
 | Method            | Description                                       |
 | ----------------- | ------------------------------------------------- |
