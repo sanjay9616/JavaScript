@@ -11,6 +11,7 @@ By default, JavaScript will use the browser's time zone and display a date as a 
 | 1   | [JS Dates](#JS-Dates)                       |
 | 2   | [JS Date Formats](#JS-Date-Formats)         |
 | 3   | [JS Get Date Methods](#JS-Get-Date-Methods) |
+| 4   | [JS Set Date Methods](#JS-Set-Date-Methods) |
 
 ### <h2>JS Dates</h2>
 
@@ -247,6 +248,67 @@ console.log(diff)
 
 **[⬆ Back to Top](#table-of-contents)**
 
+### <h2>JS Set Date Methods</h2>
+
+| Method            | Description                                       |
+| ----------------- | ------------------------------------------------- |
+| setFullYear()     | Set the year (optionally month and day)           |
+| setMonth()        | Set the month (0-11)                              |
+| setDate()         | Set the day as a number (1-31)                    |
+| setHours()        | Set the hour (0-23)                               |
+| setMinutes()      | Set the minutes (0-59)                            |
+| setSeconds()      | Set the seconds (0-59)                            |
+| setMilliseconds() | Set the milliseconds (0-999)                      |
+| setTime()         | Set the time (milliseconds since January 1, 1970) |
+
+
+```javascript
+const d = new Date();
+d.setFullYear(2020);
+console.log(d) // 2020-04-14T11:41:25.690Z
+
+const d = new Date();
+d.setFullYear(2020, 11, 3); // The setFullYear() method can optionally set month and day
+console.log(d) // 2020-12-03T11:41:55.308Z
+
+const d = new Date();
+d.setMonth(11); // 2024-12-14T11:42:41.830Z
+
+const d = new Date();
+d.setDate(15); // 2024-04-15T11:43:03.298Z
+
+const d = new Date();
+d.setDate(d.getDate() + 50); // The setDate() method can also be used to add days to a date
+console.log(d) // 2024-06-03T11:43:43.789Z
+
+const d = new Date();
+d.setHours(22);
+console.log(d) // 2024-04-14T22:44:49.967Z
+
+const d = new Date();
+d.setMinutes(30);
+console.log(d) // 2024-04-14T11:30:13.874Z
+
+const d = new Date();
+d.setSeconds(30);
+console.log(d) // 2024-04-14T11:45:30.560Z
+```
+
+**Compare Dates**
+
+```javascript
+let text = "";
+const today = new Date();
+const someday = new Date();
+someday.setFullYear(2100, 0, 14);
+if (someday > today) {
+  text = "Today is before January 14, 2100.";
+} else {
+  text = "Today is after January 14, 2100.";
+}
+```
+
+**[⬆ Back to Top](#table-of-contents)**
 
 
 <h2><a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/README.md"> 🔙 Back</a></h2>
