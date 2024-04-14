@@ -4,12 +4,12 @@ Strings are written with quotes. You can use single or double quotes:
 
 ### Table of Contents
 
-| No. | Topic                                                               |
-| --- | ------------------------------------------------------------------- |
-| 1   | [String Methods](#String-Methods)                                   |
-| 2   | [String Search Methods](#String-Search-Methods)                     |
-| 3   | [Template Strings](#Template-Strings)                               |
-| 4   | [Interview Questions and Answers](#Interview-Questions-and-Answers) |
+| No. | Topic                                                                                                                   |
+| --- | ----------------------------------------------------------------------------------------------------------------------- |
+| 1   | [String Methods](#String-Methods)                                                                                       |
+| 2   | [String Search Methods](#String-Search-Methods)                                                                         |
+| 3   | [Template Strings or String Templates or Template Literals](#Template-Strings-or-String-Templates-or-Template-Literals) |
+| 4   | [Interview Questions and Answers](#Interview-Questions-and-Answers)                                                     |
 
 ### <h2>String Methods</h2>
 
@@ -303,7 +303,7 @@ console.log(res) // res
 **[⬆ Back to Top](#table-of-contents)**
 
 
-### <h2>Template Strings</h2>
+### <h2>Template Strings or String Templates or Template Literals</h2>
 
 **Template Strings** use back-ticks (``) rather than the quotes ("") to define a string:
 
