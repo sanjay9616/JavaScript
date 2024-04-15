@@ -35,6 +35,8 @@ Objects written as name value pairs are similar to:
 | 10  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Array.md">JavaScript Arrays</a>             |
 | 11  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Date.md">JavaScript Date Objects</a>        |
 | 12  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Math.md">JavaScript Math Object</a>         |
+| 13  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/RegExp.md">JavaScript RegExp Object</a>     |
+
 
 ### <h2>Creating a JavaScript Object</h2>
 
