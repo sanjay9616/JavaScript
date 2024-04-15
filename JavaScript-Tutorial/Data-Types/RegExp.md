@@ -44,10 +44,10 @@ console.log(result) // Visit W3Schools!, Microsoft
 
 <h2>Regular Expression Patterns</h2>
 
-| Expression  | Description                                     |
-| ----------- | ----------------------------------------------- |
-| [abc]       | Find any of the characters between the brackets |
-| [0-9]       | Find any of the digits between the brackets     |
-| (x`|`y) | Find any of the alternatives separated with `|`         |
+| Expression | Description                                        |
+| ---------- | -------------------------------------------------- |
+| [abc]      | Find any of the characters between the brackets    |
+| [0-9]      | Find any of the digits between the brackets        |
+| (x&#124;y) | Find any of the alternatives separated with &#124; |
 
 <h2><a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/README.md"> 🔙 Back</a></h2>
