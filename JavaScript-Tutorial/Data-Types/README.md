@@ -27,6 +27,8 @@ The latest ECMAScript standard defines eight data types Out of which seven data 
 | 11  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Date.md">JavaScript Date Objects</a>                                                                                                       |
 | 12  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Math.md">JavaScript Math Object</a>                                                                                                        |
 | 13  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/RegExp.md">JavaScript RegExp Object</a>                                                                                                    |
+| 14  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/JSON.md">JavaScript JSON Object</a>                                                                                                        |
+
 
 
 
