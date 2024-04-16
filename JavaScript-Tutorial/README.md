@@ -2,7 +2,8 @@
 
 | No. | Topics                                                                                                                          |
 | --- | ------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Operators/README.md">Operators</a>            |
-| 2   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/README.md">Data Types</a>          |
-| 3   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Loops/README.md">Different Kinds of Loops</a> |
-| 4   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/README.md">Async</a>               |
+| 1   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Variables/README.md">JavaScript Variables</a> |
+| 2   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Loops/README.md">Different Kinds of Loops</a> |
+| 3   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/README.md">Data Types</a>          |
+| 4   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Operators/README.md">Operators</a>            |
+| 5   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/README.md">Async</a>               |
