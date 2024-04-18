@@ -11,6 +11,8 @@
 | 5   | [Logical Operators](#Logical-Operators)       |
 | 6   | [Bitwise Operators](#Bitwise-Operators)       |
 | 7   | [Type Operators](#Type-Operators)             |
+| 8   | [Spread Operators](#Spread-Operators)         |
+| 9   | [Rest Operators](#Rest-Operators)             |
 
 ### <h2>Arithmetic Operators</h2>
 
@@ -148,5 +150,43 @@ Bit operators work on 32 bits numbers, Any numeric operand in the operation is c
 | instanceof | Returns true if an object is an instance of an object type |
 
 **[⬆ Back to Top](#table-of-contents)**
+
+### <h2>Spread Operators</h2>
+
+The spread operator and rest parameter have the same syntax which is three dots(…). Even though they have the same syntax they differ in functions
+
+The spread operator helps us expand an iterable ( arrays / objects / strings ) and allows us to quickly copy all or part of an existing array or object into another array or object
+
+```javascript
+l=[1,2,3]
+console.log([...l]) // [ 1, 2, 3 ]
+
+const numbersOne = [1, 2, 3];
+const numbersTwo = [4, 5, 6];
+const numbersCombined = [...numbersOne, ...numbersTwo];
+console.log(numbersCombined) // [ 1, 2, 3, 4, 5, 6 ]
+```
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### <h2>Rest Operators</h2>
+
+The rest(...) parameter is converse to the spread operator. while the spread operator expands elements of an iterable, the rest operator compresses them, and allows a function to accept an indefinite number of arguments as an array.
+
+```javascript
+sum = (...values) => {
+    console.log(values)
+    let total = 0
+    for(const val of values) {
+        total += val
+    }
+    return total
+}
+console.log(sum(1, 2, 3)); //Output: 6
+console.log(sum(1, 2, 3, 4)); //Output: 10
+```
+
+**[⬆ Back to Top](#table-of-contents)**
+
 
 <h2><a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/README.md"> 🔙 Back</a></h2>

@@ -331,9 +331,25 @@ const arr = Array.from("ABCDEFG");
 console.log(arr) // [ 'A', 'B', 'C', 'D', 'E', 'F', 'G' ]
 ```
 
-<h3>JavaScript Operator</h3>
+<h3>JavaScript Spread Operator</h3>
 
-The rest operator ( ... ) allows a function to accept an indefinite number of arguments as an array.
+The spread operator and rest parameter have the same syntax which is three dots(…). Even though they have the same syntax they differ in functions
+
+The spread operator helps us expand an iterable ( arrays / objects / strings ) and allows us to quickly copy all or part of an existing array or object into another array or object
+
+```javascript
+l=[1,2,3]
+console.log([...l]) // [ 1, 2, 3 ]
+
+const numbersOne = [1, 2, 3];
+const numbersTwo = [4, 5, 6];
+const numbersCombined = [...numbersOne, ...numbersTwo];
+console.log(numbersCombined) // [ 1, 2, 3, 4, 5, 6 ]
+```
+
+<h3>JavaScript Rest Operator</h3>
+
+The rest(...) parameter is converse to the spread operator. while the spread operator expands elements of an iterable, the rest operator compresses them, and allows a function to accept an indefinite number of arguments as an array.
 
 ```javascript
 sum = (...values) => {
@@ -346,20 +362,6 @@ sum = (...values) => {
 }
 console.log(sum(1, 2, 3)); //Output: 6
 console.log(sum(1, 2, 3, 4)); //Output: 10
-```
-
-<h3>JavaScript Spread</h3>
-
-The rest operator ( ... ) allows us to quickly copy all or part of an existing array or object into another array or object.
-
-```javascript
-l=[1,2,3]
-console.log([...l]) // [ 1, 2, 3 ]
-
-const numbersOne = [1, 2, 3];
-const numbersTwo = [4, 5, 6];
-const numbersCombined = [...numbersOne, ...numbersTwo];
-console.log(numbersCombined) // [ 1, 2, 3, 4, 5, 6 ]
 ```
 
 **[⬆ Back to Top](#table-of-contents)**
