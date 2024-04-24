@@ -1,22 +1,33 @@
 ### Table of Contents
 
-| No. | Questions                                                                                                                               |
-| --- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | [What is the purpose of double exclamation](#What-is-the-purpose-of-double-exclamation)                                                 |
-| 2   | [What is a comma operator and their Advantagess](#What-is-a-comma-operator-and-their-Advantagess)                                       |
-| 3   | [Is the '!--' notation represents a special operator](#Is-the-'!--'-notation-represents-a-special-operator)                             |
-| 4   | [What is the purpose of double tilde operator](#What-is-the-purpose-of-double-tilde-operator)                                           |
-| 5   | [What is nullish coalescing operator (??)?](#What-is-nullish-coalescing-operator-(??)?)                                                 |
-| 6   | [What is a conditional operator in javascript](#What-is-a-conditional-operator-in-javascript)                                           |
-| 7   | [Can you apply chaining on conditional operator](#Can-you-apply-chaining-on-conditional-operator)                                       |
-| 8   | [What is the purpose of the delete operator](#What-is-the-purpose-of-the-delete-operator)                                               |
-| 9   | [What is typeof operator](#What-is-typeof-operator)                                                                                     |
-| 10  | [What is a void operator](#What-is-a-void-operator)                                                                                     |
-| 11  | [What is an Unary operator](#What-is-an-Unary-operator)                                                                                 |
-| 12  | [What is the output of below console statement with unary operator](#What-is-the-output-of-below-console-statement-with-unary-operator) |
-| 13  | [How do you create self string using special characters](#How-do-you-create-self-string-using-special-characters)                       |
-| 14  | [What is the output of prepend additive operator on falsy values](#What-is-the-output-of-prepend-additive-operator-on-falsy-values)     |
-| 15  | [What is a spread operator](#What-is-a-spread-operator)                                                                                 |
+| No. | Questions                                                                                                                                     |
+| --- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | [What is the purpose of double exclamation](#What-is-the-purpose-of-double-exclamation)                                                       |
+| 2   | [What is a comma operator and their Advantagess](#What-is-a-comma-operator-and-their-Advantagess)                                             |
+| 3   | [Is the '!--' notation represents a special operator](#Is-the-'!--'-notation-represents-a-special-operator)                                   |
+| 4   | [What is the purpose of double tilde operator](#What-is-the-purpose-of-double-tilde-operator)                                                 |
+| 5   | [What is nullish coalescing operator (??)?](#What-is-nullish-coalescing-operator-(??)?)                                                       |
+| 6   | [What is a conditional operator in javascript](#What-is-a-conditional-operator-in-javascript)                                                 |
+| 7   | [Can you apply chaining on conditional operator](#Can-you-apply-chaining-on-conditional-operator)                                             |
+| 8   | [What is the purpose of the delete operator](#What-is-the-purpose-of-the-delete-operator)                                                     |
+| 9   | [What is typeof operator](#What-is-typeof-operator)                                                                                           |
+| 10  | [What is a void operator](#What-is-a-void-operator)                                                                                           |
+| 11  | [What is an Unary operator](#What-is-an-Unary-operator)                                                                                       |
+| 12  | [What is the output of below console statement with unary operator](#What-is-the-output-of-below-console-statement-with-unary-operator)       |
+| 13  | [How do you create self string using special characters](#How-do-you-create-self-string-using-special-characters)                             |
+| 14  | [What is the output of prepend additive operator on falsy values](#What-is-the-output-of-prepend-additive-operator-on-falsy-values)           |
+| 15  | [What is a Spread operator](#What-is-a-Spread-operator)                                                                                       |
+| 16  | [What is a Rest operator](#What-is-a-Rest-operator)                                                                                           |
+| 17  | [What is the output of below spread operator array](#What-is-the-output-of-below-spread-operator-array)                                       |
+| 18  | [What are the differences between spread operator and rest parameter](#What-are-the-differences-between-spread-operator-and-rest-parameter)   |
+| 19  | [What are the differences between arguments object and rest parameter](#What-are-the-differences-between-arguments-object-and-rest-parameter) |
+| 20  | [What happens if you do not use rest parameter as a last argument](#What-happens-if-you-do-not-use-rest-parameter-as-a-last-argument)         |
+| 21  | [What are the bitwise operators available in javascript](#What-are-the-bitwise-operators-available-in-javascript)                             |
+| 22  | [What are various operators supported by javascript](#What-are-various-operators-supported-by-javascript)                                     |
+| 23  | [What is destructuring aliases](#What-is-destructuring-aliases)                                                                               |
+| 24  | [What is destructuring assignment](#What-is-destructuring-assignment)                                                                         |
+| 25  | [What are default values in destructuring assignment](#What-are-default-values-in-destructuring-assignment)                                   |
+| 26  | [How do you swap variables in destructuring assignment](#How-do-you-swap-variables-in-destructuring-assignment)                               |
 
 ### <h2>What is the purpose of double exclamation</h2>
 
@@ -249,7 +260,7 @@ console.log(+""); // 0
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### <h2>What is a spread operator</h2>
+### <h2>What is a Spread operator</h2>
 
 The spread operator and rest parameter have the same syntax which is three dots(…). Even though they have the same syntax they differ in functions
 
@@ -263,6 +274,171 @@ const numbersOne = [1, 2, 3];
 const numbersTwo = [4, 5, 6];
 const numbersCombined = [...numbersOne, ...numbersTwo];
 console.log(numbersCombined) // [ 1, 2, 3, 4, 5, 6 ]
+```
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### <h2>What is a Rest operator</h2>
+
+The rest(...) parameter is converse to the spread operator. while the spread operator expands elements of an iterable, the rest operator compresses them, and allows a function to accept an indefinite number of arguments as an array.
+
+```javascript
+sum = (...values) => {
+    console.log(values)
+    let total = 0
+    for(const val of values) {
+        total += val
+    }
+    return total
+}
+console.log(sum(1, 2, 3)); //Output: 6
+console.log(sum(1, 2, 3, 4)); //Output: 10
+```
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### <h2>What is the output of below spread operator array</h2>
+
+```javascript
+[..."John Resig"];
+```
+
+The output of the array is ['J', 'o', 'h', 'n', '', 'R', 'e', 's', 'i', 'g']
+**Explanation:** The string is an iterable type and the spread operator within an array maps every character of an iterable to one element. Hence, each character of a string becomes an element within an Array.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### <h2>What are the differences between spread operator and rest parameter</h2>
+
+Rest parameter collects all remaining elements into an array. Whereas Spread operator allows iterables( arrays / objects / strings ) to be expanded into single arguments/elements. i.e, Rest parameter is opposite to the spread operator.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### <h2>What are the differences between arguments object and rest parameter</h2>
+
+There are three main differences between arguments object and rest parameters
+
+1. The arguments object is an array-like but not an array. Whereas the rest parameters are array instances.
+2. The arguments object does not support methods such as sort, map, forEach, or pop. Whereas these methods can be used in rest parameters.
+3. The rest parameters are only the ones that haven’t been given a separate name, while the arguments object contains all arguments passed to the function
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### <h2>What happens if you do not use rest parameter as a last argument</h2>
+
+The rest parameter should be the last argument, as its job is to collect all the remaining arguments into an array. For example, if you define a function like below it doesn’t make any sense and will throw an error.
+
+```javascript
+function someFunc(a,…b,c){
+//You code goes here
+return;
+}
+```
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### <h2>What are the bitwise operators available in javascript</h2>
+
+Below are the list of bitwise logical operators used in JavaScript
+
+1. Bitwise AND ( & ) </br>
+2. Bitwise OR ( | ) </br>
+3. Bitwise XOR ( ^ ) </br>
+4. Bitwise NOT ( ~ ) </br>
+5. Left Shift ( << ) </br>
+6. Sign Propagating Right Shift ( >> ) </br>
+7. Zero fill Right Shift ( >>> ) </br>
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### <h2>What are various operators supported by javascript</h2>
+
+An operator is capable of manipulating(mathematical and logical computations) a certain value or operand. There are various operators supported by JavaScript as below,
+
+1. **Arithmetic Operators:** Includes + (Addition),– (Subtraction), \* (Multiplication), / (Division), % (Modulus), + + (Increment) and – – (Decrement) </br>
+2. **Comparison Operators:** Includes = =(Equal),!= (Not Equal), ===(Equal with type), > (Greater than),> = (Greater than or Equal to),< (Less than),<= (Less than or Equal to) </br>
+3. **Logical Operators:** Includes &&(Logical AND),||(Logical OR),!(Logical NOT) </br>
+4. **Assignment Operators:** Includes = (Assignment Operator), += (Add and Assignment Operator), – = (Subtract and Assignment Operator), \*= (Multiply and Assignment), /= (Divide and Assignment), %= (Modules and Assignment) </br>
+5. **Ternary Operators:** It includes conditional(: ?) Operator </br>
+6. **typeof Operator:** It uses to find type of variable. The syntax looks like `typeof variable` </br>
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### <h2>What is destructuring aliases</h2>
+
+Sometimes you would like to have a destructured variable with a different name than the property name. In that case, you'll use a `: newName` to specify a name for the variable. This process is called destructuring aliases.
+
+```javascript
+const obj = { x: 1 };
+// Grabs obj.x as as { otherName }
+const { x: otherName } = obj;
+console.log(otherName) // 1
+```
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### <h2>What is destructuring assignment</h2>
+
+The destructuring assignment is a JavaScript expression that makes it possible to unpack values from arrays or properties from objects into distinct variables.
+Let's get the month values from an array using destructuring assignment
+
+```javascript
+var [one, two, three] = ["JAN", "FEB", "MARCH"];
+
+console.log(one); // "JAN"
+console.log(two); // "FEB"
+console.log(three); // "MARCH"
+```
+
+and you can get user properties of an object using destructuring assignment,
+
+```javascript
+var { name, age } = { name: "John", age: 32 };
+
+console.log(name); // John
+console.log(age); // 32
+```
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### <h2>What are default values in destructuring assignment</h2>
+
+A variable can be assigned a default value when the value unpacked from the array or object is undefined during destructuring assignment. It helps to avoid setting default values separately for each assignment. Let's take an example for both arrays and object use cases,
+
+**Arrays destructuring:**
+
+```javascript
+var x, y, z;
+
+[x = 2, y = 4, z = 6] = [10];
+console.log(x); // 10
+console.log(y); // 4
+console.log(z); // 6
+```
+
+**Objects destructuring:**
+
+```javascript
+var { x = 2, y = 4, z = 6 } = { x: 10 };
+
+console.log(x); // 10
+console.log(y); // 4
+console.log(z); // 6
+```
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### <h2>How do you swap variables in destructuring assignment</h2>
+
+If you don't use destructuring assignment, swapping two values requires a temporary variable. Whereas using a destructuring feature, two variable values can be swapped in one destructuring expression. Let's swap two number variables in array destructuring assignment,
+
+```javascript
+var x = 10,
+y = 20;
+
+[x, y] = [y, x];
+console.log(x); // 20
+console.log(y); // 10
 ```
 
 **[⬆ Back to Top](#table-of-contents)**
