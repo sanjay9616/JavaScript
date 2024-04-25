@@ -96,6 +96,7 @@
 123	What are the various url properties of location object
 122	How do you get the current url with javascript
 284	How do I modify the url without reloading the page
+124	How do get query string values in javascript
 212	How do you print the contents of web page
 
 183	How do you detect javascript disabled in the page
