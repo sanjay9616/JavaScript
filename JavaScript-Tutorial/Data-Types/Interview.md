@@ -14,7 +14,7 @@
 | 10  | [How do you define JSON arrays](#How-do-you-define-JSON-arrays)                                                                   |
 
 
-`<h1>InterView Questions and Answers on Basics data types</h1>`
+<h1 style="color:red">InterView Questions and Answers on Basics data types</h1>
 
 ### <h2>What are the differences between primitives and non-primitives</h2>
 
