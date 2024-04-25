@@ -44,6 +44,7 @@ function isPrimitive(val) {
 }
 console.log(isPrimitive(30));  // true
 console.log(isPrimitive({})); // false
+console.log(Object({}) !== {}) // **Warning** - true
 ```
 
 If the value is a primitive data type, the Object constructor creates a new wrapper object for the value. But If the value is a non-primitive data type (an object), the Object constructor will give the same object.
