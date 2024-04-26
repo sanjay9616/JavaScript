@@ -1,3 +1,7 @@
+What is the difference between null and undefined
+What is the difference between isNaN and Number.isNaN
+What are the differences between undeclared and undefined variables
+
 What are the possible ways to create objects in JavaScript
 What are the recommendations to create new object?
 What is the difference between native, host and user objects?
@@ -12,7 +16,15 @@ How do you map the array values without using map method
 410	How do you make an object iterable in javascript
 280	How do you list all properties of an object
 264	How do you define multiple properties on an object
+
 260	How do you set prototype of one object to another
+How do you create an object with prototype
+How do you get the prototype of an object
+How do you set prototype of one object to another
+What happens If I pass string type for getPrototype method
+Do all objects have prototypes
+What is the difference between proto and prototype
+
 255	What is a constructor method
 256	What happens if you write constructor more than once in a class
 257	How do you call the constructor of a parent class
