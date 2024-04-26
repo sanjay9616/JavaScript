@@ -5,7 +5,6 @@
 | 1   | [Questions based on Objects and Map](#Questions-based-on-Objects-and-Map)                           |
 | 2   | [Prototype](#Prototype)                                                                             |
 | 3   | [Call, Apply and Bind](#Call-Apply-and-Bind)                                                        |
-| 4   | [JSON](#JSON)                                                                                       |
 | 6   | [null, undefined, and Nan](#null-undefined-and-Nan)                                                 |
 | 7   | [== and === operators](#==-and-===-operators)                                                       |
 | 8   | [var, let, and const](#var-let-and-const)                                                           |
@@ -502,70 +501,6 @@ Function.prototype.myOwnBind = function (whoIsCallingMe) {
    };
 };
 ```
-
-**[⬆ Back to Top](#table-of-contents)**
-
-### <h1>JSON</h1>
-
-**JSON** is a text-based data format following JavaScript object syntax, which was popularized by `Douglas Crockford`. It is useful when you want to transmit data across a network. It is basically just a text file with an extension of .json, and a MIME type of application/json
-
-**OR**
-
-JSON (JavaScript Object Notation) is a lightweight format that is used for data interchanging. It is based on a subset of JavaScript language in the way objects are built in JavaScript.
-
-**Parsing:** Converting a string to a native object
-
-```javascript
-JSON.parse(text);
-```
-
-**Stringification:** Converting a native object to a string so that it can be transmitted across the network
-
-```javascript
-JSON.stringify(object);
-```
-**Purpose:** When sending data to a web server, the data has to be in a string format. You can achieve this by converting JSON object into a string using stringify() method.
-
-Below are the list of syntax rules of JSON </br>
-1. The data is in name/value pairs </br>
-2. The data is separated by commas </br>
-3. Curly braces hold objects </br>
-4. Square brackets hold arrays </br>
-
-<h2>Questions and Answers:</h2>
-
-**1. How do you define JSON arrays?**
-
-**Ans:** JSON arrays are written inside square brackets and arrays contain javascript objects. For example, the JSON array of users would be as below,
-
-```javascript
-"users":[
-  {"firstName":"John", "lastName":"Abrahm"},
-  {"firstName":"Anna", "lastName":"Smith"},
-  {"firstName":"Shane", "lastName":"Warn"}
-]
-```
-
-**2. What are the syntax rules of JSON?**
-
-**Ans:** 1. The data is in name/value pairs <br>
-         2. The data is separated by commas <br>
-         3. Curly braces hold objects <br>
-         4. Square brackets hold arrays <br>
-
-**3. What is the purpose JSON stringify?**
-
-**Ans:** When sending data to a web server, the data has to be in a string format. You can achieve this by converting JSON object into a string using stringify() method.
-
-```javascript
-var userJSON = { name: "John", age: 31 };
-var userString = JSON.stringify(userJSON);
-console.log(userString); //"{"name":"John","age":31}"
-```
-
-**4. Why do you need JSON?**
-
-**Ans:** When exchanging data between a browser and a server, the data can only be text. Since JSON is text only, it can easily be sent to and from a server, and used as a data format by any programming language.
 
 **[⬆ Back to Top](#table-of-contents)**
 

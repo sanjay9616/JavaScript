@@ -1,3 +1,14 @@
+What are the possible ways to create objects in JavaScript
+What are the recommendations to create new object?
+What is the difference between native, host and user objects?
+What are wrapper objects
+How do you compare two date objects
+How do you compare Object and Map
+What are the differences between WeakMap and Map
+List down the collection of methods available on WeakMap
+How do you map the array values without using map method
+
+
 410	How do you make an object iterable in javascript
 280	How do you list all properties of an object
 264	How do you define multiple properties on an object
