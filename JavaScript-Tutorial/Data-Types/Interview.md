@@ -1,44 +1,46 @@
 ### Table of Contents
 
-| No. | Questions                                                                                                                                     |
-| --- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | [What are the differences between primitives and non-primitives](#What-are-the-differences-between-primitives-and-non-primitives)             |
-| 2   | [What are primitive data types](#What-are-primitive-data-types)                                                                               |
-| 3   | [How do you detect primitive or non primitive value type](#How-do-you-detect-primitive-or-non-primitive-value-type)                           |
-| 4   | [What is JSON](#What-is-JSON)                                                                                                                 |
-| 5   | [What is JSON and its common operations](#What-is-JSON-and-its-common-operations)                                                             |
-| 6   | [What are the syntax rules of JSON](#What-are-the-syntax-rules-of-JSON)                                                                       |
-| 7   | [What is the purpose JSON stringify](#What-is-the-purpose-JSON-stringify)                                                                     |
-| 8   | [How do you parse JSON string](#How-do-you-parse-JSON-string)                                                                                 |
-| 9   | [Why do you need JSON](#Why-do-you-need-JSON)                                                                                                 |
-| 10  | [How do you define JSON arrays](#How-do-you-define-JSON-arrays)                                                                               |
-| 11  | [What is the purpose of the array slice method](#What-is-the-purpose-of-the-array-slice-method)                                               |
-| 12  | [What is the purpose of the array splice method](#What-is-the-purpose-of-the-array-splice-method)                                             |
-| 13  | [What is the difference between slice and splice](#What-is-the-difference-between-slice-and-splice)                                           |
-| 14  | [What is the purpose of some method in arrays](#What-is-the-purpose-of-some-method-in-arrays)                                                 |
-| 15  | [How do you map the array values without using map method](#How-do-you-map-the-array-values-without-using-map-method)                         |
-| 16  | [What is the difference between dense and sparse arrays](#What-is-the-difference-between-dense-and-sparse-arrays)                             |
-| 17  | [What are the different ways to create sparse arrays](#What-are-the-different-ways-to-create-sparse-arrays)                                   |
-| 18  | [How do you reversing an array](#How-do-you-reversing-an-array)                                                                               |
-| 19  | [How do you reverse an array without modifying original array](#How-do-you-reverse-an-array-without-modifying-original-array)                 |
-| 20  | [How do you sort elements in an array](#How-do-you-sort-elements-in-an-array)                                                                 |
-| 21  | [How do you find min and max value in an array](#How-do-you-find-min-and-max-value-in-an-array)                                               |
-| 22  | [How do you find min and max values without Math functions](#How-do-you-find-min-and-max-values-without-Math-functions)                       |
-| 23  | [How do you check whether an array includes a particular value or not](#How-do-you-check-whether-an-array-includes-a-particular-value-or-not) |
-| 24  | [How do you compare scalar arrays](#How-do-you-compare-scalar-arrays)                                                                         |
-| 25  | [What are typed arrays](#What-are-typed-arrays)                                                                                               |
-| 26  | [What is ArrayBuffer](#What-is-ArrayBuffer)                                                                                                   |
-| 27  | [What happens with negating an array](#What-happens-with-negating-an-array)                                                                   |
-| 28  | [What happens if we add two arrays](#What-happens-if-we-add-two-arrays)                                                                       |
-| 29  | [How do you remove falsy values from an array](#How-do-you-remove-falsy-values-from-an-array)                                                 |
-| 30  | [How do you get unique values of an array](#How-do-you-get-unique-values-of-an-array)                                                         |
-| 31  | [How do you combine two or more arrays](#How-do-you-combine-two-or-more-arrays)                                                               |
-| 32  | [What is the easiest way to convert an array to an object](#What-is-the-easiest-way-to-convert-an-array-to-an-object)                         |
-| 33  | [How do you create an array with some data](#How-do-you-create-an-array-with-some-data)                                                       |
-| 34  | [How do you flattening multi dimensional arrays](#How-do-you-flattening-multi-dimensional-arrays)                                             |
-| 35  | [How do you empty an array](#How-do-you-empty-an-array)                                                                                       |
-| 36  | [What is the easiest way to resize an array](#What-is-the-easiest-way-to-resize-an-array)                                                     |
-| 37  | [How to verify if a variable is an array](#How-to-verify-if-a-variable-is-an-array)                                                           |
+| No. | Questions                                                                                                                                                 |
+| --- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | [What are the differences between primitives and non-primitives](#What-are-the-differences-between-primitives-and-non-primitives)                         |
+| 2   | [What are primitive data types](#What-are-primitive-data-types)                                                                                           |
+| 3   | [How do you detect primitive or non primitive value type](#How-do-you-detect-primitive-or-non-primitive-value-type)                                       |
+| 4   | [What is JSON](#What-is-JSON)                                                                                                                             |
+| 5   | [What is JSON and its common operations](#What-is-JSON-and-its-common-operations)                                                                         |
+| 6   | [What are the syntax rules of JSON](#What-are-the-syntax-rules-of-JSON)                                                                                   |
+| 7   | [What is the purpose JSON stringify](#What-is-the-purpose-JSON-stringify)                                                                                 |
+| 8   | [How do you parse JSON string](#How-do-you-parse-JSON-string)                                                                                             |
+| 9   | [Why do you need JSON](#Why-do-you-need-JSON)                                                                                                             |
+| 10  | [How do you define JSON arrays](#How-do-you-define-JSON-arrays)                                                                                           |
+| 11  | [What is the purpose of the array slice method](#What-is-the-purpose-of-the-array-slice-method)                                                           |
+| 12  | [What is the purpose of the array splice method](#What-is-the-purpose-of-the-array-splice-method)                                                         |
+| 13  | [What is the difference between slice and splice](#What-is-the-difference-between-slice-and-splice)                                                       |
+| 14  | [What is the purpose of some method in arrays](#What-is-the-purpose-of-some-method-in-arrays)                                                             |
+| 15  | [How do you map the array values without using map method](#How-do-you-map-the-array-values-without-using-map-method)                                     |
+| 16  | [What is the difference between dense and sparse arrays](#What-is-the-difference-between-dense-and-sparse-arrays)                                         |
+| 17  | [What are the different ways to create sparse arrays](#What-are-the-different-ways-to-create-sparse-arrays)                                               |
+| 18  | [How do you reversing an array](#How-do-you-reversing-an-array)                                                                                           |
+| 19  | [How do you reverse an array without modifying original array](#How-do-you-reverse-an-array-without-modifying-original-array)                             |
+| 20  | [How do you sort elements in an array](#How-do-you-sort-elements-in-an-array)                                                                             |
+| 21  | [How do you find min and max value in an array](#How-do-you-find-min-and-max-value-in-an-array)                                                           |
+| 22  | [How do you find min and max values without Math functions](#How-do-you-find-min-and-max-values-without-Math-functions)                                   |
+| 23  | [How do you check whether an array includes a particular value or not](#How-do-you-check-whether-an-array-includes-a-particular-value-or-not)             |
+| 24  | [How do you compare scalar arrays](#How-do-you-compare-scalar-arrays)                                                                                     |
+| 25  | [What are typed arrays](#What-are-typed-arrays)                                                                                                           |
+| 26  | [What is ArrayBuffer](#What-is-ArrayBuffer)                                                                                                               |
+| 27  | [What happens with negating an array](#What-happens-with-negating-an-array)                                                                               |
+| 28  | [What happens if we add two arrays](#What-happens-if-we-add-two-arrays)                                                                                   |
+| 29  | [How do you remove falsy values from an array](#How-do-you-remove-falsy-values-from-an-array)                                                             |
+| 30  | [How do you get unique values of an array](#How-do-you-get-unique-values-of-an-array)                                                                     |
+| 31  | [How do you combine two or more arrays](#How-do-you-combine-two-or-more-arrays)                                                                           |
+| 32  | [What is the easiest way to convert an array to an object](#What-is-the-easiest-way-to-convert-an-array-to-an-object)                                     |
+| 33  | [How do you create an array with some data](#How-do-you-create-an-array-with-some-data)                                                                   |
+| 34  | [How do you flattening multi dimensional arrays](#How-do-you-flattening-multi-dimensional-arrays)                                                         |
+| 35  | [How do you empty an array](#How-do-you-empty-an-array)                                                                                                   |
+| 36  | [What is the easiest way to resize an array](#What-is-the-easiest-way-to-resize-an-array)                                                                 |
+| 37  | [How to verify if a variable is an array](#How-to-verify-if-a-variable-is-an-array)                                                                       |
+| 38  | [Can you write a random integers function to print integers with in a range](#Can-you-write-a-random-integers-function-to-print-integers-with-in-a-range) |
+| 39  | [How do you generate random integers](#How-do-you-generate-random-integers)                                                                               |
 
 
 <h1>InterView Questions and Answers on Basics data</h1>
@@ -765,5 +767,35 @@ It is possible to check if a variable is an array instance using 3 different way
   console.log(numbers.constructor === Array); // true
   console.log(user.constructor === Array); // false
   ```
+
+**[⬆ Back to Top](#table-of-contents)**
+
+
+<h1>InterView Questions and Answers based on MATH</h1>
+
+### <h2>Can you write a random integers function to print integers with in a range</h2>
+
+Yes, you can create a proper random function to return a random number between min and max (both included)
+
+```javascript
+function randomInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+randomInteger(1, 100); // returns a random integer from 1 to 100
+randomInteger(1, 1000); // returns a random integer from 1 to 1000
+```
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### <h2>How do you generate random integers</h2>
+
+You can use Math.random() with Math.floor() to return random integers. For example, if you want generate random integers between 1 to 10, the multiplication factor should be 10,
+
+```javascript
+Math.floor(Math.random() * 10) + 1; // returns a random integer from 1 to 10
+Math.floor(Math.random() * 100) + 1; // returns a random integer from 1 to 100
+```
+
+**Note:** Math.random() returns a random number between 0 (inclusive), and 1 (exclusive)
 
 **[⬆ Back to Top](#table-of-contents)**
