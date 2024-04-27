@@ -4,7 +4,6 @@
 | --- | --------------------------------------------------------------------------------------------------- |
 | 1   | [Questions based on Objects and Map](#Questions-based-on-Objects-and-Map)                           |
 | 9   | [How do you decode or encode a URL in JavaScript](#How-do-you-decode-or-encode-a-URL-in-JavaScript) |
-| 10  | [localStorage, sessionStorage, and Cookie](#localStorage-sessionStorage-and-Cookie)                 |
 
 ### <h1>Questions based on Objects and Map</h1>
 
@@ -269,14 +268,6 @@ let encoded_uri = encodeURI(uri); // output - https://mozilla.org/?x=%D1%88%D0%B
 let decoded_uri = decodeURI(encoded_uri); // output - https://mozilla.org/?x=шеллы
 ```
 **[⬆ Back to Top](#table-of-contents)**
-
-### <h1>localStorage, sessionStorage, and Cookie</h1>
-
-**localStorage:** The localStorage object allows you to save key/value pairs in the browser, the data is not deleted even when the browser is closed and reopened(i.e it has no expiration time).
-
-**sessionStorage:** The localStorage object allows you to save key/value pairs in the browser, the data is deleted when tab is closed.
-
-**Cookie:** The localStorage object allows you to save key/value pairs in the browser, the data is deleted as configured using Expires option.
 
 ### <h1>Object and Map</h1>
 
