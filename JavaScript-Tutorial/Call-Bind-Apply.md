@@ -1,1 +1,0 @@
-How do you create your own bind method using either call or apply method
