@@ -5,7 +5,6 @@
 | 1   | [Questions based on Objects and Map](#Questions-based-on-Objects-and-Map)                           |
 | 3   | [Call, Apply and Bind](#Call-Apply-and-Bind)                                                        |
 | 7   | [== and === operators](#==-and-===-operators)                                                       |
-| 8   | [var, let, and const](#var-let-and-const)                                                           |
 | 9   | [How do you decode or encode a URL in JavaScript](#How-do-you-decode-or-encode-a-URL-in-JavaScript) |
 | 10  | [localStorage, sessionStorage, and Cookie](#localStorage-sessionStorage-and-Cookie)                 |
 
@@ -402,122 +401,6 @@ null === undefined // false
 []==[] or []===[] //false, refer different objects in memory
 {}=={} or {}==={} //false, refer different objects in memory
 ```
-**[⬆ Back to Top](#table-of-contents)**
-
-### <h1>var, let, and const</h1>
-
-You can list out the differences in a tabular format
-
-| var                                                    | let                                             | const                                  |
-| ------------------------------------------------------ | ----------------------------------------------- | -------------------------------------- |
-| Redeclare and reassign is possible                     | Redeclare not possible but reassign is possible | Redeclare and reassign is not possible |
-| Global scope                                           | Block scope                                     | Block scope                            |
-| It has been available from the beginning of JavaScript | Introduced as part of ES6                       | Introduced as part of ES6              |
-| Global scope                                           | Block scope                                     | Block scope                            |
-| Global scope                                           | Block scope                                     | Block scope                            |
-
-**Examples:**
-
-```javascript
-var a = 10
-var a = 11 // It is allowed
-a = 12 // It is allowed
-```
-```javascript
-let a = 10
-let a = 11 // It is not allowed
-a = 12 // It is allowed
-```
-
-```javascript
-const a = 10
-const a = 10 // It is not allowed
-a = 10 // It is not allowed
-```
-
-<h2>Questions and Answers:</h2>
-
-**1. What is the purpose of the let keyword?**
-
-**Ans:** The `let` statement declares a **block scope local variable**. Hence the variables defined with let keyword are limited in scope to the block, statement, or expression on which it is used. Whereas variables declared with the `var` keyword used to define a variable globally, or locally to an entire function regardless of block scope.
-
-Let's take an example to demonstrate the usage,
-
-```javascript
-let counter = 30;
-if (counter === 30) {
-let counter = 31;
-console.log(counter); // 31
-}
-console.log(counter); // 30 (because the variable in if block won't exist here)
-```
-
-**2. What is the reason to choose the name let as a keyword?**
-
-**Ans:** The `let` statement declares a **block scope local variable**. Hence the variables defined with let keyword are limited in scope to the block, statement, or expression on which it is used. Whereas variables declared with the `var` keyword used to define a variable globally, or locally to an entire function regardless of block scope.
-
-Let's take an example to demonstrate the usage,
-
-```javascript
-let counter = 30;
-if (counter === 30) {
-let counter = 31;
-console.log(counter); // 31
-}
-console.log(counter); // 30 (because the variable in if block won't exist here)
-```
-
-**3. Can I redeclare let and const variables?**
-
-**Ans:** No, you cannot redeclare let and const variables. If you do, it throws below error
-
-```bash
-Uncaught SyntaxError: Identifier 'someVariable' has already been declared
-```
-
-**Explanation:** The variable declaration with `var` keyword refers to a function scope and the variable is treated as if it were declared at the top of the enclosing scope due to hoisting feature. So all the multiple declarations contributing to the same hoisted variable without any error. Let's take an example of re-declaring variables in the same scope for both var and let/const variables.
-
-```javascript
-var name = "John";
-function myFunc() {
-   var name = "Nick";
-   var name = "Abraham"; // Re-assigned in the same function block
-   alert(name); // Abraham
-}
-myFunc();
-alert(name); // John
-```
-
-The block-scoped multi-declaration throws syntax error,
-
-```javascript
-let name = "John";
-function myFunc() {
-   let name = "Nick";
-   let name = "Abraham"; // Uncaught SyntaxError: Identifier 'name' has already been declared
-   alert(name);
-}
-
-myFunc();
-alert(name);
-```
-
-**4. What are global variables?**
-
-**Ans:** Global variables are those that are available throughout the length of the code without any scope. The var keyword is used to declare a local variable but if you omit it then it will become global variable
-
-```javascript
-msg = "Hello"; // var is missing, it becomes global variable
-```
-
-**5. What are the problems with global variables?**
-
-**Ans:** The problem with global variables is the conflict of variable names of local and global scope. It is also difficult to debug and test the code that relies on global variables.
-
-**6. What is scope in javascript?**
-
-**Ans:** Scope is the accessibility of variables, functions, and objects in some particular part of your code during runtime. In other words, scope determines the visibility of variables and other resources in areas of your code.
-
 **[⬆ Back to Top](#table-of-contents)**
 
 ### <h1>How do you decode or encode a URL in JavaScript</h1>
