@@ -80,7 +80,6 @@
 239	What is a decorator
 238	What is an event queue
 237	What is call stack
-234	What is an Iterator
 235	How does the synchronous iteration work
 231	What is nodejs
 
