@@ -1,6 +1,6 @@
 <h1>JavaScript ES5 Object Methods</h1>
 
-<h2>Managing Objects</h2>
+<h2>JavaScript Object Management</h2>
 
 ```javascript
 Object.create() // Create object with an existing object as prototype
@@ -30,7 +30,7 @@ Object.defineProperty(person, "fullName", { // // Define a getter
 console.log(person.fullName) // John Doe
 ```
 
-<h2>Managing Objects</h2>
+<h2>JavaScript Object Protection</h2>
 
 ```javascript
 Object.preventExtensions(object) // Prevents adding properties to an object

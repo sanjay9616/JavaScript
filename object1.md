@@ -23,23 +23,23 @@ How do you map the array values without using map method
 201	How can you get the list of keys of any object
 200	What is the main difference between Object.values and Object.entries method
 
-194	What is a proxy object
-195	What is the purpose of seal method
-196	What are the applications of seal method
-198	How do you determine if an object is sealed or not
-
 199	How do you get enumerable key and value pairs
 190	How do you determine two values same or not using object
 191	What is the purpose of using object is method
 192	How do you copy properties from one object to other
 193	What are the applications of assign method
 
+194	What is a proxy object
+195	What is the purpose of seal method
+196	What are the applications of seal method
+198	How do you determine if an object is sealed or not
+
 178	What is a freeze method
 189	How do you determine whether object is frozen or not
 179	What is the purpose of freeze method
 180	Why do I need to use freeze method
-
 197	What are the differences between freeze and seal methods
+
 
 261	How do you check whether an object can be extendable or not
 262	How do you prevent an object to extend
