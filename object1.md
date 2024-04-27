@@ -29,22 +29,6 @@ How do you map the array values without using map method
 192	How do you copy properties from one object to other
 193	What are the applications of assign method
 
-194	What is a proxy object
-195	What is the purpose of seal method
-196	What are the applications of seal method
-198	How do you determine if an object is sealed or not
-
-178	What is a freeze method
-189	How do you determine whether object is frozen or not
-179	What is the purpose of freeze method
-180	Why do I need to use freeze method
-197	What are the differences between freeze and seal methods
-
-
-261	How do you check whether an object can be extendable or not
-262	How do you prevent an object to extend
-263	What are the different ways to make an object non-extensible
-
 135	How do you add a key value pair in javascript
 128	What is an arguments object
 125	How do you check if a key exists in an object

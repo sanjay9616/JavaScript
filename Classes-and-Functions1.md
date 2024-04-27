@@ -57,11 +57,8 @@
 266	What Is Obfuscation in javascript
 265	What is MEAN in javascript
 225 What are the function parameter rules
-219	What are the advantages of Getters and Setters
-220	Can I add getters and setters using defineProperty method
-217	How do you define property on Object constructor
-216 What are javascript accessors
-218	What is the difference between get and defineProperty
+
+
 213	What is the difference between uneval and eval
 209	What is the purpose of uneval
 62	What is callback in callback

@@ -58,9 +58,7 @@
 319	What are the use cases for dynamic imports
 318	What are dynamic imports
 312	What are tagged templates
-305	What is ES6
-26	What are classes in ES6
-304	List down some of the features of ES6
+
 300	How to set the cursor to wait
 298	Why do we call javascript as dynamic language
 297	What is V8 JavaScript engine
