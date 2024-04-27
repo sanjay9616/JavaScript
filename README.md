@@ -3,7 +3,6 @@
 | No. | Questions                                                                                           |
 | --- | --------------------------------------------------------------------------------------------------- |
 | 1   | [Questions based on Objects and Map](#Questions-based-on-Objects-and-Map)                           |
-| 9   | [How do you decode or encode a URL in JavaScript](#How-do-you-decode-or-encode-a-URL-in-JavaScript) |
 
 ### <h1>Questions based on Objects and Map</h1>
 
@@ -252,24 +251,6 @@ const countries = [
 const cityNames = Array.from(countries, ({ capital }) => capital);
 console.log(cityNames); // ['Delhi, 'Washington', 'Moscow', 'Singapore', 'Beijing', 'Paris']
 ```
-
-**[⬆ Back to Top](#table-of-contents)**
-
-### <h1>How do you decode or encode a URL in JavaScript</h1>
-
-`encodeURI()` function is used to encode an URL. This function requires a URL string as a parameter and return that encoded string.
-`decodeURI()` function is used to decode an URL. This function requires an encoded URL string as parameter and return that decoded string.
-
-**Note:** If you want to encode characters such as `/ ? : @ & = + $ #` then you need to use `encodeURIComponent()`.
-
-```javascript
-let uri = "https://mozilla.org/?x=шеллы";
-let encoded_uri = encodeURI(uri); // output - https://mozilla.org/?x=%D1%88%D0%B5%D0%BB%D0%BB%D1%8B
-let decoded_uri = decodeURI(encoded_uri); // output - https://mozilla.org/?x=шеллы
-```
-**[⬆ Back to Top](#table-of-contents)**
-
-### <h1>Object and Map</h1>
 
 
 **[⬆ Back to Top](#table-of-contents)**
