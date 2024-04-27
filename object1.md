@@ -13,14 +13,6 @@ How do you map the array values without using map method
 280	How do you list all properties of an object
 264	How do you define multiple properties on an object
 
-260	How do you set prototype of one object to another
-How do you create an object with prototype
-How do you get the prototype of an object
-How do you set prototype of one object to another
-What happens If I pass string type for getPrototype method
-Do all objects have prototypes
-What is the difference between proto and prototype
-
 255	What is a constructor method
 256	What happens if you write constructor more than once in a class
 257	How do you call the constructor of a parent class
