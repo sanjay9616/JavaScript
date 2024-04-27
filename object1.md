@@ -1,7 +1,3 @@
-What is the difference between null and undefined
-What is the difference between isNaN and Number.isNaN
-What are the differences between undeclared and undefined variables
-
 What are the possible ways to create objects in JavaScript
 What are the recommendations to create new object?
 What is the difference between native, host and user objects?
