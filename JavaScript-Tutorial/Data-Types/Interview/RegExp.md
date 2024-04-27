@@ -11,9 +11,6 @@
 | 55  | [What is the purpose of exec method](#What-is-the-purpose-of-exec-method)                                                                                 |
 | 56  | [How do you return all matching strings against a regular expression](#How-do-you-return-all-matching-strings-against-a-regular-expression)               |
 
-
-<h1>InterView Questions and Answers based on RegExp</h1>
-
 ### <h2>What is a Regular Expression</h2>
 
 A regular expression is a sequence of characters that forms a search pattern. You can use this search pattern for searching data in a text. These can be used to perform all types of text search and text replace operations. Let's see the syntax format now,
@@ -141,6 +138,3 @@ console.log(greetingList[2]); //Hello3
 ```
 
 **[⬆ Back to Top](#table-of-contents)**
-
-
-
