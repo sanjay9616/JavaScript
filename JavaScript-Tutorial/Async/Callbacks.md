@@ -21,7 +21,7 @@ function callbackFunction(result) { // Define the callback function
 mainFunction(callbackFunction); // Call the main function with the callback function
 ```
 **Output**
-`
+```
 Performing operation...
 Result: Operation complete
-`
+```
