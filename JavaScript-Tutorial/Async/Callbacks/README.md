@@ -9,6 +9,20 @@ A callback function can run after another function has finished (**Synchronous**
 **Example 1:**
 
 ```javascript
+setTimeout(callBackFunction, 200)
+
+function callBackFunction() { // Define the callback function
+    console.log('I am callback function')
+}
+```
+**Output**
+```
+I am callback function
+```
+
+**Example 2:**
+
+```javascript
 function mainFunction(callback) {
     console.log("Performing operation...");
     setTimeout(() => { // Use setTimeout to simulate an asynchronous operation
@@ -28,7 +42,7 @@ Performing operation...
 Result: Operation complete
 ```
 
-**Example 2:**
+**Example 3:**
 
 ```javascript
 var numbers = [1, 2, 3, 4, 5]; // Define an array of numbers
