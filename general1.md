@@ -26,7 +26,6 @@
 385	What is minimum timeout throttling
 384	What is web speech API
 383	How to cancel a fetch request
-382	What are the different ways to deal with Asynchronous Code
 381	What is AJAX
 379	How do you disable right click in the web page
 378	How do you capture browser back button
