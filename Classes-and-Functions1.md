@@ -6,10 +6,6 @@
 15	What is the currying function
 16	What is a pure function
 22	What is IIFE(Immediately Invoked Function Expression)
-54	What is a callback function
-55	Why do we need callbacks
-56	What is a callback hell
-62	What is callback in callback
 84	What is the purpose of isFinite function
 
 140	Can we define properties for functions
