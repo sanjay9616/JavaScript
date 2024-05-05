@@ -2,8 +2,6 @@
 442	What is inline caching?
 437	What is an environment record?
 436	What is optional chaining?
-435	What is throttling?
-434	What is debouncing?
 431	How do you create custom HTML element?
 429	What is the difference between setTimeout, setImmediate and process.nextTick?
 426	How do you group and nest console output?
@@ -23,7 +21,6 @@
 390	What is the purpose of queueMicrotask
 388	What is microtask
 386	How do you implement zero timeout in modern browsers
-385	What is minimum timeout throttling
 384	What is web speech API
 383	How to cancel a fetch request
 381	What is AJAX
@@ -175,7 +172,4 @@ How do you decode or encode a URL in JavaScript
 32	How do you manipulate DOM using a service worker
 33	How do you reuse information across service worker restarts
 
-27	What are closures
-
-25	What is Hoisting
 24	What is memoization

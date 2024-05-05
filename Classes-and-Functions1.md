@@ -3,7 +3,6 @@
 12	What is a first order function
 13	What is a higher order function
 14	What is a unary function
-15	What is the currying function
 16	What is a pure function
 22	What is IIFE(Immediately Invoked Function Expression)
 84	What is the purpose of isFinite function
