@@ -1,5 +1,4 @@
 Throttling
-Debouncing
 Hoisting
 Closure
 Currying

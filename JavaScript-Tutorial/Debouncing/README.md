@@ -42,4 +42,14 @@ The _debounce()_ function can be used on input, button and window events
 window.addEventListener("scroll", processChange);
 ```
 
+**In Angular you can use from rxjs library**
+```typescript
+import { debounceTime, distinctUntilChanged } from "rxjs";
+
+.pipe(
+    debounceTime(400),
+    distinctUntilChanged((prev, next) => JSON.stringify(prev) === JSON.stringify(next))
+)
+```
+
 **[⬆ Back to Top](#table-of-contents)**

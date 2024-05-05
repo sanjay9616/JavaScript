@@ -7,4 +7,4 @@
 | 3   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/README.md">Data Types</a>          |
 | 4   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Operators/README.md">JavaScript Operators</a> |
 | 5   | <a href="https://github.com/sanjay9616/JavaScript/tree/master/JavaScript-Tutorial/Async">JavaScript Async</a>                   |
-| 6   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Debouncing/README.md">Debouncing</a>          |
+| 6   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Debouncing/README.md">Debouncing in JS</a>    |
