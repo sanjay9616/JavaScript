@@ -8,3 +8,4 @@
 | 4   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Operators/README.md">JavaScript Operators</a> |
 | 5   | <a href="https://github.com/sanjay9616/JavaScript/tree/master/JavaScript-Tutorial/Async">JavaScript Async</a>                   |
 | 6   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Debouncing/README.md">Debouncing in JS</a>    |
+| 7   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Throttling/README.md">Throttling in JS</a>    |

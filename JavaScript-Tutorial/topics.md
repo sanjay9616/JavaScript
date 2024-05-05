@@ -1,4 +1,3 @@
-Throttling
 Hoisting
 Closure
 Currying
