@@ -10,3 +10,4 @@
 | 6   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Debouncing/README.md">Debouncing in JS</a>    |
 | 7   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Throttling/README.md">Throttling in JS</a>    |
 | 8   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Hoisting/README.md">Hoisting in JS</a>        |
+| 9   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Closure/README.md">Closure in JS</a>          |
