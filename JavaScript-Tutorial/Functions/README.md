@@ -1,32 +1,5 @@
 <h1>Lambda or Arrow Function</h1>
 
-**this keyword** represents the current context, or it can access variable, properties, and methods within it's scope
-
-```javascript
-let user = {
-    name: "Sanjay",
-    salary: 21,
-    welcomeMsg: function() {
-        console.log(`Welcome ${this.name}`);
-    }
-}
-user.welcomeMsg() // Welcome Sanjay
-user.name = "Anurag"
-user.welcomeMsg() // Welcome Anurag
-```
-
-```javascript
-let user = {
-    name: "Sanjay",
-    printThis: function() {
-        console.log(this);
-    }
-}
-user.printThis() // { name: 'Sanjay', printThis: [Function: printThis] }
-user.name = "Anurag"
-user.printThis() // { name: 'Anurag', printThis: [Function: printThis] }
-```
-
 **Definiion:** `An arrow function is a shorter syntax for a function expression and does not have its own **this, arguments, super, or new.target**. These functions are best suited for non-method functions, and they cannot be used as constructors.`
 
 ```js
