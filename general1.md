@@ -155,6 +155,3 @@ How do you decode or encode a URL in JavaScript
 68	How do you declare strict mode
 36	What is a post message
 34	What is IndexedDB
-31	What is a service worker
-32	How do you manipulate DOM using a service worker
-33	How do you reuse information across service worker restarts
