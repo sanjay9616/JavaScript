@@ -2,7 +2,6 @@
 141	What is the way to find the number of parameters expected by a function
 209	What is the purpose of uneval
 213	What is the difference between uneval and eval
-214	What is an anonymous function
 225	What are the function parameter rules
 342	What is the difference between a parameter and an argument
 243	What is the purpose of compareFunction while sorting arrays
@@ -16,12 +15,10 @@
 413	How to detect if a function is called as constructor
 416	What are the different kinds of generators
 419	How do you define instance and non-instance properties
-421	How to invoke an IIFE without any extra brackets?
 432	What is global execution context?
 433	What is function execution context?
 439	What is pass by value and pass by reference?
 441	What are hidden classes?
-444	What are the differences between pure and impure functions?
 445	What is referential transparency?
 447	What are compose and pipe functions?
 448	What is module pattern?

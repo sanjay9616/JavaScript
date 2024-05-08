@@ -10,10 +10,12 @@
 | 6   | [What is a pure function](#What-is-a-pure-function)                                                                       |
 | 7   | [What are the differences between pure and impure functions](#What-are-the-differences-between-pure-and-impure-functions) |
 | 8   | [What is IIFE(Immediately Invoked Function Expression)](#What-is-IIFE(Immediately-Invoked-Function-Expression))           |
-| 9   | [What is a thunk function](#What-is-a-thunk-function)                                                                     |
-| 10  | [What is an Asynchronous Thunks](#What-is-an-Asynchronous-Thunks)                                                         |
-| 11  | [What is async function](#What-is-async-function)                                                                         |
-| 12  | [How to use await outside of async function prior to ES2022](#How-to-use-await-outside-of-async-function-prior-to-ES2022) |
+| 9   | [How to invoke an IIFE without any extra brackets](#How-to-invoke-an-IIFE-without-any-extra-brackets)                     |
+| 10  | [What is a thunk function](#What-is-a-thunk-function)                                                                     |
+| 11  | [What is an Asynchronous Thunks](#What-is-an-Asynchronous-Thunks)                                                         |
+| 12  | [What is async function](#What-is-async-function)                                                                         |
+| 13  | [How to use await outside of async function prior to ES2022](#How-to-use-await-outside-of-async-function-prior-to-ES2022) |
+| 14  | [What is an anonymous function](#What-is-an-anonymous-function)                                                           |
 
 ### <h2>What are lambda or arrow functions</h2>
 
@@ -156,6 +158,27 @@ Immediately Invoked Function Expressions (IIFE) are JavaScript functions that ar
 
 **[⬆ Back to Top](#table-of-contents)**
 
+### <h2>How to invoke an IIFE without any extra brackets</h2>
+
+Immediately Invoked Function Expressions(IIFE) requires a pair of parenthesis to wrap the function which contains set of statements.
+
+```js
+(function (dt) {
+    console.log(dt.toLocaleTimeString());
+})(new Date());
+```
+
+Since both IIFE and void operator discard the result of an expression, you can avoid the extra brackets using `void operator` for IIFE as below,
+
+```js
+void (function (dt) {
+    console.log(dt.toLocaleTimeString());
+})(new Date());
+```
+
+**[⬆ Back to Top](#table-of-contents)**
+
+
 ### <h2>What is a thunk function</h2>
 
 A thunk is just a function which delays the evaluation of the value. It doesn’t take any arguments but gives the value whenever you invoke the thunk. i.e, It is used not to execute now but it will be sometime in the future. Let's take a synchronous example,
@@ -235,6 +258,42 @@ await Promise.resolve(console.log("Hello await")); //Hello await
 ```
 
 **[⬆ Back to Top](#table-of-contents)**
+
+### <h2>What is an anonymous function</h2>
+
+```javascript
+function () { // Synax Error
+
+}
+```
+`An anonymous function is a function without a name!` Anonymous functions are commonly assigned to a variable name or used as a callback function. The syntax would be as below,
+
+```javascript
+function (optionalParameters) {
+    //do something
+}
+
+const myFunction = function(){ //Anonymous function assigned to a variable
+    //do something
+};
+
+[1, 2, 3].map(function(element){ //Anonymous function used as a callback function
+    //do something
+});
+```
+
+Let's see the above anonymous function in an example,
+
+```javascript
+var x = function (a, b) {
+    return a * b;
+};
+var z = x(5, 10);
+console.log(z); // 50
+```
+
+**[⬆ Back to Top](#table-of-contents)**
+
 
 
 
