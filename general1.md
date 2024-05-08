@@ -15,7 +15,6 @@
 398	What is babel
 396	What is the difference between shim and polyfill
 395	What is a microTask queue
-394	What is an event table
 393	What is heap
 391	How do you use javascript libraries in typescript file
 390	What is the purpose of queueMicrotask
@@ -74,7 +73,6 @@
 28	What are modules
 29	Why do you need modules
 239	What is a decorator
-238	What is an event queue
 237	What is call stack
 235	How does the synchronous iteration work
 231	What is nodejs
@@ -127,24 +125,14 @@ How do you decode or encode a URL in JavaScript
 
 116	What are PWAs
 110	What is ECMAScript
-109	What is an event delegation
 108	Why is JavaScript treated as Single threaded
 
 106	What is the use of setTimeout
 107	What is the use of setInterval
 105	What is BOM
 
-102	What is the use of preventDefault method
 103	What is the use of stopPropagation method
 104	What are the steps involved in return false usage
-100	What are events
-86	What is event bubbling
-87	What is event capturing
-85	What is an event flow
-57	What are server-sent events
-58	How do you receive server-sent event notifications
-59	How do you check browser support for server-sent events
-60	What are the events available for server sent events
 
 101	Who created javascript
 
@@ -156,7 +144,6 @@ How do you decode or encode a URL in JavaScript
 94	What is the difference between an attribute and a property
 95	What is same-origin policy
 
-90	What is the difference between document load and DOMContentLoaded events
 88	How do you submit a form using JavaScript
 89	How do you find operating system details
 
