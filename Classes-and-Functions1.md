@@ -1,11 +1,3 @@
-10	What are lambda or arrow functions
-11	What is a first class function
-12	What is a first order function
-13	What is a higher order function
-14	What is a unary function
-16	What is a pure function
-22	What is IIFE(Immediately Invoked Function Expression)
-
 140	Can we define properties for functions
 141	What is the way to find the number of parameters expected by a function
 209	What is the purpose of uneval
@@ -16,12 +8,10 @@
 243	What is the purpose of compareFunction while sorting arrays
 
 308	What are default parameters
-351	What is a thunk function
 353	What is the output of below function calls
 
 402	What is the difference between Function constructor and function declaration
 406	What is the difference between function and class declarations
-407	What is an async function
 411	What is a Proper Tail Call
 413	How to detect if a function is called as constructor
 416	What are the different kinds of generators
@@ -36,7 +26,6 @@
 447	What are compose and pipe functions?
 448	What is module pattern?
 449	What is Function Composition?
-450	How to use await outside of async function prior to ES2022?
 451	What is the purpose of the this keyword in JavaScript?
 
 225 What are the function parameter rules

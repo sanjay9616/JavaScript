@@ -165,7 +165,107 @@ console.log(addToTotal(3, 4)) // 14
 ```
 
 <h1>IIFE(Immediately Invoked Function Expression)</h1>
+
+Immediately Invoked Function Expressions (IIFE) are JavaScript functions that are executed immediately after they are defined. They are typically used to create a local scope for variables to prevent them from polluting the global scope.
+
+```js
+(function abc() {
+    console.log('DB Connected')
+})();
+```
+**OR**
+```js
+(() => {
+    console.log('DB Connected')
+})();
+```
+```js
+((dbName) => { // with parameter
+    console.log(`${dbName} is Connected`)
+})('UserDetails');
+```
+
 <h1>Thunk Function</h1>
+
+A thunk is just a function which delays the evaluation of the value. It doesn’t take any arguments but gives the value whenever you invoke the thunk. i.e, It is used not to execute now but it will be sometime in the future. Let's take a synchronous example,
+
+```javascript
+const add = (x, y) => x + y;
+
+const thunk = () => add(2, 3);
+
+thunk(); // 5
+```
+
 <h1>async Function</h1>
+
+An async function is a function declared with the `async` keyword which enables asynchronous, promise-based behavior to be written in a cleaner style by avoiding promise chains. These functions can contain zero or more `await` expressions.
+
+Let's take a below async function example,
+
+```javascript
+async function logger() {
+let data = await fetch("http://someapi.com/users"); // pause until fetch returns
+console.log(data);
+}
+logger();
+```
+
+It is basically syntax sugar over ES2015 promises and generators.
+
+<h1>Asynchronous Thunks</h1>
+
+The asynchronous thunks are useful to make network requests. Let's see an example of network requests,
+
+```javascript
+function fetchData(fn) {
+    fetch("https://jsonplaceholder.typicode.com/todos/1")
+        .then((response) => response.json())
+        .then((json) => fn(json));
+    }
+
+    const asyncThunk = function () {
+    return fetchData(function getData(data) {
+        console.log(data);
+    });
+};
+
+asyncThunk();
+```
+
+The `getData` function won't be called immediately but it will be invoked only when the data is available from API endpoint. The setTimeout function is also used to make our code asynchronous. The best real time example is redux state management library which uses the asynchronous thunks to delay the actions to dispatch.
+
 <h1>Compose and Pipe Function</h1>
+
+The "compose" and "pipe" are two techniques commonly used in functional programming to simplify complex operations and make code more readable. They are not native to JavaScript and higher-order functions. the `compose()` applies right to left any number of functions to the output of the previous function.
+
+```js
+const addTwo = (a) => a + 2;
+const substractThree = (a) => a - 3;
+const multiplyByFive = (a) => a * 5;
+
+const res = multiplyByFive(substractThree(addTwo(4)))
+console.log(res) // 15
+
+// To get compose order from Right to Left - we need reduceRight
+const compose = (...fns) => val => fns.reduceRight((prev, fn) => fn(prev), val)
+const composeRes = compose(multiplyByFive, substractThree, addTwo)(4);
+console.log(composeRes) // 15
+
+// To get same, but compose function from Left to Right - we need reduce
+const compose = (...fns) => val => fns.reduce((prev, fn) => fn(prev), val)
+const composeRes = compose(multiplyByFive, substractThree, addTwo)(4);
+console.log(composeRes) // 19
+```
+
+```js
+const addTwo = (a) => a + 2;
+const substractThree = (a) => a - 3;
+const multiplyByFive = (a) => a * 5;
+const divideBy = (a, b) => a / b;
+
+const compose = (...fns) => val => fns.reduce((prev, fn) => fn(prev), val)
+pipeRes = compose(multiplyByFive, substractThree, addTwo, x => divideBy(x, 2))(4);
+console.log(pipeRes) // 9.5
+```
 <h1>uneval and eval Function</h1>
