@@ -5,7 +5,6 @@
 14	What is a unary function
 16	What is a pure function
 22	What is IIFE(Immediately Invoked Function Expression)
-84	What is the purpose of isFinite function
 
 140	Can we define properties for functions
 141	What is the way to find the number of parameters expected by a function

@@ -165,8 +165,6 @@ console.log(addToTotal(3, 4)) // 14
 ```
 
 <h1>IIFE(Immediately Invoked Function Expression)</h1>
-<h1>isFinite Function</h1>
-<h1>compareFunction Function</h1>
 <h1>Thunk Function</h1>
 <h1>async Function</h1>
 <h1>Compose and Pipe Function</h1>
