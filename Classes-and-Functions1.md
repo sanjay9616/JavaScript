@@ -20,7 +20,6 @@
 439	What is pass by value and pass by reference?
 441	What are hidden classes?
 445	What is referential transparency?
-447	What are compose and pipe functions?
 448	What is module pattern?
 449	What is Function Composition?
 451	What is the purpose of the this keyword in JavaScript?

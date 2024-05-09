@@ -16,6 +16,7 @@
 | 12  | [What is async function](#What-is-async-function)                                                                         |
 | 13  | [How to use await outside of async function prior to ES2022](#How-to-use-await-outside-of-async-function-prior-to-ES2022) |
 | 14  | [What is an anonymous function](#What-is-an-anonymous-function)                                                           |
+| 15  | [What are compose and pipe functions](#What-are-compose-and-pipe-functions)                                               |
 
 ### <h2>What are lambda or arrow functions</h2>
 
@@ -293,6 +294,43 @@ console.log(z); // 50
 ```
 
 **[⬆ Back to Top](#table-of-contents)**
+
+### <h2>What are compose and pipe functions</h2>
+
+The "compose" and "pipe" are two techniques commonly used in functional programming to simplify complex operations and make code more readable. They are not native to JavaScript and higher-order functions. the `compose()` applies right to left any number of functions to the output of the previous function.
+
+```js
+const addTwo = (a) => a + 2;
+const substractThree = (a) => a - 3;
+const multiplyByFive = (a) => a * 5;
+
+const res = multiplyByFive(substractThree(addTwo(4)))
+console.log(res) // 15
+
+// To get compose order from Right to Left - we need reduceRight
+const compose = (...fns) => val => fns.reduceRight((prev, fn) => fn(prev), val)
+const composeRes = compose(multiplyByFive, substractThree, addTwo)(4);
+console.log(composeRes) // 15
+
+// To get same, but compose function from Left to Right - we need reduce
+const compose = (...fns) => val => fns.reduce((prev, fn) => fn(prev), val)
+const composeRes = compose(multiplyByFive, substractThree, addTwo)(4);
+console.log(composeRes) // 19
+```
+
+```js
+const addTwo = (a) => a + 2;
+const substractThree = (a) => a - 3;
+const multiplyByFive = (a) => a * 5;
+const divideBy = (a, b) => a / b;
+
+const compose = (...fns) => val => fns.reduce((prev, fn) => fn(prev), val)
+pipeRes = compose(multiplyByFive, substractThree, addTwo, x => divideBy(x, 2))(4);
+console.log(pipeRes) // 9.5
+```
+
+**[⬆ Back to Top](#table-of-contents)**
+
 
 
 
