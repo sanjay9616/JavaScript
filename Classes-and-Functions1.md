@@ -13,7 +13,6 @@
 413	How to detect if a function is called as constructor
 416	What are the different kinds of generators
 419	How do you define instance and non-instance properties
-432	What is global execution context?
 433	What is function execution context?
 439	What is pass by value and pass by reference?
 441	What are hidden classes?
