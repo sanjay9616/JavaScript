@@ -29,6 +29,7 @@
 | 25  | [How do you empty an array](#How-do-you-empty-an-array)                                                                                       |
 | 26  | [What is the easiest way to resize an array](#What-is-the-easiest-way-to-resize-an-array)                                                     |
 | 27  | [How to verify if a variable is an array](#How-to-verify-if-a-variable-is-an-array)                                                           |
+| 27  | [What is the purpose of compareFunction while sorting arrays](#What-is-the-purpose-of-compareFunction-while-sorting-arrays)                   |
 
 ### <h2>What is the purpose of the array slice method</h2>
 
@@ -626,3 +627,15 @@ It is possible to check if a variable is an array instance using 3 different way
   ```
 
 **[⬆ Back to Top](#table-of-contents)**
+
+### <h2>What is the purpose of compareFunction while sorting arrays</h2>
+
+The compareFunction is used to define the sort order. If omitted, the array elements are converted to strings, then sorted according to each character's Unicode code point value. Let's take an example to see the usage of compareFunction,
+
+  ```javascript
+  let numbers = [1, 2, 5, 3, 4];
+  numbers.sort((a, b) => b - a);
+  console.log(numbers); // [5, 4, 3, 2, 1]
+  ```
+
+  **[⬆ Back to Top](#table-of-contents)**

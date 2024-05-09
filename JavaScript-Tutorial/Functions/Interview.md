@@ -1,24 +1,30 @@
 ### Table of Contents
 
-| No. | Questions                                                                                                                 |
-| --- | ------------------------------------------------------------------------------------------------------------------------- |
-| 1   | [What are lambda or arrow functions](#What-are-lambda-or-arrow-functions)                                                 |
-| 2   | [What is a first class function](#What-is-a-first-class-function)                                                         |
-| 3   | [What is a first order function](#What-is-a-first-order-function)                                                         |
-| 4   | [What is a higher order function](#What-is-a-higher-order-function)                                                       |
-| 5   | [What is a unary function](#What-is-a-unary-function)                                                                     |
-| 6   | [What is a pure function](#What-is-a-pure-function)                                                                       |
-| 7   | [What are the differences between pure and impure functions](#What-are-the-differences-between-pure-and-impure-functions) |
-| 8   | [What is IIFE(Immediately Invoked Function Expression)](#What-is-IIFE(Immediately-Invoked-Function-Expression))           |
-| 9   | [How to invoke an IIFE without any extra brackets](#How-to-invoke-an-IIFE-without-any-extra-brackets)                     |
-| 10  | [What is a thunk function](#What-is-a-thunk-function)                                                                     |
-| 11  | [What is an Asynchronous Thunks](#What-is-an-Asynchronous-Thunks)                                                         |
-| 12  | [What is async function](#What-is-async-function)                                                                         |
-| 13  | [How to use await outside of async function prior to ES2022](#How-to-use-await-outside-of-async-function-prior-to-ES2022) |
-| 14  | [What is an anonymous function](#What-is-an-anonymous-function)                                                           |
-| 15  | [What are compose and pipe functions](#What-are-compose-and-pipe-functions)                                               |
-| 16  | [What is the purpose of uneval](#What-is-the-purpose-of-uneval)                                                           |
-| 17  | [What is the difference between uneval and eval](#What-is-the-difference-between-uneval-and-eval)                         |
+| No. | Questions                                                                                                                                           |
+| --- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | [What are lambda or arrow functions](#What-are-lambda-or-arrow-functions)                                                                           |
+| 2   | [What is a first class function](#What-is-a-first-class-function)                                                                                   |
+| 3   | [What is a first order function](#What-is-a-first-order-function)                                                                                   |
+| 4   | [What is a higher order function](#What-is-a-higher-order-function)                                                                                 |
+| 5   | [What is a unary function](#What-is-a-unary-function)                                                                                               |
+| 6   | [What is a pure function](#What-is-a-pure-function)                                                                                                 |
+| 7   | [What are the differences between pure and impure functions](#What-are-the-differences-between-pure-and-impure-functions)                           |
+| 8   | [What is IIFE(Immediately Invoked Function Expression)](#What-is-IIFE(Immediately-Invoked-Function-Expression))                                     |
+| 9   | [How to invoke an IIFE without any extra brackets](#How-to-invoke-an-IIFE-without-any-extra-brackets)                                               |
+| 10  | [What is a thunk function](#What-is-a-thunk-function)                                                                                               |
+| 11  | [What is an Asynchronous Thunks](#What-is-an-Asynchronous-Thunks)                                                                                   |
+| 12  | [What is async function](#What-is-async-function)                                                                                                   |
+| 13  | [How to use await outside of async function prior to ES2022](#How-to-use-await-outside-of-async-function-prior-to-ES2022)                           |
+| 14  | [What is an anonymous function](#What-is-an-anonymous-function)                                                                                     |
+| 15  | [What are compose and pipe functions](#What-are-compose-and-pipe-functions)                                                                         |
+| 16  | [What is the purpose of uneval](#What-is-the-purpose-of-uneval)                                                                                     |
+| 17  | [What is the difference between uneval and eval](#What-is-the-difference-between-uneval-and-eval)                                                   |
+| 18  | [Can we define properties for functions](#Can-we-define-properties-for-functions)                                                                   |
+| 19  | [What is the way to find the number of parameters expected by a function](#What-is-the-way-to-find-the-number-of-parameters-expected-by-a-function) |
+| 20  | [What are the function parameter rules](#What-are-the-function-parameter-rules)                                                                     |
+| 21  | [What is the difference between a parameter and an argument](#What-is-the-difference-between-a-parameter-and-an-argument)                           |
+| 22  | [What are default parameters](#What-are-default-parameters)                                                                                         |
+| 23  | [What is the output of below function calls](#What-is-the-output-of-below-function-calls)                                                           |
 
 ### <h2>What are lambda or arrow functions</h2>
 
@@ -365,6 +371,125 @@ greeting(); // returns "Hello, Good morning"
 ```
 
 **[⬆ Back to Top](#table-of-contents)**
+
+### <h2>Can we define properties for functions</h2>
+
+Yes, We can define properties for functions because functions are also objects.
+
+```javascript
+fn = function (x) {
+    //Function code goes here
+};
+
+fn.name = "John";
+
+fn.profile = function (y) {
+    //Profile code goes here
+};
+```
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### <h2>What is the way to find the number of parameters expected by a function</h2>
+
+You can use `function.length` syntax to find the number of parameters expected by a function. Let's take an example of `sum` function to calculate the sum of numbers,
+
+```javascript
+function sum(num1, num2, num3, num4) {
+    return num1 + num2 + num3 + num4;
+}
+sum.length; // 4 is the number of parameters expected.
+```
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### <h2>What are the function parameter rules</h2>
+
+JavaScript functions follow below rules for parameters,
+
+1. The function definitions do not specify data types for parameters. </br>
+2. Do not perform type checking on the passed arguments.</br>
+3. Do not check the number of arguments received. </br>
+i.e, The below function follows the above rules,
+
+```javascript
+function functionName(parameter1, parameter2, parameter3) {
+    console.log(parameter1); // 1
+}
+functionName(1);
+```
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### <h2>What is the difference between a parameter and an argument</h2>
+
+Parameter is the variable name of a function definition whereas an argument represents the value given to a function when it is invoked. Let's explain this with a simple function
+
+```js
+function a(param1, param2) { // parameters
+    console.log(param1 + param2)
+}
+a(1, 2) // arguments
+```
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### <h2>What are default parameters</h2>
+
+In ES5, we need to depend on logical OR operators to handle default values of function parameters. Whereas in ES6, Default function parameters feature allows parameters to be initialized with default values if no value or undefined is passed. Let's compare the behavior with an examples,
+
+```javascript
+//ES5
+var calculateArea = function (height, width) {
+    height = height || 50;
+    width = width || 60;
+
+    return width * height;
+};
+console.log(calculateArea()); //300
+```
+
+The default parameters makes the initialization more simpler,
+
+```javascript
+//ES6
+var calculateArea = function (height = 50, width = 60) {
+    return width * height;
+};
+
+console.log(calculateArea()); //300
+```
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### <h2>What is the output of below function calls</h2>
+
+**Code snippet:**
+
+```javascript
+const circle = {
+    radius: 20,
+    diameter() {
+        return this.radius * 2;
+    },
+    perimeter: () => 2 * Math.PI * this.radius,
+};
+```
+
+```javascript
+console.log(circle.diameter());
+console.log(circle.perimeter());
+```
+
+**Output:**
+
+The output is 40 and NaN. Remember that diameter is a regular function, whereas the value of perimeter is an arrow function. The `this` keyword of a regular function(i.e, diameter) refers to the surrounding scope which is a class(i.e, Shape object). Whereas this keyword of perimeter function refers to the surrounding scope which is a window object. Since there is no radius property on window objects it returns an undefined value and the multiple of number value returns NaN value.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+
+
+
 
 
 

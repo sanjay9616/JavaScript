@@ -1,11 +1,4 @@
-140	Can we define properties for functions
-141	What is the way to find the number of parameters expected by a function
-225	What are the function parameter rules
-342	What is the difference between a parameter and an argument
-243	What is the purpose of compareFunction while sorting arrays
 
-308	What are default parameters
-353	What is the output of below function calls
 
 402	What is the difference between Function constructor and function declaration
 406	What is the difference between function and class declarations
