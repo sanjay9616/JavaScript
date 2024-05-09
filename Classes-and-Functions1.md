@@ -1,7 +1,5 @@
 140	Can we define properties for functions
 141	What is the way to find the number of parameters expected by a function
-209	What is the purpose of uneval
-213	What is the difference between uneval and eval
 225	What are the function parameter rules
 342	What is the difference between a parameter and an argument
 243	What is the purpose of compareFunction while sorting arrays

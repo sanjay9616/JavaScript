@@ -17,6 +17,8 @@
 | 13  | [How to use await outside of async function prior to ES2022](#How-to-use-await-outside-of-async-function-prior-to-ES2022) |
 | 14  | [What is an anonymous function](#What-is-an-anonymous-function)                                                           |
 | 15  | [What are compose and pipe functions](#What-are-compose-and-pipe-functions)                                               |
+| 16  | [What is the purpose of uneval](#What-is-the-purpose-of-uneval)                                                           |
+| 17  | [What is the difference between uneval and eval](#What-is-the-difference-between-uneval-and-eval)                         |
 
 ### <h2>What are lambda or arrow functions</h2>
 
@@ -327,6 +329,39 @@ const divideBy = (a, b) => a / b;
 const compose = (...fns) => val => fns.reduce((prev, fn) => fn(prev), val)
 pipeRes = compose(multiplyByFive, substractThree, addTwo, x => divideBy(x, 2))(4);
 console.log(pipeRes) // 9.5
+```
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### <h2>What is the purpose of uneval</h2>
+
+The uneval() is an inbuilt function which is used to create a string representation of the source code of an Object. It is a top-level function and is not associated with any object. Let's see the below example to know more about it's functionality,
+
+```javascript
+var a = 1;
+uneval(a); // returns a String containing 1
+uneval(function user() {}); // returns "(function user(){})"
+```
+
+The `uneval()` function has been deprecated. It is recommended to use `toString()` for functions and `JSON.toStringify()` for other cases.
+
+```javascript
+function user() {}
+console.log(user.toString()); // returns "(function user(){})"
+```
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### <h2>What is the difference between uneval and eval</h2>
+
+The `uneval` function returns the source of a given object; whereas the `eval` function does the opposite, by evaluating that source code in a different memory area. Let's see an example to clarify the difference,
+
+```javascript
+var msg = uneval(function greeting() {
+    return "Hello, Good morning";
+});
+var greeting = eval(msg);
+greeting(); // returns "Hello, Good morning"
 ```
 
 **[⬆ Back to Top](#table-of-contents)**

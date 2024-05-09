@@ -269,3 +269,34 @@ pipeRes = compose(multiplyByFive, substractThree, addTwo, x => divideBy(x, 2))(4
 console.log(pipeRes) // 9.5
 ```
 <h1>uneval and eval Function</h1>
+
+**eval():** The eval function evaluates or executes an argument. If the argument is an expression, eval() evaluates the expression. If the argument is one or more javascript statements, eval() executes the statements.
+
+The `uneval` function returns the source of a given object; whereas the `eval` function does the opposite, by evaluating that source code in a different memory area. Let's see an example to clarify the difference,
+
+```js
+console.log(eval(2+2), typeof eval(2+2)) // 4 number
+console.log(eval(2+'2'), typeof eval(2+'2')) // 22 number
+```
+```javascript
+var msg = uneval(function greeting() {
+    return "Hello, Good morning";
+});
+var greeting = eval(msg);
+greeting(); // returns "Hello, Good morning"
+```
+
+**uneval():** The uneval() is an inbuilt function which is used to create a string representation of the source code of an Object. It is a top-level function and is not associated with any object. Let's see the below example to know more about it's functionality,
+
+```javascript
+var a = 1;
+uneval(a); // returns a String containing 1
+uneval(function user() {}); // returns "(function user(){})"
+```
+
+The `uneval()` function has been deprecated. It is recommended to use `toString()` for functions and `JSON.toStringify()` for other cases.
+
+```javascript
+function user() {}
+console.log(user.toString()); // returns "(function user(){})"
+```
