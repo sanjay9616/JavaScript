@@ -300,3 +300,11 @@ The `uneval()` function has been deprecated. It is recommended to use `toString(
 function user() {}
 console.log(user.toString()); // returns "(function user(){})"
 ```
+
+<h1>Generators</h1>
+<h1>module pattern</h1>
+<h1>referential transparency</h1>
+<h1>hidden classes</h1>
+<h1>pass by value and pass by reference</h1>
+<h1>What is Function Composition</h1>
+<h1>enum</h1>

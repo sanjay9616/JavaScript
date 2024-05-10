@@ -34,6 +34,8 @@
 | 30  | [What is a constructor method](#What-is-a-constructor-method)                                                                                               |
 | 31  | [What happens if you write constructor more than once in a class](#What-happens-if-you-write-constructor-more-than-once-in-a-class)                         |
 | 32  | [How do you call the constructor of a parent class](#How-do-you-call-the-constructor-of-a-parent-class)                                                     |
+| 33  | [How do you get property descriptors of an object](#How-do-you-get-property-descriptors-of-an-object)                                                       |
+| 34  | [What are the attributes provided by a property descriptor](#What-are-the-attributes-provided-by-a-property-descriptor)                                     |
 
 ### <h2>What are the possible ways to create objects in JavaScript</h2>
 
@@ -751,5 +753,37 @@ class Square extends Rectangle {
     }
 }
 ```
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### <h2>How do you get property descriptors of an object</h2>
+
+You can use the `Object.getOwnPropertyDescriptors()` method which returns all own property descriptors of a given object. The example usage of this method is below,
+
+```javascript
+const newObject = {
+a: 1,
+b: 2,
+c: 3,
+};
+const descriptorsObject = Object.getOwnPropertyDescriptors(newObject);
+console.log(descriptorsObject.a.writable); //true
+console.log(descriptorsObject.a.configurable); //true
+console.log(descriptorsObject.a.enumerable); //true
+console.log(descriptorsObject.a.value); // 1
+```
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### <h2>What are the attributes provided by a property descriptor</h2>
+
+A property descriptor is a record which has the following attributes
+
+1. value: The value associated with the property </br>
+2. writable: Determines whether the value associated with the property can be changed or not </br>
+3. configurable: Returns true if the type of this property descriptor can be changed and if the property can be deleted from the corresponding object. </br>
+4. enumerable: Determines whether the property appears during enumeration of the properties on the corresponding object or not. </br>
+5. set: A function which serves as a setter for the property </br>
+6. get: A function which serves as a getter for the property
 
 **[⬆ Back to Top](#table-of-contents)**

@@ -155,3 +155,5 @@ How do you decode or encode a URL in JavaScript
 68	How do you declare strict mode
 36	What is a post message
 34	What is IndexedDB
+
+265	What is MEAN in javascript
