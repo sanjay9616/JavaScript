@@ -6,8 +6,6 @@
         <summary><b>Tell me about yourself.</b></summary>
         <p>
         My Name is Sanjay
-
-      
         kdsksk
 <pre>
 <code>
