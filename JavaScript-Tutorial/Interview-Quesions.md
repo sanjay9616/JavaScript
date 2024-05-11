@@ -20,11 +20,6 @@ function demo() {
   <li>
     <details>
         <summary><b>Tell me about yourself22.</b></summary>
-        ```js
-        function demo() {
-            
-        }
-        ```
     </details>
   </li>
 </ol>
