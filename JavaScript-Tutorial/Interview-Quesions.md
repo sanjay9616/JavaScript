@@ -5,11 +5,11 @@
     <details>
         <summary><b>Tell me about yourself.</b></summary>
         <p>
-            <script>
+            <code>
                 function demo() {
                     console.log('1111')
                 }
-            </script>
+            </code>
         </p>
     </details>
   </li>
@@ -17,11 +17,11 @@
     <details>
         <summary><b>Tell me about yourself22.</b></summary>
         <p>
-            <script>
+            `
                 function demo() {
                     console.log('222')
                 }
-            </script>
+            `
         </p>
     </details>
   </li>
