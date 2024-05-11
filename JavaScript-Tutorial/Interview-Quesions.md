@@ -4,12 +4,14 @@
   <li>
     <details>
         <summary><b>Tell me about yourself.</b></summary>
+        <p>
         My Name is Sanjay
 <pre>
 function demo() {
     console.log('1111')
 }
 </pre>
+      </p>
     </details>
   </li>
   <li>
