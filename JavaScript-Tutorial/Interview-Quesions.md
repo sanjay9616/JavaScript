@@ -9,7 +9,7 @@
         }
         ```
     </p>
-<details>
+</details>
 
 <details>
     <summary><b>Tell me about yourself.</b></summary>
@@ -20,4 +20,4 @@
         }
         ```
     </p>
-<details>
+</details>
