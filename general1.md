@@ -129,9 +129,7 @@ How do you decode or encode a URL in JavaScript
 
 106	What is the use of setTimeout
 107	What is the use of setInterval
-105	What is BOM
 
-103	What is the use of stopPropagation method
 104	What are the steps involved in return false usage
 
 101	Who created javascript
