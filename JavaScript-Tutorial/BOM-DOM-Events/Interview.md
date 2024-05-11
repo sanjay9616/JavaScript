@@ -7,16 +7,17 @@
 | 3   | [What is event capturing](#What-is-event-capturing)                                                                                                   |
 | 4   | [What is the use of stopPropagation method](#What-is-the-use-of-stopPropagation-method)                                                               |
 | 5   | [What is an event delegation](#What-is-an-event-delegation)                                                                                           |
-| 6   | [What is an event queue](#What-is-an-event-queue)                                                                                                     |
-| 7   | [What is an event table](#What-is-an-event-table)                                                                                                     |
-| 8   | [What is the use of preventDefault method](#What-is-the-use-of-preventDefault-method)                                                                 |
-| 9   | [What are events](#What-are-events)                                                                                                                   |
-| 10  | [What are server-sent events](#What-are-server-sent-events)                                                                                           |
-| 11  | [How do you receive server-sent event notifications](#How-do-you-receive-server-sent-event-notifications)                                             |
-| 12  | [How do you check browser support for server-sent events](#How-do-you-check-browser-support-for-server-sent-events)                                   |
-| 13  | [What are the events available for server sent events](#What-are-the-events-available-for-server-sent-events)                                         |
-| 14  | [What is the difference between document load and DOMContentLoaded events](#What-is-the-difference-between-document-load-and-DOMContentLoaded-events) |
-| 15  | [What is BOM](#What-is-BOM)                                                                                                                           |
+| 6   | [What is call stack](#What-is-call-stack)                                                                                                             |
+| 7   | [What is an event queue](#What-is-an-event-queue)                                                                                                     |
+| 8   | [What is an event table](#What-is-an-event-table)                                                                                                     |
+| 9   | [What is the use of preventDefault method](#What-is-the-use-of-preventDefault-method)                                                                 |
+| 10  | [What are events](#What-are-events)                                                                                                                   |
+| 11  | [What are server-sent events](#What-are-server-sent-events)                                                                                           |
+| 12  | [How do you receive server-sent event notifications](#How-do-you-receive-server-sent-event-notifications)                                             |
+| 13  | [How do you check browser support for server-sent events](#How-do-you-check-browser-support-for-server-sent-events)                                   |
+| 14  | [What are the events available for server sent events](#What-are-the-events-available-for-server-sent-events)                                         |
+| 15  | [What is the difference between document load and DOMContentLoaded events](#What-is-the-difference-between-document-load-and-DOMContentLoaded-events) |
+| 16  | [What is BOM](#What-is-BOM)                                                                                                                           |
 
 ### <h2>What is an event flow</h2>
 
@@ -84,6 +85,37 @@ form.addEventListener(
     false
 );
 ```
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### <h2>What is call stack</h2>
+
+Call Stack is a data structure for javascript interpreters to keep track of function calls(creates execution context) in the program. It has two major actions,
+
+1. Whenever you call a function for its execution, you are pushing it to the stack. </br>
+2. Whenever the execution is completed, the function is popped out of the stack.</br>
+
+Let's take an example and it's state representation in a diagram format
+
+```javascript
+function hungry() {
+ eatFruits();
+}
+
+function eatFruits() {
+ return "I'm eating fruits";
+}
+
+// Invoke the `hungry` function
+hungry();
+```
+
+The above code processed in a call stack as below,
+
+1. Add the `hungry()` function to the call stack list and execute the code. </br>
+2. Add the `eatFruits()` function to the call stack list and execute the code. </br>
+3. Delete the `eatFruits()` function from our call stack list. </br>
+4. Delete the `hungry()` function from the call stack list since there are no items anymore. </br>
 
 **[⬆ Back to Top](#table-of-contents)**
 

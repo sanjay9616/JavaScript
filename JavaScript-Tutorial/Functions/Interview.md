@@ -17,40 +17,43 @@
 | 13  | [How to use await outside of async function prior to ES2022](#How-to-use-await-outside-of-async-function-prior-to-ES2022)                                     |
 | 14  | [What is an anonymous function](#What-is-an-anonymous-function)                                                                                               |
 | 15  | [What are compose and pipe functions](#What-are-compose-and-pipe-functions)                                                                                   |
-| 16  | [What is the purpose of uneval](#What-is-the-purpose-of-uneval)                                                                                               |
-| 17  | [What is the difference between uneval and eval](#What-is-the-difference-between-uneval-and-eval)                                                             |
-| 18  | [Can we define properties for functions](#Can-we-define-properties-for-functions)                                                                             |
-| 19  | [What is the way to find the number of parameters expected by a function](#What-is-the-way-to-find-the-number-of-parameters-expected-by-a-function)           |
-| 20  | [What are the function parameter rules](#What-are-the-function-parameter-rules)                                                                               |
-| 21  | [What is the difference between a parameter and an argument](#What-is-the-difference-between-a-parameter-and-an-argument)                                     |
-| 22  | [What are default parameters](#What-are-default-parameters)                                                                                                   |
-| 23  | [What is the output of below function calls](#What-is-the-output-of-below-function-calls)                                                                     |
-| 24  | [What is the difference between Function constructor and function declaration](#What-is-the-difference-between-Function-constructor-and-function-declaration) |
-| 25  | [What is a Proper Tail Call](#What-is-a-Proper-Tail-Call)                                                                                                     |
-| 26  | [How to detect if a function is called as constructor](#How-to-detect-if-a-function-is-called-as-constructor)                                                 |
-| 27  | [What are the different kinds of generators](#What-are-the-different-kinds-of-generators)                                                                     |
-| 28  | [How do you define instance and non-instance properties](#How-do-you-define-instance-and-non-instance-properties)                                             |
-| 29  | [What is pass by value and pass by reference](#What-is-pass-by-value-and-pass-by-reference)                                                                   |
-| 30  | [What are hidden classes](#What-are-hidden-classes)                                                                                                           |
-| 31  | [What is referential transparency](#What-is-referential-transparency)                                                                                         |
-| 32  | [What is module pattern](#What-is-module-pattern)                                                                                                             |
-| 33  | [What is Function Composition](#What-is-Function-Composition)                                                                                                 |
-| 34  | [What is the purpose of the this keyword in JavaScript](#What-is-the-purpose-of-the-this-keyword-in-JavaScript)                                               |
-| 35  | [What Is Obfuscation in javascript](#What-Is-Obfuscation-in-javascript)                                                                                       |
-| 36  | [Why do you need Obfuscation](#Why-do-you-need-Obfuscation)                                                                                                   |
-| 37  | [What is Minification](#What-is-Minification)                                                                                                                 |
-| 38  | [What are the advantages of minification](#What-are-the-advantages-of-minification)                                                                           |
-| 39  | [What are the differences between Obfuscation and Encryption](#What-are-the-differences-between-Obfuscation-and-Encryption)                                   |
-| 40  | [What are the common tools used for minification](#What-are-the-common-tools-used-for-minification)                                                           |
-| 41  | [How do you perform form validation using javascript](#How-do-you-perform-form-validation-using-javascript)                                                   |
-| 42  | [How do you perform form validation without javascript](#How-do-you-perform-form-validation-without-javascript)                                               |
-| 43  | [What are the DOM methods available for constraint validation](#What-are-the-DOM-methods-available-for-constraint-validation)                                 |
-| 44  | [What are the available constraint validation DOM properties](#What-are-the-available-constraint-validation-DOM-properties)                                   |
-| 45  | [What are the list of validity properties](#What-are-the-list-of-validity-properties)                                                                         |
-| 46  | [Give an example usage of rangeOverflow property](#Give-an-example-usage-of-rangeOverflow-property)                                                           |
-| 47  | [What is an enum](#What-is-an-enum)                                                                                                                           |
-| 48  | [Is enums feature available in javascript](#Is-enums-feature-available-in-javascript)                                                                         |
-| 49  | [How do you extend classes](#How-do-you-extend-classes)                                                                                                       |
+| 16  | [What is eval](#What-is-eval)                                                                                                                                 |
+| 17  | [Is it recommended to use eval](#Is-it-recommended-to-use-eval)                                                                                               |
+| 18  | [What is the purpose of EvalError object](#What-is-the-purpose-of-EvalError-object)                                                                           |
+| 19  | [What is the purpose of uneval](#What-is-the-purpose-of-uneval)                                                                                               |
+| 20  | [What is the difference between uneval and eval](#What-is-the-difference-between-uneval-and-eval)                                                             |
+| 21  | [Can we define properties for functions](#Can-we-define-properties-for-functions)                                                                             |
+| 22  | [What is the way to find the number of parameters expected by a function](#What-is-the-way-to-find-the-number-of-parameters-expected-by-a-function)           |
+| 23  | [What are the function parameter rules](#What-are-the-function-parameter-rules)                                                                               |
+| 24  | [What is the difference between a parameter and an argument](#What-is-the-difference-between-a-parameter-and-an-argument)                                     |
+| 25  | [What are default parameters](#What-are-default-parameters)                                                                                                   |
+| 26  | [What is the output of below function calls](#What-is-the-output-of-below-function-calls)                                                                     |
+| 27  | [What is the difference between Function constructor and function declaration](#What-is-the-difference-between-Function-constructor-and-function-declaration) |
+| 28  | [What is a Proper Tail Call](#What-is-a-Proper-Tail-Call)                                                                                                     |
+| 29  | [How to detect if a function is called as constructor](#How-to-detect-if-a-function-is-called-as-constructor)                                                 |
+| 30  | [What are the different kinds of generators](#What-are-the-different-kinds-of-generators)                                                                     |
+| 31  | [How do you define instance and non-instance properties](#How-do-you-define-instance-and-non-instance-properties)                                             |
+| 32  | [What is pass by value and pass by reference](#What-is-pass-by-value-and-pass-by-reference)                                                                   |
+| 33  | [What are hidden classes](#What-are-hidden-classes)                                                                                                           |
+| 34  | [What is referential transparency](#What-is-referential-transparency)                                                                                         |
+| 35  | [What is module pattern](#What-is-module-pattern)                                                                                                             |
+| 36  | [What is Function Composition](#What-is-Function-Composition)                                                                                                 |
+| 37  | [What is the purpose of the this keyword in JavaScript](#What-is-the-purpose-of-the-this-keyword-in-JavaScript)                                               |
+| 38  | [What Is Obfuscation in javascript](#What-Is-Obfuscation-in-javascript)                                                                                       |
+| 39  | [Why do you need Obfuscation](#Why-do-you-need-Obfuscation)                                                                                                   |
+| 40  | [What is Minification](#What-is-Minification)                                                                                                                 |
+| 41  | [What are the advantages of minification](#What-are-the-advantages-of-minification)                                                                           |
+| 42  | [What are the differences between Obfuscation and Encryption](#What-are-the-differences-between-Obfuscation-and-Encryption)                                   |
+| 43  | [What are the common tools used for minification](#What-are-the-common-tools-used-for-minification)                                                           |
+| 44  | [How do you perform form validation using javascript](#How-do-you-perform-form-validation-using-javascript)                                                   |
+| 45  | [How do you perform form validation without javascript](#How-do-you-perform-form-validation-without-javascript)                                               |
+| 46  | [What are the DOM methods available for constraint validation](#What-are-the-DOM-methods-available-for-constraint-validation)                                 |
+| 47  | [What are the available constraint validation DOM properties](#What-are-the-available-constraint-validation-DOM-properties)                                   |
+| 48  | [What are the list of validity properties](#What-are-the-list-of-validity-properties)                                                                         |
+| 49  | [Give an example usage of rangeOverflow property](#Give-an-example-usage-of-rangeOverflow-property)                                                           |
+| 50  | [What is an enum](#What-is-an-enum)                                                                                                                           |
+| 51  | [Is enums feature available in javascript](#Is-enums-feature-available-in-javascript)                                                                         |
+| 52  | [How do you extend classes](#How-do-you-extend-classes)                                                                                                       |
 
 ### <h2>What are lambda or arrow functions</h2>
 
@@ -361,6 +364,42 @@ const divideBy = (a, b) => a / b;
 const compose = (...fns) => val => fns.reduce((prev, fn) => fn(prev), val)
 pipeRes = compose(multiplyByFive, substractThree, addTwo, x => divideBy(x, 2))(4);
 console.log(pipeRes) // 9.5
+```
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### <h2>What is eval</h2>
+
+The eval() function evaluates JavaScript code represented as a string. The string can be a JavaScript expression, variable, statement, or sequence of statements.
+
+```javascript
+console.log(eval("1 + 2")); //  3
+```
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### <h2>Is it recommended to use eval</h2>
+
+No, it allows arbitrary code to be run which causes a security problem. As we know that the eval() function is used to run text as code. In most of the cases, it should not be necessary to use it.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### <h2>What is the purpose of EvalError object</h2>
+
+The EvalError object indicates an error regarding the global `eval()` function. Even though this exception is not thrown by JavaScript anymore, the EvalError object remains for compatibility. The syntax of this expression would be as below,
+
+```javascript
+new EvalError([message[, fileName[, lineNumber]]])
+```
+
+You can throw EvalError with in try...catch block as below,
+
+```javascript
+try {
+    throw new EvalError('Eval function error', 'someFile.js', 100);
+} catch (e) {
+    console.log(e.message, e.name, e.fileName);   
+}           // "Eval function error", "EvalError", "someFile.js"
 ```
 
 **[⬆ Back to Top](#table-of-contents)**
