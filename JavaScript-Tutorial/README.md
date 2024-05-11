@@ -18,3 +18,4 @@
 | 13  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/BOM-DOM-Events/README.md">BOM DOM Events in JS</a>       |
 | 14  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Service%20Worker/README.md">Web Workers in JS</a>        |
 | 15  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/use%20strict%20Mode/README.md">use strict Mode in JS</a> |
+| 16  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Web-APIs/Interview.md">Web APIs in JS</a>                |
