@@ -35,7 +35,6 @@
 355	What is the difference between reflow and repaint
 350	Does javascript uses mixins
 345	What is the difference between Shallow and Deep copy
-340	What are the list of cases error thrown from non-strict mode to strict mode
 339	What is the purpose of EvalError object
 338	What is the purpose of Error object
 335	How do you convert character to ASCII code
@@ -148,9 +147,6 @@ How do you decode or encode a URL in JavaScript
 76	What is the difference between window and document
 77	How do you access history in javascript
 78	How do you detect caps lock key turned on or not
-66	What is a strict mode in javascript
-67	Why do you need strict mode
-68	How do you declare strict mode
 36	What is a post message
 34	What is IndexedDB
 
