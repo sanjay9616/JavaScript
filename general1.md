@@ -3,9 +3,6 @@
 437	What is an environment record?
 436	What is optional chaining?
 431	How do you create custom HTML element?
-429	What is the difference between setTimeout, setImmediate and process.nextTick?
-426	How do you group and nest console output?
-424	How do style the console output using CSS?
 422	Is that possible to use expressions in switch cases?
 417	What are the built-in iterables
 409	What is deno
@@ -21,17 +18,11 @@
 388	What is microtask
 386	How do you implement zero timeout in modern browsers
 384	What is web speech API
-383	How to cancel a fetch request
 381	What is AJAX
 379	How do you disable right click in the web page
 378	How do you capture browser back button
 377	What is the easiest multi condition checking
 374	How do you create copy to clipboard button
-372	How do you display data in a tabular format using console object
-371	Is it possible to debug HTML elements in console
-370	What is the purpose of dir method of console object
-369	Is it possible to add CSS to console messages
-368	What are the placeholders from console object
 355	What is the difference between reflow and repaint
 350	Does javascript uses mixins
 345	What is the difference between Shallow and Deep copy
@@ -81,15 +72,6 @@
 228	What are the different error names from error object
 229	What are the various statements in error handling
 
-210	How do you encode an URL
-211	How do you decode an URL
-123	What are the various url properties of location object
-122	How do you get the current url with javascript
-284	How do I modify the url without reloading the page
-How do you decode or encode a URL in JavaScript
-124	How do get query string values in javascript
-212	How do you print the contents of web page
-
 183	How do you detect javascript disabled in the page
 181	How do you detect a browser language preference
 177	Give an example where do you really need semicolon
@@ -104,10 +86,6 @@ How do you decode or encode a URL in JavaScript
 
 165	Can I use reserved words as identifiers
 
-163	What is a debugger statement
-164	What is the purpose of breakpoints in debugging
-92	What are the tools or techniques used for debugging JavaScript code
-
 162	What would be the result of 1+2+'3'
 161	How do you change the style of a HTML element
 
@@ -118,16 +96,11 @@ How do you decode or encode a URL in JavaScript
 142	What is a polyfill
 139	What is an app shell model
 
-117	What is the purpose of clearTimeout method
-118	What is the purpose of clearInterval method
 119	How do you redirect new page in javascript
 
 116	What are PWAs
 110	What is ECMAScript
 108	Why is JavaScript treated as Single threaded
-
-106	What is the use of setTimeout
-107	What is the use of setInterval
 
 104	What are the steps involved in return false usage
 
@@ -145,8 +118,6 @@ How do you decode or encode a URL in JavaScript
 89	How do you find operating system details
 
 76	What is the difference between window and document
-77	How do you access history in javascript
-78	How do you detect caps lock key turned on or not
 36	What is a post message
 34	What is IndexedDB
 
