@@ -5,11 +5,11 @@
     <details>
         <summary><b>Tell me about yourself.</b></summary>
             My Name is Sanjay
-          <pre>
-            function demo() {
-                console.log('1111')
-            }
-          </pre>
+<pre>
+  function demo() {
+      console.log('1111')
+  }
+</pre>
     </details>
   </li>
   <li>
