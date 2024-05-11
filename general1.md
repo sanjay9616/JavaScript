@@ -155,3 +155,13 @@ How do you decode or encode a URL in JavaScript
 34	What is IndexedDB
 
 265	What is MEAN in javascript
+
+
+Generator function
+
+
+Angular
+
+Rxjs - obervables, subject, subject behavior, fork join etc.
+
+State management - ngrx, package.json vs package.lock.json, directives, pipes, hooks, communication b/t component and with relation with relation, view init, change detection, stand alone components, artectecture type, template and reactive form
