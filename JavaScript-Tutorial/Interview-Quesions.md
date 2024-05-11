@@ -1,6 +1,7 @@
 <h1>Javascript Interview Questions and Answers</h1>
 
 <ol>
+
   <li>
     <details>
         <summary><b>Tell me about yourself.</b></summary>
@@ -17,9 +18,11 @@ function demo() {
       </p>
     </details>
   </li>
+
   <li>
     <details>
         <summary><b>Tell me about yourself22.</b></summary>
     </details>
   </li>
+
 </ol>
