@@ -6,13 +6,11 @@
         <summary><b>Tell me about yourself.</b></summary>
         <p>
             My Name is Sanjay
-            <script>
-                <code>
-                    function demo() {
-                        console.log('1111')
-                    }
-                </code>
-            <script>
+<code>
+    function demo() {
+        console.log('1111')
+    }
+</code>
         </p>
     </details>
   </li>
