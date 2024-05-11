@@ -7,9 +7,11 @@
         <p>
         My Name is Sanjay
 <pre>
+<code>
 function demo() {
     console.log('1111')
 }
+</code>
 </pre>
       </p>
     </details>
