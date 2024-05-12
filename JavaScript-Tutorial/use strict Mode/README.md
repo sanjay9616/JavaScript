@@ -63,3 +63,5 @@ obj.x = 3.14;            // This will cause an error
 "use strict";
 delete Object.prototype; // This will cause an error
 ```
+
+<h2><a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/README.md"> 🔙 Back</a></h2>

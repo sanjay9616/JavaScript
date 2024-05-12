@@ -26,3 +26,5 @@ user.printThis() // { name: 'Sanjay', printThis: [Function: printThis] }
 user.name = "Anurag"
 user.printThis() // { name: 'Anurag', printThis: [Function: printThis] }
 ```
+
+<h2><a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/README.md"> 🔙 Back</a></h2>

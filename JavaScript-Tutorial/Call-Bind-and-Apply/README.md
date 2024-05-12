@@ -63,3 +63,5 @@ Call and Apply are pretty much interchangeable. Both execute the current functio
 Bind creates a new function that will have `this` set to the first parameter passed to bind().
 
 <h2>Polyfill for bind method</h2>
+
+<h2><a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/README.md"> 🔙 Back</a></h2>

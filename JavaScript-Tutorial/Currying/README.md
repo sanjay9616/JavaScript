@@ -15,3 +15,5 @@ curryUnaryFunction(1)(2)(3); // returns the number 6
 ```
 
 Curried functions are great to improve **code reusability** and **functional composition**.
+
+<h2><a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/README.md"> 🔙 Back</a></h2>

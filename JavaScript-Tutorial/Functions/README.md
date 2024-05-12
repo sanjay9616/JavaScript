@@ -308,3 +308,5 @@ console.log(user.toString()); // returns "(function user(){})"
 <h1>pass by value and pass by reference</h1>
 <h1>What is Function Composition</h1>
 <h1>enum</h1>
+
+<h2><a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/README.md"> 🔙 Back</a></h2>
