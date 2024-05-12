@@ -8,13 +8,12 @@
     <li>Worker runs in a different global context</li>
     <li>They can do complex operations without interfering the UI</li>
     <li>They can send and accept message/data from UI using events</li>
-    <li></li>
-
-    ```js
-    var workerObj = new Worker('workerFileName.js')
-    onMessage(), postMessage()
-    ```
 </ul>
+
+```js
+var workerObj = new Worker('workerFileName.js')
+onMessage(), postMessage()
+```
 
 <h1>Advantages</h1>
 
