@@ -20,7 +20,7 @@
 | 16  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Loops/README.md">Different Kinds of Loops</a>                  |
 | 17  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Operators/README.md">JavaScript Operators</a>                  |
 | 18  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/README.md">Data Types</a>                           |
-| 19  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Operators/README.md">Others Interview Questions</a>            |
+| 19  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Other/Interview.md">Others Interview Questions</a>             |
 
 
 <h2><a href="https://github.com/sanjay9616/JavaScript/blob/master/README.md"> 🔙 Back</a></h2>
