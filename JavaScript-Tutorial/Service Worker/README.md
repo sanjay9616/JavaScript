@@ -26,3 +26,5 @@ onMessage(), postMessage()
 1. Does not have access to Parent object. </br>
 2. Does not have access to window object. </br>
 3. Does not have access to Document Object. </br>
+
+<h2><a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/README.md"> 🔙 Back</a></h2>
