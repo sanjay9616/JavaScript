@@ -4,15 +4,20 @@
 
   <li>
     <details>
-        <summary><b>Tell me about yourself.</b></summary>
+        <summary><b>What is the difference between Call, Apply and Bind?</b></summary>
         <p>
-        My Name is Sanjay
-        kdsksk
+        <b>Call:</b> The call() method invokes a function with a given <b>this</b> value and arguments provided one by one.
 <pre>
 <code>
-function demo() {
-    console.log('1111')
+var employee1 = { firstName: "John", lastName: "Rodson" };
+var employee2 = { firstName: "Jimmy", lastName: "Baily" };
+
+function invite(greeting1, greeting2) {
+    console.log(greeting1 + " " + this.firstName + " " + this.lastName + ", " + greeting2);
 }
+
+invite.call(employee1, "Hello", "How are you?"); // Hello John Rodson, How are you?
+invite.call(employee2, "Hello", "How are you?"); // Hello Jimmy Baily, How are you?
 </code>
 </pre>
       </p>
