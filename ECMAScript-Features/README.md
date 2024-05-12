@@ -2522,3 +2522,5 @@ Most of these features already supported by some browsers and try out with babel
    ```
 
    **[⬆ Back to Top](#table-of-contents)**
+
+<h2><a href="https://github.com/sanjay9616/JavaScript/blob/master/README.md"> 🔙 Back</a></h2>
