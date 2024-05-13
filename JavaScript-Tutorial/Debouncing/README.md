@@ -1,6 +1,6 @@
 <h1>Debouncing in Javascript</h2>
 
-Debouncing is a technique used to improve the performance of a feature by controlling the frequency of function calls. It delays the execution of a function until a certain amount of time has passed since the last invocation.
+`Debouncing is a technique used to improve the performance of a feature by controlling the frequency of function calls. It delays the execution of a function until a certain amount of time has passed since the last invocation`.
 
 Debouncing is a programming pattern that allows delaying execution of some piece of code until a specified time to avoid unnecessary _CPU cycles, API calls and improve performance_. The debounce function make sure that your code is only triggered once per user input. The common usecases are Search box suggestions, text-field auto-saves, and eliminating double-button clicks.
 
