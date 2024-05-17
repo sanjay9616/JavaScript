@@ -17,5 +17,6 @@
 | 13    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/last-Operator.md">last Operator</a>                 |
 | 14    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/elementAt-Operator.md">elementAt Operator</a>       |
 | 15    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/filter-Operator.md">filter Operator</a>             |
+| 16    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/distinct-Operator.md">distinct Operator</a>         |
 
 <h2><a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/README.md"> 🔙 Back</a></h2>
