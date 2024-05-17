@@ -20,5 +20,6 @@
 | 16    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/distinct-Operator.md">distinct Operator</a>         |
 | 17    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/skip-Operator.md">skip Operator</a>                 |
 | 18    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/count-Operator.md">count Operator</a>               |
+| 19    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/max-Operator.md">max Operator</a>                   |
 
 <h2><a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/README.md"> 🔙 Back</a></h2>
