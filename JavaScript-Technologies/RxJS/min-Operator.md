@@ -1,11 +1,11 @@
-<h1>max Operator</h1>
+<h1>min Operator</h1>
 
 - Max Operator will take an Observable with all values and return an Observable with the max value.
 
 ```ts
 ngOnInit() {
     from([1, 2, 3, 4, 5])
-      .pipe(max())
+      .pipe(min())
       .subscribe((data) => {
         console.log(data);
       })
@@ -13,7 +13,7 @@ ngOnInit() {
 ```
 **Output**
 ```
-5
+1
 ```
 
 <h2><a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/README.md"> 🔙 Back</a></h2>
