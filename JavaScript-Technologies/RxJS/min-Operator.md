@@ -1,6 +1,6 @@
 <h1>min Operator</h1>
 
-- Max Operator will take an Observable with all values and return an Observable with the max value.
+- Max Operator will take an Observable with all values and return an Observable with the min value.
 
 ```ts
 ngOnInit() {
