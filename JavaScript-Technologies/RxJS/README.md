@@ -24,9 +24,12 @@
 | 19    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/count-Operator.md">count Operator</a>                               |
 | 20    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/max-Operator.md">max Operator</a>                                   |
 | 21    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/min-Operator.md">min Operator</a>                                   |
-| 22    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/switchMap-Operator.md">switchMap Operator</a>                       |
 | 23    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/map-Operator.md">map Operator</a>                                   |
 | 24    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/pluck-Operator.md">pluck Operator</a>                               |
 | 25    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/tap-Operator.md">tap Operator</a>                                   |
+| 22    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/switchMap-Operator.md">switchMap Operator</a>                       |
+| 22    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/concatMap-Operator.md">concatMap Operator</a>                       |
+| 22    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/mergeMap-Operator.md">mergeMap Operator</a>                         |
+| 22    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/exhaustMap-Operator.md">exhaustMap Operator</a>                     |
 
 <h2><a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/README.md"> 🔙 Back</a></h2>

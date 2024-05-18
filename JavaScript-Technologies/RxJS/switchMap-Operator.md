@@ -20,7 +20,6 @@ observer 8
 observer 3
 observer 9
 observer 27
-
 ```
 
 <h2><a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/README.md"> 🔙 Back</a></h2>
