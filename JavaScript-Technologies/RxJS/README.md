@@ -28,8 +28,8 @@
 | 24    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/pluck-Operator.md">pluck Operator</a>                               |
 | 25    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/tap-Operator.md">tap Operator</a>                                   |
 | 22    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/switchMap-Operator.md">switchMap Operator</a>                       |
-| 22    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/concatMap-Operator.md">concatMap Operator</a>                       |
 | 22    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/mergeMap-Operator.md">mergeMap Operator</a>                         |
+| 22    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/concatMap-Operator.md">concatMap Operator</a>                       |
 | 22    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/exhaustMap-Operator.md">exhaustMap Operator</a>                     |
 
 <h2><a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/README.md"> 🔙 Back</a></h2>

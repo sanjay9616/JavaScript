@@ -1,4 +1,4 @@
-<h1>concatMap Operator</h1>
+<h1>mergeMap Operator</h1>
 
 - The concatMap operator will create a derived observable (called inner observable) from a source observable and emit those values.
 - The concatMap operator is used to flatten the observable sequence of values. It maps each source value to an inner observable and subscribes to them in sequence, waiting for each to complete before subscribing to the next. This makes it particularly useful when you need to retrieve data from multiple APIs in sequence or process observables one after the other.
@@ -6,7 +6,7 @@
 ```ts
 ngOnInit() {
     of(1, 2, 3)
-      .pipe(concatMap(x => of(x, x ** 2, x ** 3)))
+      .pipe(mergeMap(x => of(x, x ** 2, x ** 3)))
       .subscribe((observer: any) => console.log("observer", observer))
 }
 ```
