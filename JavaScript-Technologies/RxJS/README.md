@@ -25,5 +25,6 @@
 | 21    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/min-Operator.md">min Operator</a>                   |
 | 22    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/switchMap-Operator.md">switchMap Operator</a>       |
 | 23    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/map-Operator.md">map Operator</a>                   |
+| 24    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/pluck-Operator.md">pluck Operator</a>               |
 
 <h2><a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/README.md"> 🔙 Back</a></h2>
