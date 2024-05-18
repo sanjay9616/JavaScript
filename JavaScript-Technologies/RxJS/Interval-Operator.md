@@ -24,7 +24,7 @@ export class RxjsComponent implements OnInit {
 ```
 **Output**
 ```
-interval 0 // after 500 ms
+interval 0
 interval 1 // after 500 ms
 interval 2 // after 500 ms
 interval 3 // after 500 ms

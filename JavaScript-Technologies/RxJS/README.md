@@ -9,6 +9,7 @@
 | 5     | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/From-Operator.md">From Operator</a>                 |
 | 6     | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/fromEvent-Operator.md">fromEvent Operator</a>       |
 | 7     | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/Interval-Operator.md">Interval Operator</a>         |
+| 7     | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/timer-Operator.md">timer Operator</a>               |
 | 8     | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/debounceTime-Operator.md">debounceTime Operator</a> |
 | 9     | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/take-Operator.md">take Operator</a>                 |
 | 10    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/takeWhile-Operator.md">takeWhile Operator</a>       |
