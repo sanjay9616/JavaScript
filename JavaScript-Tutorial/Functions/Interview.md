@@ -334,6 +334,8 @@ console.log(z); // 50
 
 ### <h2>What are compose and pipe functions</h2>
 
+`compose and pipe functions are powerful technique that allows developers to combine multiple functions into a single function`
+
 The "compose" and "pipe" are two techniques commonly used in functional programming to simplify complex operations and make code more readable. They are not native to JavaScript and higher-order functions. the `compose()` applies right to left any number of functions to the output of the previous function.
 
 ```js
