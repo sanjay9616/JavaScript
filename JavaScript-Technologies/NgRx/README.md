@@ -1,5 +1,8 @@
 <h2>
-     <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/NgRx/Introduction.md">Concepts of NgRx</a>
+     <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/NgRx/Introduction.md">➢ Concepts of NgRx</a>
+</h2>
+<h2>
+     <a href="https://github.com/sanjay9616/ngrx">➢ NgRx Implementation</a>
 </h2>
 
 ### <h2>Interview Questions</h2>
