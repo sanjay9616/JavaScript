@@ -1,7 +1,14 @@
-<h1>Table of Content</h1>
+<h2>
+     <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/NgRx/Introduction.md">Concepts of NgRx</a>
+</h2>
 
-| S No. | Topic                                                                                                                        |
-| ----- | ---------------------------------------------------------------------------------------------------------------------------- |
-| 1     | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/NgRx/Introduction.md">Introduction</a> |
+### <h2>Interview Questions</h2>
+
+| No. | Questions                 |
+| --- | ------------------------- |
+| 1   | [Question 1](#Question-1) |
+
+**[⬆ Back to Top](#Interview-Questions)**
+
 
 <h2><a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/README.md"> 🔙 Back</a></h2>
