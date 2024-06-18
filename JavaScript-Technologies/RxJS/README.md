@@ -4,8 +4,7 @@
 | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1     | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/Introduction-Observable-Operators.md">Introduction - Observable, Operators</a>                                                             |
 | 2     | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/of-from-fromEvent.md">of Operator, and from Operator</a>                                                                                   |
-| 5     | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/Interval-Operator.md">Interval Operator</a>                                                                                                |
-| 6     | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/timer-Operator.md">timer Operator</a>                                                                                                      |
+| 5     | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/Interval-Operator.md">interval Operator, and timer Operator</a>                                                                            |
 | 7     | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/debounceTime-Operator.md">debounceTime Operator</a>                                                                                        |
 | 8     | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/distinctUntilChanged-Operator.md">distinctUntilChanged Operator</a>                                                                        |
 | 9     | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/take-Operator.md">take Operator</a>                                                                                                        |
@@ -25,7 +24,7 @@
 | 23    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/tap-Operator.md">tap Operator</a>                                                                                                          |
 | 24    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/switchMap-mergeMap-concatMap-exhaustMap-forkJoin-combineLatest.md">switchMap, mergeMap, concatMap, exhaustMap, forkJoin, combineLatest</a> |
 
-**Add-**: merge, concat, startWith, endWith, throttling, subject, behavioursubject, find, error handling
+**Add-**: merge, concat, startWith, endWith, throttling, subject, behavioursubject, find, error handling, delay
 
 <h2><a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/README.md"> 🔙 Back</a></h2>
 
