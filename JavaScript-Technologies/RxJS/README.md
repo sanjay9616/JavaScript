@@ -28,8 +28,6 @@
 | 24    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/pluck-Operator.md">pluck Operator</a>                                                                                                      |
 | 25    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/tap-Operator.md">tap Operator</a>                                                                                                          |
 | 26    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/switchMap-mergeMap-concatMap-exhaustMap-forkJoin-combineLatest.md">switchMap, mergeMap, concatMap, exhaustMap, forkJoin, combineLatest</a> |
-| 28    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/concatMap-Operator.md">concatMap Operator</a>                                                                                              |
-| 29    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/exhaustMap-Operator.md">exhaustMap Operator</a>                                                                                            |
 
 **Add-**: merge, concat, startWith, endWith, throttling, subject, behavioursubject, find, error handling
 
