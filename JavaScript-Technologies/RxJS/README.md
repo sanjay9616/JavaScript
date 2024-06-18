@@ -2,7 +2,7 @@
 
 | S No. | Topic                                                                                                                                                                                                                                 |
 | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1     | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/Introduction.md">Introduction - Observable, Operators</a>                                                                                  |
+| 1     | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/Introduction-Observable-Operators.md">Introduction - Observable, Operators</a>                                                             |
 | 2     | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/Of-Operator.md">Of Operator</a>                                                                                                            |
 | 3     | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/From-Operator.md">From Operator</a>                                                                                                        |
 | 4     | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/fromEvent-Operator.md">fromEvent Operator</a>                                                                                              |
