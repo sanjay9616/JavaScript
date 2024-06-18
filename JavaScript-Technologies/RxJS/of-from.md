@@ -1,4 +1,4 @@
-<h1>Of Operator</h1>
+<h1>of Operator</h1>
 
 - Make Observable from a string or array or an object.
 - Whenever we want to paas a variable which has to be Observable instead of Array or String, we use Of Operator.
@@ -36,7 +36,7 @@ export class RxjsComponent implements OnInit {
 ["Ram", "Sita", "Gita"]
 ```
 
-<h1>From Operator</h1>
+<h1>from Operator</h1>
 
 - From Operator will create an observable from an array, an array-like object, an iterable object, or observable-like object.
 - Rememer it will always take an Array or Array like.
