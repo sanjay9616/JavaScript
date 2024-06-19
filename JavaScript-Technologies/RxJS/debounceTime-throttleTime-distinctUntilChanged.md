@@ -42,6 +42,50 @@ export class SummaryComponent implements OnInit {
 }
 ```
 
+<h1>throttleTime Operator</h1>
+
+- Throttle time is used to ignore subscription for given time like when we want to hit an API but you want a delay but want to get the latest value emitted from source observable
+
+```html
+<form [formGroup]="formGroup">
+  <mat-form-field appearance="outline">
+    <mat-label>Seach</mat-label>
+    <input matInput formControlName="searchStr" placeholder="Search Here..." autocomplete="off">
+  </mat-form-field>
+</form>
+```
+
+```ts
+import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
+import { throttleTime } from 'rxjs/operators';
+@Component({
+  selector: 'app-summary',
+  templateUrl: './summary.component.html',
+  styleUrls: ['./summary.component.scss']
+})
+export class SummaryComponent implements OnInit {
+
+  formGroup!: FormGroup;
+
+  constructor() { this.initializeFormGroup() }
+
+  ngOnInit() {
+    this.formGroup.get('searchStr')?.valueChanges
+      .pipe(throttleTime(500))
+      .subscribe((observer: any) => {
+        console.log('observer', observer)
+      })
+  }
+
+  initializeFormGroup() {
+    this.formGroup = new FormGroup({
+      searchStr: new FormControl(''),
+    });
+  }
+}
+```
+
 <h1>distinctUntilChanged Operator</h1>
 
 - Emits a notification from the source Observable only after detect changes source emission(if they are distinct in comparison to the last value the result observable emitted).
