@@ -10,11 +10,12 @@
 | 12    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/first-last-elementAt.md">first, last, and elementAt Operators</a>                                                                          |
 | 15    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/map-pluck-filter.md">map, pluck and filter Operators</a>                                                                                   |
 | 16    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/count-distinct-skip.md">count, distinct, and skip Operators</a>                                                                            |
-| 19    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/max-min.md">max, and min Operator</a>                                                                                                      |
+| 19    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/max-min.md">max, and min Operators</a>                                                                                                     |
+| 19    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/startWith-endWith.md">startWith, and endWith Operators</a>                                                                                 |
 | 23    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/tap-Operator.md">tap Operator</a>                                                                                                          |
 | 24    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/switchMap-mergeMap-concatMap-exhaustMap-forkJoin-combineLatest.md">switchMap, mergeMap, concatMap, exhaustMap, forkJoin, combineLatest</a> |
 
-**Add-**: merge, concat, startWith, endWith, subject, behavioursubject, find, error handling, delay
+**Add-**: merge, concat, subject, behavioursubject, find, error handling
 
 <h2><a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/README.md"> 🔙 Back</a></h2>
 
