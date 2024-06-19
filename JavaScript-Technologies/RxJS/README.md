@@ -2,7 +2,7 @@
 
 | S No. | Topic                                                                                                                                                                                                                                 |
 | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1     | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/Introduction-Observable-Subject-BehaviorSubject-Operators.md">Introduction - Observable, Subject, BehaviorSubject, and Operators</a>       |
+| 1     | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/Introduction%20-%20Observable-Subject-BehaviorSubject-Operators.md">Introduction - Observable, Subject, BehaviorSubject, and Operators</a> |
 | 2     | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/of-from-fromEvent.md">of, and from Operators</a>                                                                                           |
 | 5     | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/delay-timer-interval.md">delay, timer, and interval Operators</a>                                                                          |
 | 7     | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/debounceTime-throttleTime-distinctUntilChanged.md">debounceTime, throttleTime, and distinctUntilChanged Operators</a>                      |
