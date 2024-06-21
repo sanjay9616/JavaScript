@@ -1,4 +1,10 @@
-<h1>What is RxJS (Reactive Extensions for JavaScript)</h1>
+<h1>Introduction - Observable, Subject, BehaviorSubject, and Operators</h1>
+
+https://dev.to/devbyrayray/when-use-rxjs-subject-behavioursubject-replaysubject-asyncsubject-or-void-subject-in-angular-4pn9
+
+RXJS is a library that serves as a tool for carrying out asynchronous programming in JavaScript, wherein Observable and Subject are two distinct categories within the RXJS ecosystem that are leveraged for asynchronous programming purposes.
+
+<h2>What is RxJS (Reactive Extensions for JavaScript)</h2>
 
 `What is RxJS (Reactive Extensions for JavaScript) is a library for reactive programming using observables that make it easier to compose asynchronous or callback based code.`
 
@@ -15,7 +21,7 @@ Rxjs consists of main 3 thing </br>
 
 **Reactive Programming:** Reactive programming is an asynchronous programming paradigm concerned with data stream and propogation of change.
 
-<h1>Observable</h1>
+<h2>Observable</h2>
 
 - Observable emits data over a period of time.
 - Observable needs to be subscribed else it won't do anything on its own!
@@ -70,7 +76,7 @@ Shyam
 Sita
 ```
 
-<h1>Operators</h1>
+<h2>Operators</h2>
 
 - Operators are very important part of RxJS.
 - Rxjs library provides a lot of useful operators which helps us write clean code and reduce lot of effors in writting custom logic, which leads to many bugs actually.
