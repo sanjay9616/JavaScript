@@ -15,7 +15,9 @@ In this article, we’ll cover:
 - What is an Observer?
 - What is an operator?
 - Comparing Observables, Observers, and operators in RxJS
+- Observers and subscriptions?
 - The Observable lifecycle
+- Creating Observables and Observer
 - The difference between Observables and Promises
 
 <h2>Pull vs Push system</h2>
@@ -91,7 +93,7 @@ With some help from Observes and subscriptions, the Observable instance passes t
 - Execution
 - Destruction
 
-<h2>Creating Observables</h2>
+<h2>Creating Observables and Observer</h2>
 
 ```ts
 const observer = {
