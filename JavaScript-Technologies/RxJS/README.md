@@ -15,6 +15,7 @@
 | 11    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/tap-Operator.md">tap Operator</a>                                                                                                                                                      |
 | 12    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/debounceTime-throttleTime-distinctUntilChanged.md">debounceTime, throttleTime, and distinctUntilChanged Operators</a>                                                                  |
 | 13    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/switchMap-mergeMap-concatMap-exhaustMap-forkJoin-combineLatest.md">switchMap, mergeMap, concatMap, exhaustMap, forkJoin, combineLatest</a>                                             |
+| 14    | <a href="">Interview Questions and Answers</a>                                                                                                                                                                                                                                    |
 
 
 <h2><a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/README.md"> 🔙 Back</a></h2>
