@@ -151,3 +151,6 @@ It’s important to note that while they share some similarities, Observables an
 An Observable is an object that represents a stream of data that can be subscribed to, allowing multiple values to be emitted over time. Observables provide methods for subscribing to the stream and handling its emissions. On the other hand, Operators are functions that can be used to transform, filter, or combine data streams produced by Observables. Operators take an Observable as input and return a new Observable with the transformed data stream.
 
 A Promise is a one-time operation that represents an asynchronous operation’s eventual completion or failure and can only return a single value. Once a Promise is resolved or rejected, its state cannot be changed. Promises are used in Angular for handling HTTP requests and other asynchronous operations.
+
+<h2><a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/README.md"> 🔙 Back</a></h2>
+
