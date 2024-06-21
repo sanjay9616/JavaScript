@@ -15,26 +15,7 @@
 | 11    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/tap-Operator.md">tap Operator</a>                                                                                                                                                      |
 | 12    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/debounceTime-throttleTime-distinctUntilChanged.md">debounceTime, throttleTime, and distinctUntilChanged Operators</a>                                                                  |
 | 13    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/switchMap-mergeMap-concatMap-exhaustMap-forkJoin-combineLatest.md">switchMap, mergeMap, concatMap, exhaustMap, forkJoin, combineLatest</a>                                             |
-| 14    | <a href="">Interview Questions and Answers</a>                                                                                                                                                                                                                                    |
+| 14    | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/RxJS/Interview.md">Interview Questions and Answers</a>                                                                                                                                      |
 
 
 <h2><a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Technologies/README.md"> 🔙 Back</a></h2>
-
-### ----------------------------------------------------------------------------------------------------------------------- ###
-**RxJS**
-Subject vs behavior subject
-Observables vs Promises
-What are observables?
-What are observables?
-What is RxJS?
-What is subscribing?
-What is an observable?
-What is an observer?
-What is the difference between promise and observable?
-What is multicasting?
-How do you perform error handling in observables?
-What is the shorthand notation for subscribe method?
-What are the utility functions provided by RxJS?
-What are observable creation functions?
-What will happen if you do not supply handler for the observer?
-What is an rxjs Subject?
