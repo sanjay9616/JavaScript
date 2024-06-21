@@ -1,7 +1,5 @@
 <h1>Introduction - Observable, Subject, BehaviorSubject, and Operators</h1>
 
-https://dev.to/devbyrayray/when-use-rxjs-subject-behavioursubject-replaysubject-asyncsubject-or-void-subject-in-angular-4pn9
-
 RXJS is a library that serves as a tool for carrying out asynchronous programming in JavaScript, wherein Observable and Subject are two distinct categories within the RXJS ecosystem that are leveraged for asynchronous programming purposes.
 
 <h2>What is RxJS (Reactive Extensions for JavaScript)</h2>
