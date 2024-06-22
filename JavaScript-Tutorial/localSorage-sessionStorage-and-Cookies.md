@@ -5,3 +5,5 @@
 **sessionStorage:** The sessionStorage object allows you to save key/value pairs in the browser, the data is deleted when tab is closed.
 
 **Cookie:** The Cookie object allows you to save key/value pairs in the browser, the data is deleted as configured using Expires option.
+
+<h2><a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/README.md"> 🔙 Back</a></h2>
