@@ -15,7 +15,7 @@
 | 9   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Promises.md">JavaScript Promises</a>                     |
 | 10  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Functions.md">Functions in JS</a>                        |
 | 12  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/this-keyword.md">this keyword in JS</a>                  |
-| 13  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Service%20Worker/README.md">Web Workers in JS</a>        |
+| 13  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Service-Worker.md">Web Workers in JS</a>                 |
 | 14  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/use%20strict%20Mode/README.md">use strict Mode in JS</a> |
 | 15  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Variables/README.md">JavaScript Variables</a>            |
 | 16  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Loops/README.md">Different Kinds of Loops</a>            |
