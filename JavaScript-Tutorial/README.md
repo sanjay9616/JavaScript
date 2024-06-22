@@ -18,7 +18,7 @@
 | 13  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Service-Worker.md">Web Workers in JS</a>                |
 | 14  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/use-strict-Mode.md">use strict Mode in JS</a>           |
 | 15  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Variables.md">JavaScript Variables</a>                  |
-| 16  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Loops/README.md">Different Kinds of Loops</a>           |
+| 16  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Loops.md">Different Kinds of Loops</a>                  |
 | 17  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Operators/README.md">JavaScript Operators</a>           |
 | 18  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/README.md">Data Types</a>                    |
 | 19  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Other/Interview.md">Others Interview Questions</a>      |
