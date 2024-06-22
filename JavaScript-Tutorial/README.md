@@ -6,7 +6,7 @@
 | 2   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Debouncing.md">Debouncing in JS</a>                           |
 | 3   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Throttling.md">Throttling in JS</a>                           |
 | 4   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Hoisting.md">Hoisting in JS</a>                               |
-| 5   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Closure/README.md">Closure in JS</a>                          |
+| 5   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Closure.md">Closure in JS</a>                                 |
 | 6   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Currying/README.md">Currying in JS</a>                        |
 | 7   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Memoization/README.md">Memoization in JS</a>                  |
 | 8   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/BOM-DOM-Events/README.md">BOM DOM Events in JS</a>            |
