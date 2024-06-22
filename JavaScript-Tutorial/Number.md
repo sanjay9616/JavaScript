@@ -15,7 +15,6 @@ JavaScript has only one type of number. Numbers can be written with or without d
 | 7   | [JavaScript Numbers as Objects](#JavaScript-Numbers-as-Objects)     |
 | 8   | [Number Methods](#Number-Methods)                                   |
 | 9   | [Number Properties](#Number-Properties)                             |
-| 10  | [Interview Questions and Answers](#Interview-Questions-and-Answers) |
 
 ```javascript
 let x = 3.14;    // A number with decimals
@@ -432,31 +431,6 @@ console.log(x) // NaN
 
 let x = 100 / "Apple";
 console.log(x) // NaN
-```
-
-**[⬆ Back to Top](#table-of-contents)**
-
-### <h2>Interview Questions and Answers</h2>
-
-**[⬆ Back to Top](#table-of-contents)**
-
-**1. How do you verify that an argument is a Number or not?**
-
-**Ans:** The combination of IsNaN and isFinite methods are used to confirm whether an argument is a number or not.
-
-```javascript
-function isNumber(n) {
-return !isNaN(parseFloat(n)) && isFinite(n);
-}
-```
-
-**2. How do you round numbers to certain decimals?**
-
-**Ans:** You can round numbers to a certain number of decimals using `toFixed` method from native javascript.
-
-```javascript
-let pie = 3.141592653;
-pie = pie.toFixed(3); // 3.142
 ```
 
 **[⬆ Back to Top](#table-of-contents)**

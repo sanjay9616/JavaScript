@@ -1,4 +1,4 @@
-<h1>Number</h1>
+<h1>Boolean</h1>
 
 A JavaScript Boolean represents one of two values: true or false.
 

@@ -21,22 +21,22 @@ Objects written as name value pairs are similar to:
 
 ### Table of Contents
 
-| No. | Topic                                                                                                                                    |
-| --- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | [Creating a JavaScript Object](#Creating-a-JavaScript-Object)                                                                            |
-| 2   | [JavaScript Objects are Mutable](#JavaScript-Objects-are-Mutable)                                                                        |
-| 3   | [Displaying the Object in a Loop](#Displaying-the-Object-in-a-Loop)                                                                      |
-| 4   | [JavaScript Accessors](#JavaScript-Accessors)                                                                                            |
-| 5   | [Object Prototypes](#Object-Prototypes)                                                                                                  |
-| 6   | [JavaScript Iterators](#JavaScript-Iterators)                                                                                            |
-| 7   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Set.md">JavaScript Sets</a>                 |
-| 8   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Map.md">JavaScript Maps</a>                 |
-| 9   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Object-Reference.md">ES5 Object Methods</a> |
-| 10  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Array.md">JavaScript Arrays</a>             |
-| 11  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Date.md">JavaScript Date Objects</a>        |
-| 12  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Math.md">JavaScript Math Object</a>         |
-| 13  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/RegExp.md">JavaScript RegExp Object</a>     |
-| 14  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/JSON.md">JavaScript JSON Object</a>         |
+| No. | Topic                                                                                                                                            |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1   | [Creating a JavaScript Object](#Creating-a-JavaScript-Object)                                                                                    |
+| 2   | [JavaScript Objects are Mutable](#JavaScript-Objects-are-Mutable)                                                                                |
+| 3   | [Displaying the Object in a Loop](#Displaying-the-Object-in-a-Loop)                                                                              |
+| 4   | [JavaScript Accessors](#JavaScript-Accessors)                                                                                                    |
+| 5   | [Object Prototypes](#Object-Prototypes)                                                                                                          |
+| 6   | [JavaScript Iterators](#JavaScript-Iterators)                                                                                                    |
+| 7   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Set.md">JavaScript Sets</a>                                    |
+| 8   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Map.md">JavaScript Maps</a>                                    |
+| 9   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Object-Reference.md">ES5 Object Methods (Object Reference)</a> |
+| 10  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Array.md">JavaScript Arrays</a>                                |
+| 11  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Date.md">JavaScript Date Objects</a>                           |
+| 12  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Math.md">JavaScript Math Object</a>                            |
+| 13  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/RegExp.md">JavaScript RegExp Object</a>                        |
+| 14  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/JSON.md">JavaScript JSON Object</a>                            |
 
 
 ### <h2>Creating a JavaScript Object</h2>
