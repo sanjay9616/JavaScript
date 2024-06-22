@@ -9,7 +9,7 @@
 | 5   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Closure.md">Closure in JS</a>                                 |
 | 6   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Currying.md">Currying in JS</a>                               |
 | 7   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Memoization.md">Memoization in JS</a>                         |
-| 8   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/BOM-DOM-Events/README.md">BOM DOM Events in JS</a>            |
+| 8   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/BOM-DOM-Events.md">BOM DOM Events in JS</a>                   |
 | 9   | <a href="https://github.com/sanjay9616/JavaScript/tree/master/JavaScript-Tutorial/Async">JavaScript Async (Aync-Await, Callbacks, Promises)</a> |
 | 10  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Functions/README.md">Functions in JS</a>                      |
 | 11  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Web-APIs/Interview.md">Web APIs in JS</a>                     |
