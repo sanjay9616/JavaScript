@@ -317,3 +317,6 @@ Promise.any([p1, p2, p3])
 if replace console.log(err) with console.log(err.errors) then output [ 'P1 Success', 'P2 Fails', 'P3 Success' ]
 ```
 
+<h2><a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/README.md"> 🔙 Back</a></h2>
+
+
