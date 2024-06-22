@@ -9,3 +9,4 @@ The latest ECMAScript standard defines eight data types Out of which seven data 
 **Non-Primitive Data Types:** The data types that are derived from primitive data types of the JavaScript language are known as non-primitive data types. It is also known as derived data types or reference data types. ex - **Object**.
 
 <h2><a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/README.md"> 🔙 Back</a></h2>
+

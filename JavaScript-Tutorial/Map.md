@@ -74,4 +74,4 @@ console.log(fruits.entries()) // { [ 'apples', 500 ], [ 'bananas', 300 ], [ 'ora
 | Have default keys                 | Do not have default keys      |
 
 
-<h2><a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Data-Types/Object.md"> 🔙 Back</a></h2>
+<h2><a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/README.md"> 🔙 Back</a></h2>
