@@ -14,7 +14,6 @@
 | 9   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Callbacks.md">JavaScript Callbacks</a>                   |
 | 9   | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Promises.md">JavaScript Promises</a>                     |
 | 10  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Functions.md">Functions in JS</a>                        |
-| 11  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Web-APIs/Interview.md">Web APIs in JS</a>                |
 | 12  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/this%20keyword/README.md">this keyword in JS</a>         |
 | 13  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/Service%20Worker/README.md">Web Workers in JS</a>        |
 | 14  | <a href="https://github.com/sanjay9616/JavaScript/blob/master/JavaScript-Tutorial/use%20strict%20Mode/README.md">use strict Mode in JS</a> |
